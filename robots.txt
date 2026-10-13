@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akrwin.github.io/sitemap.xml
