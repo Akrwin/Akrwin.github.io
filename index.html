@@ -553,42 +553,85 @@ button{font-family:inherit}
 <sc-if value="{{ isExperience }}" hint-placeholder-val="{{ false }}">
 <section id="experience" style="background:var(--bg);padding:clamp(72px,10vw,120px) 22px">
   <div style="max-width:1024px;margin:0 auto">
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));align-items:end;gap:24px 48px;margin-bottom:64px;border-bottom:1px solid var(--line)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));align-items:end;gap:24px 48px;margin-bottom:48px;border-bottom:1px solid var(--line)">
       <div style="padding-bottom:clamp(32px,5vw,64px)">
-        <h2 style="margin:0 0 16px;font-size:clamp(36px,5.5vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1">{{ t.expH }}</h2>
-        <p style="margin:0 0 28px;max-width:440px;font-size:19px;line-height:1.5;color:var(--mute);text-wrap:pretty">{{ t.expP }}</p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <a href="#fulltime" style="font-size:14px;padding:8px 16px;border-radius:999px;background:var(--pill);color:var(--pillink);text-decoration:none">{{ t.fulltime }}</a>
-          <a href="#freelance" style="font-size:14px;padding:8px 16px;border-radius:999px;background:var(--card2);color:var(--ink);text-decoration:none">{{ t.freelance }}</a>
-        </div>
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:var(--mute);margin-bottom:14px">/ experience</div>
+        <h2 style="margin:0 0 16px;font-size:clamp(34px,5vw,52px);font-weight:700;letter-spacing:-0.03em;line-height:1.1;text-wrap:balance">{{ t.expH }}</h2>
+        <p style="margin:0;max-width:460px;font-size:19px;line-height:1.5;color:var(--mute);text-wrap:pretty">{{ t.expP }}</p>
       </div>
       <div style="position:relative;display:flex;justify-content:center;align-items:flex-end">
         <div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:78%;aspect-ratio:1;border-radius:50%;background:var(--ink);opacity:0.05"></div>
         <img src="assets/akkarawin-cutout.webp" width="640" height="1122" alt="Akkarawin Saiprapakorn" style="position:relative;display:block;width:100%;max-width:290px;height:auto">
       </div>
     </div>
-    <div id="fulltime" style="display:flex;align-items:baseline;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin-bottom:24px;scroll-margin-top:72px">
-      <h3 style="margin:0;min-width:0;flex:1 1 auto;font-size:clamp(24px,3.4vw,36px);line-height:1.2;font-weight:700;letter-spacing:-0.03em">{{ t.fulltimeH }}</h3>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border-radius:20px;overflow:hidden">
+      <sc-for list="{{ expStats }}" as="st" hint-placeholder-count="4">
+        <div style="background:var(--card);padding:24px 20px">
+          <div style="font-size:clamp(30px,4vw,40px);font-weight:700;letter-spacing:-0.03em;line-height:1">{{ st.value }}</div>
+          <div style="margin-top:8px;font-size:14px;color:var(--mute)">{{ st.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <h3 style="margin:72px 0 20px;font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">{{ t.capsH }}</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px">
+      <sc-for list="{{ caps }}" as="c" hint-placeholder-count="3">
+        <div style="background:var(--card);box-shadow:var(--shadow);border:1px solid var(--line);border-radius:20px;padding:24px;display:flex;flex-direction:column;gap:8px">
+          <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;color:var(--mute)">{{ c.num }}</div>
+          <div style="font-size:20px;font-weight:700;letter-spacing:-0.015em;line-height:1.3">{{ c.title }}</div>
+          <div style="font-size:15px;line-height:1.5;color:var(--mute)">{{ c.tools }}</div>
+          <div style="margin-top:auto;padding-top:8px;font-size:13px;color:var(--mute)">{{ t.capsFrom }} {{ c.from }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div id="fulltime" style="display:flex;align-items:baseline;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin:72px 0 8px;scroll-margin-top:72px">
+      <h3 style="margin:0;font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">{{ t.pathH }}</h3>
       <span style="font-size:14px;color:var(--mute)">{{ t.ftRange }}</span>
     </div>
     <div style="display:flex;flex-direction:column">
       <sc-for list="{{ jobs }}" as="j" hint-placeholder-count="4">
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px 40px;padding:36px 0;border-top:1px solid var(--line)">
-          <div>
-            <img src="{{ j.logo }}" alt="{{ j.company }}" width="56" height="56" style="display:block;width:56px;height:56px;border-radius:14px;object-fit:cover;background:#fff;box-shadow:0 1px 3px rgba(10,10,10,0.14);margin-bottom:16px" />
-            <div style="font-size:14px;color:var(--mute)">{{ j.dates }}</div>
-            <div style="font-size:17px;font-weight:600;margin-top:6px">{{ j.company }}</div>
-          </div>
-          <div style="grid-column:span 2;min-width:0">
-            <div style="font-size:24px;font-weight:600;letter-spacing:-0.015em">{{ j.role }}</div>
-            <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px">
-              <sc-for list="{{ j.points }}" as="pt" hint-placeholder-count="3">
-                <div style="font-size:17px;line-height:1.55;color:var(--ink);text-wrap:pretty">{{ pt }}</div>
-              </sc-for>
-            </div>
+        <div style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;padding:28px 0;border-top:1px solid var(--line)">
+          <img src="{{ j.logo }}" alt="{{ j.company }}" width="56" height="56" style="display:block;width:56px;height:56px;border-radius:14px;object-fit:cover;background:#fff;box-shadow:0 1px 3px rgba(10,10,10,0.14)" />
+          <div style="min-width:0">
+            <div style="font-size:clamp(18px,2.2vw,22px);font-weight:600;letter-spacing:-0.015em;line-height:1.3">{{ j.role }} · {{ j.company }}</div>
+            <div style="margin-top:4px;font-size:14px;color:var(--mute)">{{ j.industry }} · {{ j.dates }}</div>
+            <sc-if value="{{ j.hasOutcome }}" hint-placeholder-val="{{ true }}">
+              <div style="margin-top:12px;font-size:17px;line-height:1.55;text-wrap:pretty"><span aria-hidden="true" style="color:var(--mute)">→ </span>{{ j.outcome }}</div>
+            </sc-if>
+            <sc-if value="{{ j.hasTools }}" hint-placeholder-val="{{ true }}">
+              <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:12px">
+                <sc-for list="{{ j.tools }}" as="tl" hint-placeholder-count="3"><span style="font-size:13px;padding:4px 11px;border-radius:999px;background:var(--card2);color:var(--mute);white-space:nowrap">{{ tl }}</span></sc-for>
+              </div>
+            </sc-if>
+            <sc-if value="{{ j.hasPoints }}" hint-placeholder-val="{{ true }}">
+              <details style="margin-top:14px">
+                <summary style="cursor:pointer;font-size:14px;color:var(--mute);width:max-content">{{ t.more }}</summary>
+                <div style="display:flex;flex-direction:column;gap:10px;margin-top:12px">
+                  <sc-for list="{{ j.points }}" as="pt" hint-placeholder-count="3">
+                    <div style="font-size:16px;line-height:1.55;color:var(--ink);text-wrap:pretty">{{ pt }}</div>
+                  </sc-for>
+                </div>
+              </details>
+            </sc-if>
           </div>
         </div>
       </sc-for>
+      <div style="display:grid;grid-template-columns:56px minmax(0,1fr);gap:18px;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+        <img src="assets/logo-fastwork.webp" alt="Fastwork" width="56" height="56" style="display:block;width:56px;height:56px;border-radius:14px;object-fit:cover;background:#fff;box-shadow:0 1px 3px rgba(10,10,10,0.14)" />
+        <div style="min-width:0">
+          <div style="font-size:clamp(18px,2.2vw,22px);font-weight:600;letter-spacing:-0.015em;line-height:1.3">Freelance Data Analyst · Fastwork</div>
+          <div style="margin-top:4px;font-size:14px;color:var(--mute)">{{ t.flRowSub }}</div>
+          <div style="margin-top:12px;font-size:17px;line-height:1.55"><span aria-hidden="true" style="color:var(--mute)">→ </span>{{ t.flRowOut }}</div>
+          <a href="#freelance" style="display:inline-block;margin-top:12px;font-size:15px;font-weight:600">{{ t.flRowLink }}</a>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-top:56px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;background:var(--card2);border-radius:24px;padding:clamp(24px,4vw,36px)">
+      <div style="font-size:clamp(20px,2.6vw,26px);font-weight:700;letter-spacing:-0.02em;line-height:1.3;max-width:560px;text-wrap:balance">{{ t.expCta }}</div>
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;background:var(--pill);color:var(--pillink);font-size:16px;font-weight:600;text-decoration:none;white-space:nowrap" style-hover="text-decoration:none;opacity:0.85">{{ t.expCtaBtn }}</a>
     </div>
   </div>
 </section>
@@ -836,7 +879,7 @@ const TX = {
     live: 'View live dashboard', source: 'Source on GitHub ›', pipelineH: 'The pipeline.', stackH: 'Tech stack.', step: 'STEP',
     projH: 'Built in the open.', viewProject: 'View project ›', emptySub: 'New projects in this category are on the way.', ghNote: 'The full source code of all my projects is available on my',
     ytP: 'Build a real-time data pipeline that collects YouTube (9arm channel) data and shows it on a dashboard.', ytBtn: 'View source on GitHub',
-    expH: 'Experience.', expP: 'Four years in data across banking, real estate, education and tech, now taking freelance projects on Fastwork.', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – Present',
+    expH: 'Big-company data experience, now for your business.', expP: 'Four years of data work for banking, real estate, education and tech companies, now building dashboards and data systems for businesses of any size.', capsH: 'What you get from this experience.', capsFrom: 'From', pathH: 'Career path.', more: 'Details', flRowSub: 'Clients across many businesses · Present', flRowOut: '22 orders delivered, 5 stars on every review.', flRowLink: 'Read client reviews ›', expCta: 'Want a dashboard like these for your business?', expCtaBtn: 'Start a project →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – Present',
     flTag: 'Freelance · Fastwork', since: 'Since February 2026', flH: 'Joined Fastwork in 2026.',
     flP: 'Freelance data analysis, dashboard and tutoring work for clients on Fastwork, alongside my full-time role.',
     avg: 'Average rating', reviewsL: 'Client reviews', five: '5-star reviews', say: 'What clients say.', selected: 'Selected from 19 verified reviews on Fastwork.', client: 'Fastwork client',
@@ -857,7 +900,7 @@ const TX = {
     live: 'ดูแดชบอร์ดจริง', source: 'ซอร์สโค้ดบน GitHub ›', pipelineH: 'The pipeline.', stackH: 'Tech stack.', step: 'ขั้นที่',
     projH: 'Built in the open.', viewProject: 'ดูผลงาน ›', emptySub: 'ผลงานในหมวดนี้กำลังจะมาเร็วๆ นี้', ghNote: 'ซอร์สโค้ดของทุกโปรเจกต์ดูได้ที่',
     ytP: 'สร้าง data pipeline แบบ real-time ที่เก็บข้อมูลช่อง YouTube (9arm) และแสดงผลบนแดชบอร์ด', ytBtn: 'ดูซอร์สโค้ดบน GitHub',
-    expH: 'Experience.', expP: 'ประสบการณ์ด้านข้อมูล 4 ปี ทั้งธนาคาร อสังหาริมทรัพย์ การศึกษา และเทคโนโลยี ตอนนี้รับงานฟรีแลนซ์บน Fastwork ด้วย', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – ปัจจุบัน',
+    expH: '4 ปีกับข้อมูลองค์กรใหญ่ พร้อมทำให้ธุรกิจคุณ', expP: 'เคยทำงานข้อมูลให้ธนาคาร อสังหาริมทรัพย์ การศึกษา และเทคโนโลยี ตอนนี้นำวิธีเดียวกันมาทำ Dashboard และระบบข้อมูลให้ธุรกิจทุกขนาด', capsH: 'สิ่งที่คุณได้จากประสบการณ์นี้', capsFrom: 'จาก', pathH: 'เส้นทางการทำงาน', more: 'ดูรายละเอียด', flRowSub: 'ลูกค้าหลายธุรกิจ · ปัจจุบัน', flRowOut: 'ส่งมอบแล้ว 22 งาน ได้ 5 ดาวทุกรีวิว', flRowLink: 'อ่านรีวิวจากลูกค้า ›', expCta: 'อยากได้ Dashboard แบบนี้ในธุรกิจของคุณ?', expCtaBtn: 'เริ่มโปรเจกต์ →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – ปัจจุบัน',
     flTag: 'Freelance · Fastwork', since: 'ตั้งแต่กุมภาพันธ์ 2026', flH: 'Joined Fastwork in 2026.',
     flP: 'รับงานวิเคราะห์ข้อมูล ทำแดชบอร์ด และสอน ให้ลูกค้าบน Fastwork ควบคู่กับงานประจำ',
     avg: 'คะแนนเฉลี่ย', reviewsL: 'รีวิวจากลูกค้า', five: 'รีวิว 5 ดาว', say: 'What clients say.', selected: 'คัดมาจากรีวิว 19 รายการบน Fastwork', client: 'ลูกค้า Fastwork',
@@ -1031,7 +1074,7 @@ class Component extends DCLogic {
       ],
       ytStack: ['Python', 'Kafka', 'Airflow', 'DuckDB', 'YouTube API'],
       jobs: [
-        { dates: L('September 2025 – Present', 'กันยายน 2025 – ปัจจุบัน'), company: 'Krungsri (Bank of Ayudhya)', logo: 'assets/logo-krungsri.webp', role: 'Data Analytics Consultant', points: L([
+        { dates: L('September 2025 – Present', 'กันยายน 2025 – ปัจจุบัน'), company: 'Krungsri (Bank of Ayudhya)', industry: L('Banking', 'ธนาคาร'), outcome: L('Built dashboards from real business requirements for business units across the bank.', 'สร้าง Dashboard จาก Business Requirement จริงของหน่วยธุรกิจย่อย (BU) ภายในองค์กร'), tools: ['Tableau', 'Tableau Prep', 'BRD · Data mapping'], logo: 'assets/logo-krungsri.webp', role: 'Data Analytics Consultant', points: L([
           'Gathered and translated business requirements into solution designs across multiple business units, documented through Business Requirement Documents (BRDs), data mapping specifications, and interface specifications.',
           'Designed data ingestion workflows to consolidate data from diverse source systems across subsidiary business units within a large-scale banking organization, ensuring consistent and reliable data flow into the enterprise data foundation.',
           'Developed data transformation workflows using Tableau Prep and built analytical dashboards in Tableau, coordinating deployment with Tableau Admins across project delivery cycles.',
@@ -1040,21 +1083,32 @@ class Component extends DCLogic {
           'ออกแบบ data ingestion workflow รวมข้อมูลจากหลายระบบต้นทางของบริษัทในเครือ ในองค์กรธนาคารขนาดใหญ่ ให้ข้อมูลไหลเข้าสู่ enterprise data foundation อย่างสม่ำเสมอและเชื่อถือได้',
           'พัฒนา data transformation workflow ด้วย Tableau Prep และสร้างแดชบอร์ดวิเคราะห์ใน Tableau ประสานงาน deployment กับ Tableau Admin ตลอดรอบการส่งมอบโปรเจกต์',
           'ทำงานร่วมกับ Data Engineer ในการพัฒนา curated table และโครงการ data foundation รวมถึงร่วมกับทีม Data Governance เพื่อให้เป็นไปตามมาตรฐานและข้อกำหนดด้านข้อมูลตลอดการส่งมอบ']) },
-        { dates: L('November 2024 – August 2025', 'พฤศจิกายน 2024 – สิงหาคม 2025'), company: 'Pruksa Holding Public Company Limited', logo: 'assets/logo-pruksa.webp', role: 'Senior Data Engineer / Data Analyst', points: L([
+        { dates: L('November 2024 – August 2025', 'พฤศจิกายน 2024 – สิงหาคม 2025'), company: 'Pruksa Holding Public Company Limited', industry: L('Real estate', 'อสังหาริมทรัพย์'), outcome: L('End to end: from building ETL pipelines to designing and developing the dashboards.', 'ทำครบตั้งแต่ ETL ไปจนถึงออกแบบและพัฒนา Dashboard'), tools: ['Talend', 'Tableau', 'Data governance'], logo: 'assets/logo-pruksa.webp', role: 'Senior Data Engineer / Data Analyst', points: L([
           'Designed and managed ETL pipelines using Talend to integrate data from multiple sources, supporting analytics and business intelligence needs with accurate and timely delivery.',
           'Established and maintained data governance standards, ensuring consistent data quality and smooth integration across systems, with reporting and visualization delivered through Tableau dashboards.',
           'Oversaw data infrastructure operations including outsourced ETL supervision, tool standardization, license management, and access control for Big Data, Data Warehouse, and BI systems (Tableau).'], [
           'ออกแบบและดูแล ETL pipeline ด้วย Talend เพื่อรวมข้อมูลจากหลายแหล่ง รองรับงาน analytics และ BI ให้ถูกต้องและทันเวลา',
           'วางและดูแลมาตรฐาน data governance ให้คุณภาพข้อมูลสม่ำเสมอและเชื่อมต่อระหว่างระบบได้ราบรื่น พร้อมนำเสนอรายงานผ่านแดชบอร์ด Tableau',
           'ดูแลงานโครงสร้างพื้นฐานข้อมูล ทั้งควบคุมงาน ETL ของ outsource กำหนดมาตรฐานเครื่องมือ จัดการ license และสิทธิ์การเข้าถึงระบบ Big Data, Data Warehouse และ BI (Tableau)']) },
-        { dates: L('March 2023 – October 2024', 'มีนาคม 2023 – ตุลาคม 2024'), company: 'LEARN Corporation (Ignite by Ondemand)', logo: 'assets/logo-learn.webp', role: 'Data Analyst', points: L([
+        { dates: L('March 2023 – October 2024', 'มีนาคม 2023 – ตุลาคม 2024'), company: 'LEARN Corporation (Ignite by Ondemand)', industry: L('Education', 'การศึกษา'), outcome: L('Built dashboards that let the Marketing team make decisions from data.', 'สร้าง Dashboard ให้ทีม Marketing ตัดสินใจจากข้อมูล'), tools: ['Tableau', 'Tableau Prep'], logo: 'assets/logo-learn.webp', role: 'Data Analyst', points: L([
           'Extracted, cleaned, and analyzed data from multiple sources to identify trends and deliver ongoing reports supporting business decisions.',
           'Designed and maintained custom Tableau dashboards and BI solutions to visualize large-scale data, providing business-critical analytics and strategic insights for stakeholders including the Marketing team.',
           'Planned and designed ETL workflows using Tableau Prep based on business requirements, collaborating with the Marketing team to align data needs and handing off pipelines to the Data Engineering team for execution.'], [
           'ดึง ทำความสะอาด และวิเคราะห์ข้อมูลจากหลายแหล่ง เพื่อหาแนวโน้มและจัดทำรายงานต่อเนื่องสนับสนุนการตัดสินใจทางธุรกิจ',
           'ออกแบบและดูแลแดชบอร์ด Tableau และโซลูชัน BI สำหรับข้อมูลขนาดใหญ่ ให้ insight เชิงกลยุทธ์แก่ผู้เกี่ยวข้อง รวมถึงทีม Marketing',
           'วางแผนและออกแบบ ETL workflow ด้วย Tableau Prep ตาม business requirement ร่วมกับทีม Marketing แล้วส่งต่อ pipeline ให้ทีม Data Engineering นำไปใช้งาน']) },
-        { dates: L('May 2022 – February 2023', 'พฤษภาคม 2022 – กุมภาพันธ์ 2023'), company: 'QOL Enterprises', logo: 'assets/logo-qol.webp', role: 'Data Analyst', points: [] }
+        { dates: L('May 2022 – February 2023', 'พฤษภาคม 2022 – กุมภาพันธ์ 2023'), company: 'QOL Enterprises', industry: L('Tech', 'เทคโนโลยี'), outcome: '', tools: [], logo: 'assets/logo-qol.webp', role: 'Data Analyst', points: [] }
+      ].map(j => ({ ...j, hasOutcome: !!j.outcome, hasTools: j.tools.length > 0, hasPoints: j.points.length > 0 })),
+      expStats: [
+        { value: '4+', label: L('Years in data', 'ปีในสายงานข้อมูล') },
+        { value: '4', label: L('Industries', 'อุตสาหกรรม') },
+        { value: '22', label: L('Fastwork orders delivered', 'งานที่ส่งมอบบน Fastwork') },
+        { value: '5.0 ★', label: L('Rating from 19 reviews', 'คะแนนจาก 19 รีวิว') }
+      ],
+      caps: [
+        { num: '01', title: L('Dashboards people actually open', 'Dashboard ที่ผู้บริหารเปิดดูจริง'), tools: 'Tableau · Looker Studio · Power BI', from: 'Krungsri, LEARN' },
+        { num: '02', title: L('Data that updates itself', 'ข้อมูลอัปเดตเอง ไม่ต้องทำมือ'), tools: L('ETL with Talend and Tableau Prep', 'ETL ด้วย Talend และ Tableau Prep'), from: 'Pruksa, Krungsri' },
+        { num: '03', title: L('Numbers every team agrees on', 'ตัวเลขตรงกันทุกทีม'), tools: L('Data governance and data standards', 'Data governance และมาตรฐานข้อมูล'), from: 'Pruksa, Krungsri' }
       ],
       skills: [
         { cat: 'Data Storage / Warehousing', items: ['AWS', 'Snowflake', 'Redshift', 'Hive', 'S3'] },
