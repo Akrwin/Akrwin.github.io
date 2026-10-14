@@ -594,39 +594,14 @@ button{font-family:inherit}
       <h3 style="margin:0;font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">{{ t.pathH }}</h3>
       <span style="font-size:14px;color:var(--mute)">{{ t.ftRange }}</span>
     </div>
-    <div style="display:flex;flex-direction:column;border-bottom:1px solid var(--line)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:var(--line);border-radius:20px;overflow:hidden">
       <sc-for list="{{ jobs }}" as="j" hint-placeholder-count="4">
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px 40px;padding:36px 0;border-top:1px solid var(--line)">
-          <div>
-            <img src="{{ j.logo }}" alt="{{ j.company }}" width="56" height="56" style="display:block;width:56px;height:56px;border-radius:14px;object-fit:cover;background:#fff;box-shadow:0 1px 3px rgba(10,10,10,0.14);margin-bottom:16px" />
-            <div style="font-size:14px;color:var(--mute)">{{ j.dates }}</div>
-            <div style="font-size:17px;font-weight:600;margin-top:6px">{{ j.company }}</div>
-            <div style="font-size:14px;color:var(--mute);margin-top:2px">{{ j.industry }}</div>
-          </div>
-          <div style="grid-column:span 2;min-width:0">
-            <div style="font-size:24px;font-weight:600;letter-spacing:-0.015em">{{ j.role }}</div>
-            <sc-if value="{{ j.hasOutcome }}" hint-placeholder-val="{{ true }}">
-              <div style="margin-top:14px;font-size:17px;line-height:1.55;color:var(--ink);text-wrap:pretty">{{ j.outcome }}</div>
-            </sc-if>
-            <sc-if value="{{ j.hasTools }}" hint-placeholder-val="{{ true }}">
-              <div style="margin-top:12px;font-size:13px;color:var(--mute)">{{ j.toolsText }}</div>
-            </sc-if>
-          </div>
+        <div style="background:var(--card);padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center">
+          <img src="{{ j.logo }}" alt="{{ j.company }}" width="64" height="64" style="display:block;width:64px;height:64px;border-radius:16px;object-fit:cover;background:#fff;box-shadow:0 1px 3px rgba(10,10,10,0.14)" />
+          <div style="margin-top:18px;font-size:17px;font-weight:600;letter-spacing:-0.01em;line-height:1.3">{{ j.role }}</div>
+          <div style="margin-top:6px;font-size:14px;line-height:1.4;color:var(--mute)">{{ j.company }}</div>
         </div>
       </sc-for>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px 40px;padding:36px 0;border-top:1px solid var(--line)">
-        <div>
-          <img src="assets/logo-fastwork.webp" alt="Fastwork" width="56" height="56" style="display:block;width:56px;height:56px;border-radius:14px;object-fit:cover;background:#fff;box-shadow:0 1px 3px rgba(10,10,10,0.14);margin-bottom:16px" />
-          <div style="font-size:14px;color:var(--mute)">{{ t.since }}</div>
-          <div style="font-size:17px;font-weight:600;margin-top:6px">Fastwork</div>
-          <div style="font-size:14px;color:var(--mute);margin-top:2px">{{ t.flRowSub }}</div>
-        </div>
-        <div style="grid-column:span 2;min-width:0">
-          <div style="font-size:24px;font-weight:600;letter-spacing:-0.015em">Freelance Data Analyst</div>
-          <div style="margin-top:14px;font-size:17px;line-height:1.55;color:var(--ink)">{{ t.flRowOut }}</div>
-          <a href="#freelance" style="display:inline-block;margin-top:12px;font-size:15px">{{ t.flRowLink }}</a>
-        </div>
-      </div>
     </div>
 
     <div style="margin-top:64px;text-align:center">
@@ -890,7 +865,7 @@ const TX = {
     live: 'View live dashboard', source: 'Source on GitHub ›', pipelineH: 'The pipeline.', stackH: 'Tech stack.', step: 'STEP',
     projH: 'Built in the open.', viewProject: 'View project ›', emptySub: 'New projects in this category are on the way.', ghNote: 'The full source code of all my projects is available on my',
     ytP: 'Build a real-time data pipeline that collects YouTube (9arm channel) data and shows it on a dashboard.', ytBtn: 'View source on GitHub',
-    expH: 'Experience.', expP: 'Four years of data work for banking, real estate, education and tech companies, now building dashboards and data systems for businesses of any size.', capsH: 'What you get.', capsFrom: 'From', pathH: 'Career path.', more: 'Details', flRowSub: 'Many businesses', flRowOut: '24 orders delivered, 5 stars on every review.', flRowLink: 'Read client reviews ›', expCta: 'Want a dashboard like these for your business?', expCtaBtn: 'Start a project →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – Present',
+    expH: 'Experience.', expP: 'Four years of data work for banking, real estate, education and tech companies, now building dashboards and data systems for businesses of any size.', capsH: 'What you get.', capsFrom: 'From', pathH: 'Where I’ve worked.', more: 'Details', flRowSub: 'Many businesses', flRowOut: '24 orders delivered, 5 stars on every review.', flRowLink: 'Read client reviews ›', expCta: 'Want a dashboard like these for your business?', expCtaBtn: 'Start a project →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – Present',
     flTag: 'Freelance · Fastwork', since: 'Since February 2026', flH: 'Joined Fastwork in 2026.',
     flP: 'Freelance data analysis, dashboard and tutoring work for clients on Fastwork, alongside my full-time role.',
     avg: 'Average rating', reviewsL: 'Client reviews', five: '5-star reviews', say: 'What clients say.', selected: 'Selected from 20 verified reviews on Fastwork.', featuredL: 'Featured review', client: 'Fastwork client',
@@ -911,7 +886,7 @@ const TX = {
     live: 'ดูแดชบอร์ดจริง', source: 'ซอร์สโค้ดบน GitHub ›', pipelineH: 'The pipeline.', stackH: 'Tech stack.', step: 'ขั้นที่',
     projH: 'Built in the open.', viewProject: 'ดูผลงาน ›', emptySub: 'ผลงานในหมวดนี้กำลังจะมาเร็วๆ นี้', ghNote: 'ซอร์สโค้ดของทุกโปรเจกต์ดูได้ที่',
     ytP: 'สร้าง data pipeline แบบ real-time ที่เก็บข้อมูลช่อง YouTube (9arm) และแสดงผลบนแดชบอร์ด', ytBtn: 'ดูซอร์สโค้ดบน GitHub',
-    expH: 'Experience.', expP: 'เคยทำงานข้อมูลให้ธนาคาร อสังหาริมทรัพย์ การศึกษา และเทคโนโลยี ตอนนี้นำวิธีเดียวกันมาทำ Dashboard และระบบข้อมูลให้ธุรกิจทุกขนาด', capsH: 'What you get.', capsFrom: 'จาก', pathH: 'Career path.', more: 'ดูรายละเอียด', flRowSub: 'ลูกค้าหลายธุรกิจ', flRowOut: 'ส่งมอบแล้ว 24 งาน ได้ 5 ดาวทุกรีวิว', flRowLink: 'อ่านรีวิวจากลูกค้า ›', expCta: 'อยากได้ Dashboard แบบนี้ในธุรกิจของคุณ?', expCtaBtn: 'เริ่มโปรเจกต์ →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – ปัจจุบัน',
+    expH: 'Experience.', expP: 'เคยทำงานข้อมูลให้ธนาคาร อสังหาริมทรัพย์ การศึกษา และเทคโนโลยี ตอนนี้นำวิธีเดียวกันมาทำ Dashboard และระบบข้อมูลให้ธุรกิจทุกขนาด', capsH: 'What you get.', capsFrom: 'จาก', pathH: 'Where I’ve worked.', more: 'ดูรายละเอียด', flRowSub: 'ลูกค้าหลายธุรกิจ', flRowOut: 'ส่งมอบแล้ว 24 งาน ได้ 5 ดาวทุกรีวิว', flRowLink: 'อ่านรีวิวจากลูกค้า ›', expCta: 'อยากได้ Dashboard แบบนี้ในธุรกิจของคุณ?', expCtaBtn: 'เริ่มโปรเจกต์ →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – ปัจจุบัน',
     flTag: 'Freelance · Fastwork', since: 'ตั้งแต่กุมภาพันธ์ 2026', flH: 'Joined Fastwork in 2026.',
     flP: 'รับงานวิเคราะห์ข้อมูล ทำแดชบอร์ด และสอน ให้ลูกค้าบน Fastwork ควบคู่กับงานประจำ',
     avg: 'คะแนนเฉลี่ย', reviewsL: 'รีวิวจากลูกค้า', five: 'รีวิว 5 ดาว', say: 'What clients say.', selected: 'คัดมาจากรีวิว 20 รายการบน Fastwork', featuredL: 'รีวิวเด่น', client: 'ลูกค้า Fastwork',
