@@ -624,14 +624,6 @@ button{font-family:inherit}
       <div style="background:var(--card);padding:28px 20px;text-align:center"><div style="font-size:44px;font-weight:700;letter-spacing:-0.03em;line-height:1">100%</div><div style="margin-top:8px;font-size:14px;color:var(--mute)">{{ t.five }}</div></div>
     </div>
     <h4 style="margin:72px 0 24px;font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">{{ t.say }}</h4>
-    <figure style="margin:0 0 20px;background:var(--card);box-shadow:var(--shadow);border:1px solid var(--line);border-radius:24px;padding:clamp(24px,4vw,40px);display:flex;flex-direction:column;gap:18px">
-      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-        <span style="font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--pill);color:var(--pillink)">{{ t.featuredL }}</span>
-        <span style="font-size:17px;color:#f5b301;letter-spacing:2px" aria-label="5.0">★★★★★ <span style="color:var(--ink);letter-spacing:0;font-weight:700">5.0</span></span>
-      </div>
-      <blockquote lang="th" style="margin:0;font-size:clamp(19px,2.4vw,24px);line-height:1.6;font-weight:500;letter-spacing:-0.005em;text-wrap:pretty">“{{ featured.text }}”</blockquote>
-      <figcaption style="font-size:14px;color:var(--mute)">{{ t.client }} · {{ featured.date }}</figcaption>
-    </figure>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
       <sc-for list="{{ reviews }}" as="rv" hint-placeholder-count="5">
         <div style="background:var(--card);box-shadow:var(--shadow);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px">
@@ -865,7 +857,7 @@ const TX = {
     expH: 'Experience.', expP: 'Four years of data work for banking, real estate, education and tech companies, now building dashboards and data systems for businesses of any size.', capsH: 'What you get.', capsFrom: 'From', pathH: 'Where I’ve worked.', more: 'Details', flRowSub: 'Many businesses', flRowOut: '24 orders delivered, 5 stars on every review.', flRowLink: 'Read client reviews ›', expCta: 'Want a dashboard like these for your business?', expCtaBtn: 'Start a project →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – Present',
     flTag: 'Freelance · Fastwork', since: 'Since February 2026', flH: 'Joined Fastwork in 2026.',
     flP: 'Freelance data analysis, dashboard and tutoring work for clients on Fastwork, alongside my full-time role.',
-    avg: 'Average rating', reviewsL: 'Client reviews', five: '5-star reviews', say: 'What clients say.', selected: 'Selected from 20 verified reviews on Fastwork.', featuredL: 'Featured review', client: 'Fastwork client',
+    avg: 'Average rating', reviewsL: 'Client reviews', five: '5-star reviews', say: 'What clients say.', selected: 'Selected from 20 verified reviews on Fastwork.', client: 'Fastwork client',
     skillsH: 'Tech specs.', eduH: 'Education & certificates.',
     contact1: 'Have data?', contact2: "Let's talk.", contactP: "Tell me about your data and the decisions it should support. I'll reply with a scope and timeline.", fastwork: 'Hire me on Fastwork', phoneL: 'Phone', sample: 'Sample data', fH: 'Send a message', fName: 'Name', fContact: 'Email, LINE or phone', fContactPh: 'How should I reply?', fService: 'Service', fOther: 'Other', fMsg: 'About your data', fMsgPh: 'What data do you have, and what do you want to know from it?', fSend: 'Send message', fSending: 'Sending…', fSentH: 'Message sent.', fSentP: "Thanks. I'll get back to you within 24 hours.", fErr: "Couldn't send right now. Please email me at",
     foot1: '© 2026 DataFlick · Akkarawin Saiprapakorn. Freelance Data Analyst.', foot2: 'B.Sc. Statistics, Kasetsart University',
@@ -886,7 +878,7 @@ const TX = {
     expH: 'Experience.', expP: 'เคยทำงานข้อมูลให้ธนาคาร อสังหาริมทรัพย์ การศึกษา และเทคโนโลยี ตอนนี้นำวิธีเดียวกันมาทำ Dashboard และระบบข้อมูลให้ธุรกิจทุกขนาด', capsH: 'What you get.', capsFrom: 'จาก', pathH: 'Where I’ve worked.', more: 'ดูรายละเอียด', flRowSub: 'ลูกค้าหลายธุรกิจ', flRowOut: 'ส่งมอบแล้ว 24 งาน ได้ 5 ดาวทุกรีวิว', flRowLink: 'อ่านรีวิวจากลูกค้า ›', expCta: 'อยากได้ Dashboard แบบนี้ในธุรกิจของคุณ?', expCtaBtn: 'เริ่มโปรเจกต์ →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – ปัจจุบัน',
     flTag: 'Freelance · Fastwork', since: 'ตั้งแต่กุมภาพันธ์ 2026', flH: 'Joined Fastwork in 2026.',
     flP: 'รับงานวิเคราะห์ข้อมูล ทำแดชบอร์ด และสอน ให้ลูกค้าบน Fastwork ควบคู่กับงานประจำ',
-    avg: 'คะแนนเฉลี่ย', reviewsL: 'รีวิวจากลูกค้า', five: 'รีวิว 5 ดาว', say: 'What clients say.', selected: 'คัดมาจากรีวิว 20 รายการบน Fastwork', featuredL: 'รีวิวเด่น', client: 'ลูกค้า Fastwork',
+    avg: 'คะแนนเฉลี่ย', reviewsL: 'รีวิวจากลูกค้า', five: 'รีวิว 5 ดาว', say: 'What clients say.', selected: 'คัดมาจากรีวิว 20 รายการบน Fastwork', client: 'ลูกค้า Fastwork',
     skillsH: 'Tech specs.', eduH: 'Education & certificates.',
     contact1: 'Have data?', contact2: "Let's talk.", contactP: 'มีข้อมูลอยู่แล้วและอยากใช้ให้เกิดประโยชน์สูงสุด ทั้งเพื่อการตัดสินใจและการวิเคราะห์ธุรกิจ ติดต่อได้ทางช่องทางด้านล่างเลยครับ', fastwork: 'จ้างงานผ่าน Fastwork', phoneL: 'โทรศัพท์', sample: 'Sample data', fH: 'ส่งข้อความถึงผม', fName: 'ชื่อ', fContact: 'อีเมล, LINE หรือเบอร์โทร', fContactPh: 'ช่องทางที่ให้ติดต่อกลับ', fService: 'บริการ', fOther: 'อื่นๆ', fMsg: 'รายละเอียดข้อมูล', fMsgPh: 'มีข้อมูลอะไรบ้าง และอยากรู้อะไรจากข้อมูลนั้น', fSend: 'ส่งข้อความ', fSending: 'กำลังส่ง…', fSentH: 'ส่งข้อความแล้ว', fSentP: 'ขอบคุณครับ ผมจะติดต่อกลับภายใน 24 ชั่วโมง', fErr: 'ส่งไม่สำเร็จ กรุณาส่งอีเมลมาที่',
     foot1: '© 2026 DataFlick · Akkarawin Saiprapakorn · ฟรีแลนซ์ Data Analyst', foot2: 'วท.บ. สถิติ มหาวิทยาลัยเกษตรศาสตร์',
@@ -1053,8 +1045,8 @@ class Component extends DCLogic {
         { name: 'Google Cloud SDK', desc: L('CLI-based table uploads and BigQuery management via bq commands', 'อัปโหลดตารางและจัดการ BigQuery ผ่านคำสั่ง bq บน CLI') },
         { name: 'Facebook Ads API', desc: L('Schema modeled after real Ads structure — campaigns, ad sets, and ads hierarchy', 'Schema อิงโครงสร้าง Ads จริง ทั้ง campaigns, ad sets และ ads') }
       ],
-      featured: { text: 'ประทับใจการร่วมงานในครั้งนี้มากค่ะ ทำงานเร็วตามกำหนด งานออกมามีคุณภาพ สามารถตอบคำถามได้เคลียทุกประเด็น มีความเข้าใจในเรื่อง Data ในการทำ dashboard อย่างดี สามารถแนะนำเพิ่มเติมในส่วนที่เราบรีฟไปได้ว่ายังขาดตรงไหนอีกบ้าง โดยรวมประทับใจมากค่ะขอบคุณค่ะ', date: '13/10/2026' },
       reviews: [
+        { text: 'ประทับใจการร่วมงานในครั้งนี้มากค่ะ ทำงานเร็วตามกำหนด งานออกมามีคุณภาพ สามารถตอบคำถามได้เคลียทุกประเด็น มีความเข้าใจในเรื่อง Data ในการทำ dashboard อย่างดี สามารถแนะนำเพิ่มเติมในส่วนที่เราบรีฟไปได้ว่ายังขาดตรงไหนอีกบ้าง โดยรวมประทับใจมากค่ะขอบคุณค่ะ', date: '13/10/2026' },
         { text: 'Very professional, experienced, efficient, and quick to understand the requirements. Highly recommended.', date: '14/07/2026' },
         { text: 'สอนเข้าใจง่าย อธิบายได้ดีมากค่ะ มีการแทรกเรื่องการประยุกต์ใช้ในโลกธุรกิจจริงด้วย ตามใจ Requirement ของลูกค้าสุดๆ แนะนำค่ะ', date: '28/02/2026' },
         { text: 'เก่งและทำงานเร็วมาก', date: '16/05/2026' },
