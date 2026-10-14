@@ -304,7 +304,7 @@ button{font-family:inherit}
     <p style="margin:0 0 48px;font-size:21px;color:var(--mute);max-width:620px;line-height:1.45">{{ t.svcP }}</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px">
       <sc-for list="{{ services }}" as="s" hint-placeholder-count="4">
-        <div style="background:var(--card);box-shadow:var(--shadow);border-radius:20px;padding:36px 32px;display:flex;flex-direction:column;gap:14px">
+        <div style="{{ s.cardStyle }}">
           <sc-if value="{{ s.isViz }}" hint-placeholder-val="{{ false }}">
             <div style="margin:-12px -8px 10px;border-radius:14px;overflow:hidden;background:#0A0A0A;padding:8px;box-shadow:0 12px 32px rgba(10,10,10,0.14)">
               <div style="display:flex;gap:5px;padding:2px 4px 8px"><span style="width:7px;height:7px;border-radius:50%;background:#FF5F57"></span><span style="width:7px;height:7px;border-radius:50%;background:#FEBC2E"></span><span style="width:7px;height:7px;border-radius:50%;background:#28C840"></span></div>
@@ -371,6 +371,27 @@ button{font-family:inherit}
                 <div style="position:absolute;right:10px;top:8px;display:flex;align-items:center;gap:4px;font-size:8px;color:#248a3d;font-weight:700"><span style="width:6px;height:6px;border-radius:50%;background:#28C840"></span>Running</div></div>
             </div>
           </sc-if>
+          <sc-if value="{{ s.isConsult }}" hint-placeholder-val="{{ false }}">
+            <div aria-hidden="true" style="margin:-12px -8px 10px;border-radius:14px;overflow:hidden;background:#0A0A0A;padding:8px;box-shadow:0 12px 32px rgba(10,10,10,0.14)">
+              <div style="display:flex;gap:5px;padding:2px 4px 8px"><span style="width:7px;height:7px;border-radius:50%;background:#FF5F57"></span><span style="width:7px;height:7px;border-radius:50%;background:#FEBC2E"></span><span style="width:7px;height:7px;border-radius:50%;background:#28C840"></span></div>
+              <div style="background:#F2F2F0;border-radius:8px;height:176px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px">
+                <div style="display:flex;flex-direction:column;gap:6px">
+                  <div style="font-size:9px;color:#8A8A8A;font-weight:600">Consulting session</div>
+                  <div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #E5E5EA;border-radius:8px;padding:6px 9px;font-size:10px;font-weight:700;color:#0A0A0A"><span style="width:8px;height:8px;border-radius:2px;background:#E97627"></span>Tableau</div>
+                  <div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #E5E5EA;border-radius:8px;padding:6px 9px;font-size:10px;font-weight:700;color:#0A0A0A"><span style="width:8px;height:8px;border-radius:2px;background:#F2C811"></span>Power BI</div>
+                  <div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #E5E5EA;border-radius:8px;padding:6px 9px;font-size:10px;font-weight:700;color:#0A0A0A"><span style="width:8px;height:8px;border-radius:2px;background:#4285F4"></span>Looker Studio</div>
+                  <div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #E5E5EA;border-radius:8px;padding:6px 9px;font-size:10px;font-weight:700;color:#0A0A0A"><span style="width:8px;height:8px;border-radius:2px;background:#8944ab"></span>Data Automation</div>
+                </div>
+                <div style="background:#fff;border-radius:8px;border:1px solid #E5E5EA;padding:10px;display:flex;flex-direction:column;gap:8px">
+                  <div style="font-size:9px;color:#8A8A8A;font-weight:600">Agenda</div>
+                  <div style="display:flex;align-items:center;gap:7px;font-size:10px;color:#0A0A0A"><span style="flex-shrink:0;width:13px;height:13px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700">✓</span>Review current setup</div>
+                  <div style="display:flex;align-items:center;gap:7px;font-size:10px;color:#0A0A0A"><span style="flex-shrink:0;width:13px;height:13px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700">✓</span>Pick the right tools</div>
+                  <div style="display:flex;align-items:center;gap:7px;font-size:10px;color:#0A0A0A"><span style="flex-shrink:0;width:13px;height:13px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700">✓</span>Plan the data flow</div>
+                  <div style="display:flex;align-items:center;gap:7px;font-size:10px;color:#0A0A0A"><span style="flex-shrink:0;width:13px;height:13px;border-radius:50%;border:1.5px solid #C7C7CC;color:transparent;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700">✓</span>Train your team</div>
+                </div>
+              </div>
+            </div>
+          </sc-if>
           <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
             <span style="{{ s.tagStyle }}">{{ s.cat }}</span>
             <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;color:#8A8A8A">{{ s.num }}<span style="color:var(--ink)">/</span></span>
@@ -387,11 +408,16 @@ button{font-family:inherit}
           <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--mute)"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700;color:var(--ink)">stack</span>{{ s.tools }}</div>
           <div style="margin-top:auto;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap">
             <div style="display:flex;flex-direction:column;gap:6px">
-              <span style="font-size:13px;color:var(--mute)">{{ t.from }}</span>
-              <span style="font-size:34px;font-weight:700;letter-spacing:-0.035em;line-height:1;color:var(--ink)">฿1,000</span>
+              <span style="font-size:13px;color:var(--mute)">{{ s.fromLabel }}</span>
+              <span style="font-size:34px;font-weight:700;letter-spacing:-0.035em;line-height:1;color:var(--ink)">{{ s.price }}</span>
               <span style="font-size:13px;color:var(--mute)">{{ s.proof }}</span>
             </div>
-            <a href="https://fastwork.co/byob/2vNB5siUlb?openExternalBrowser=1&amp;source=byob" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:12px 20px;border-radius:999px;background:var(--pill);color:var(--pillink);font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap" style-hover="background:var(--ink);color:var(--bg);text-decoration:none"><img src="assets/logo-fastwork.webp" alt="" width="20" height="20" style="flex-shrink:0;display:block;width:20px;height:20px;border-radius:6px" />{{ t.orderBtn }}<span style="color:inherit">↗</span></a>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <sc-if value="{{ s.onFastwork }}" hint-placeholder-val="{{ true }}">
+                <a href="https://fastwork.co/byob/2vNB5siUlb?openExternalBrowser=1&amp;source=byob" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:12px 20px;border-radius:999px;background:var(--pill);color:var(--pillink);font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap" style-hover="background:var(--ink);color:var(--bg);text-decoration:none"><img src="assets/logo-fastwork.webp" alt="" width="20" height="20" style="flex-shrink:0;display:block;width:20px;height:20px;border-radius:6px" />{{ t.orderBtn }}<span style="color:inherit">↗</span></a>
+              </sc-if>
+              <a href="#contact" onClick="{{ s.contactMe }}" style="{{ s.directStyle }}" style-hover="text-decoration:none;opacity:0.85">{{ t.directBtn }}</a>
+            </div>
           </div>
         </div>
       </sc-for>
@@ -716,6 +742,7 @@ button{font-family:inherit}
                 <option>Excel &amp; Google Sheets</option>
                 <option>Web Scraping</option>
                 <option>Automation</option>
+                <option>Consulting</option>
                 <option>{{ t.fOther }}</option>
               </select>
             </label>
@@ -848,7 +875,7 @@ const TX = {
     heroP: 'From raw source systems to dashboards stakeholders actually use. ETL pipelines, data models and BI in Tableau, Looker Studio and Power BI.',
     flowP: 'Dashboards, data analysis and Excel work for businesses of any size. From ฿1,000.',
     heroStat1: 'Fastwork rating', heroStat2: 'Client reviews', heroStat3: 'Years in data', heroWorked: 'Experience at', start: 'Start a project', seeWork: 'See all services ›',
-    svcH: 'Services, end to end.', svcP: 'Four service scopes, each available to order on Fastwork.', kYears: 'Years in data', kRating: 'Fastwork rating', kOrders: 'Orders completed', order: 'Order on Fastwork ›', orderBtn: 'Order on Fastwork', from: 'Starting at', larger: 'For larger data projects.',
+    svcH: 'Services, end to end.', svcP: 'Five service scopes. Order on Fastwork or contact me directly.', directBtn: 'Contact directly', kYears: 'Years in data', kRating: 'Fastwork rating', kOrders: 'Orders completed', order: 'Order on Fastwork ›', orderBtn: 'Order on Fastwork', from: 'Starting at', larger: 'For larger data projects.',
     daTag: 'Data Analyst Project', deTag: 'Data Engineer Project',
     caseP: 'End-to-end analytics project connecting Facebook Ads, Facebook Page, and Google Analytics 4 data through BigQuery into a 4-page interactive Looker Studio dashboard.',
     live: 'View live dashboard', source: 'Source on GitHub ›', pipelineH: 'The pipeline.', stackH: 'Tech stack.', step: 'STEP',
@@ -869,7 +896,7 @@ const TX = {
     heroP: 'ตั้งแต่ข้อมูลดิบจากระบบต้นทาง จนถึงแดชบอร์ดที่ทีมใช้งานได้จริง ทั้ง ETL pipeline, data model และ BI ด้วย Tableau, Looker Studio และ Power BI',
     flowP: 'รับทำ Dashboard วิเคราะห์ข้อมูล และงาน Excel ให้ธุรกิจทุก​ขนาด เริ่มต้น 1,000 บาท',
     heroStat1: 'คะแนนบน Fastwork', heroStat2: 'รีวิวจากลูกค้า', heroStat3: 'ปีในสายงานข้อมูล', heroWorked: 'เคยร่วมงานกับ', start: 'เริ่มโปรเจกต์', seeWork: 'ดู Services ต่างๆ ›',
-    svcH: 'Services, end to end.', svcP: 'บริการ 4 ขอบเขต สั่งงานได้ทาง Fastwork', kYears: 'ปี ในสายงานข้อมูล', kRating: 'คะแนนบน Fastwork', kOrders: 'งานที่ส่งมอบแล้ว', order: 'สั่งงานบน Fastwork ›', orderBtn: 'สั่งงานบน Fastwork', from: 'เริ่มต้นที่', larger: 'For larger data projects.',
+    svcH: 'Services, end to end.', svcP: 'บริการ 5 ขอบเขต สั่งงานผ่าน Fastwork หรือติดต่อโดยตรงได้เลย', directBtn: 'ติดต่อโดยตรง', kYears: 'ปี ในสายงานข้อมูล', kRating: 'คะแนนบน Fastwork', kOrders: 'งานที่ส่งมอบแล้ว', order: 'สั่งงานบน Fastwork ›', orderBtn: 'สั่งงานบน Fastwork', from: 'เริ่มต้นที่', larger: 'For larger data projects.',
     daTag: 'โปรเจกต์ Data Analyst', deTag: 'โปรเจกต์ Data Engineer',
     caseP: 'โปรเจกต์วิเคราะห์ข้อมูลแบบ end-to-end เชื่อมข้อมูล Facebook Ads, Facebook Page และ Google Analytics 4 ผ่าน BigQuery สู่แดชบอร์ด Looker Studio แบบ interactive 4 หน้า',
     live: 'ดูแดชบอร์ดจริง', source: 'ซอร์สโค้ดบน GitHub ›', pipelineH: 'The pipeline.', stackH: 'Tech stack.', step: 'ขั้นที่',
@@ -1011,7 +1038,7 @@ class Component extends DCLogic {
         { num: '01', cat: 'Data', color: '#0A0A0A', bg: '#EDEDEB', title: 'Data Visualization',
           desc: L('Dashboards in Tableau, Power BI and Looker Studio.', 'Data Visualization ด้วย Tableau, Power BI, Looker'),
           items: L(['Interactive dashboards and KPI scorecards', 'Data cleaning and modeling before visualization', 'Charts designed around your business questions'], ['แดชบอร์ด interactive และ KPI scorecard', 'ทำความสะอาดและจัดโมเดลข้อมูลก่อนแสดงผล', 'ออกแบบกราฟตามคำถามทางธุรกิจของคุณ']),
-          tools: 'Tableau · Power BI · Looker Studio', proof: L('★ 5.0 · 16 orders', '★ 5.0 · ขายได้ 16') },
+          tools: 'Tableau · Power BI · Looker Studio', proof: L('★ 5.0 · 18 orders', '★ 5.0 · ขายได้ 18') },
         { num: '02', cat: 'Excel', color: '#248a3d', bg: '#e9f5ec', title: 'Excel & Google Sheets',
           desc: L('Excel and Google Sheets work: data entry, data tables, advanced formulas and charts.', 'รับทำ Excel, Google Sheet (คีย์ข้อมูล, สร้างตารางข้อมูล, ผูกสูตรระดับ advance, สร้างกราฟต่างๆ)'),
           items: L(['Data entry and structured tables', 'Advanced formulas', 'Charts and summary reports'], ['คีย์ข้อมูลและสร้างตารางข้อมูล', 'ผูกสูตรระดับ advance', 'กราฟและรายงานสรุป']),
@@ -1023,8 +1050,23 @@ class Component extends DCLogic {
         { num: '04', cat: 'Automation', color: '#8944ab', bg: '#f4ecf8', title: 'Automation Systems',
           desc: L('Automation systems that take over repetitive daily manual work.', 'รับพัฒนาระบบอัตโนมัติ เปลี่ยนงานที่ทำมือทุกวัน ให้ระบบ Automate ทำแทนอย่างมีประสิทธิภาพ'),
           items: L(['Replace repetitive manual tasks', 'Scheduled data workflows', 'Built to fit your existing tools'], ['แทนที่งานที่ต้องทำซ้ำด้วยมือ', 'ตั้งเวลา workflow ข้อมูลอัตโนมัติ', 'ออกแบบให้เข้ากับเครื่องมือที่ใช้อยู่']),
-          tools: 'Python · Airflow · Apps Script', proof: L('New service', 'บริการใหม่') }
-      ].map(s => ({ ...s, tagStyle: tagStyle(s), isViz: s.num === '01', isExcel: s.num === '02', isScrape: s.num === '03', isAuto: s.num === '04' })),
+          tools: 'Python · Airflow · Apps Script', proof: L('New service', 'บริการใหม่') },
+        { num: '05', cat: 'Consulting', color: '#0064d2', bg: '#e8f1fc', title: 'Data Consulting',
+          desc: L('Advice on getting more out of Tableau, Power BI and Looker Studio, and on planning data automation for your organization.', 'ให้คำปรึกษาการใช้งาน Tableau, Power BI, Looker Studio และการวางระบบ Data Automation สำหรับองค์กร'),
+          items: L(['Review your current dashboards and data setup', 'Choose the right BI tool and data architecture', 'Hands-on training for your team'], ['ประเมิน Dashboard และระบบข้อมูลที่มีอยู่', 'แนะนำเครื่องมือ BI และโครงสร้างข้อมูลที่เหมาะสม', 'สอนการใช้งานให้ทีมแบบลงมือทำ']),
+          tools: 'Tableau · Power BI · Looker Studio · Automation', proof: L('For organizations and teams', 'สำหรับองค์กรและทีม'),
+          price: L('Custom quote', 'ตามขอบเขตงาน'), fromLabel: L('Pricing', 'ราคา'), formValue: 'Consulting', onFastwork: false, wide: true }
+      ].map(s => {
+        const formValue = s.formValue || { '01': 'Data Visualization', '02': 'Excel & Google Sheets', '03': 'Web Scraping', '04': 'Automation' }[s.num];
+        const onFastwork = s.onFastwork !== false;
+        return { ...s, tagStyle: tagStyle(s), isViz: s.num === '01', isExcel: s.num === '02', isScrape: s.num === '03', isAuto: s.num === '04', isConsult: s.num === '05',
+          price: s.price || '฿1,000', fromLabel: s.fromLabel || t.from, onFastwork,
+          cardStyle: { background: 'var(--card)', boxShadow: 'var(--shadow)', borderRadius: 20, padding: '36px 32px', display: 'flex', flexDirection: 'column', gap: 14, gridColumn: s.wide ? '1 / -1' : undefined },
+          directStyle: { display: 'inline-flex', alignItems: 'center', gap: 6, padding: '12px 20px', borderRadius: 999, fontSize: 15, fontWeight: 600, textDecoration: 'none', whiteSpace: 'nowrap',
+            background: onFastwork ? 'transparent' : 'var(--pill)', color: onFastwork ? 'var(--ink)' : 'var(--pillink)', border: onFastwork ? '1px solid var(--line)' : '1px solid transparent' },
+          // Preselect this service in the contact form; the link itself scrolls to #contact.
+          contactMe: () => setTimeout(() => { const sel = document.querySelector('form[name=contact]:not([hidden]) select[name=service]'); if (sel) sel.value = formValue; }, 60) };
+      }),
       enterprise: [
         { title: 'ETL & data pipelines', desc: L('Ingestion and transformation workflows that consolidate data from many source systems into one reliable foundation.', 'Workflow สำหรับนำเข้าและแปลงข้อมูล รวมข้อมูลจากหลายระบบต้นทางให้เป็นฐานข้อมูลเดียวที่เชื่อถือได้'), tools: 'Talend · Tableau Prep · Kafka · Airflow' },
         { title: 'Requirements & data modeling', desc: L('Business requirements translated into solution designs, BRDs, data mapping and interface specifications.', 'แปลง business requirement เป็น solution design, BRD, data mapping และ interface specification'), tools: 'SQL · BigQuery · Snowflake · Redshift' },
