@@ -1,31 +1,43 @@
 # DataFlick — Freelance Data Analyst portfolio
 
-Personal site of **Akkarawin Saiprapakorn** — https://akrwin.github.io/
+Personal site of **Akkarawin Saiprapakorn** — https://dataflick.netlify.app/
 
-Designed in Claude Design and published as a static site on GitHub Pages (no build step).
+Designed in Claude Design and published on Netlify as a static site (no build step).
 
 ## Files
 
 | Path | What it is |
 |---|---|
-| `index.html` | The whole site: SEO `<head>` + the Claude Design template (`<x-dc>`) and its component script |
+| `index.html` | The whole site: SEO `<head>`, a hidden form Netlify detects, the Claude Design template (`<x-dc>`) and its component script |
 | `support.js` | Claude Design runtime that renders the template with React |
 | `vendor/` | Self-hosted React 18.3.1 (mapped in via `window.__resources`, so no CDN is needed) |
 | `logo-intro.js` | Logo intro animation |
 | `assets/` | Images (WebP), favicon, `og-image.png` (social share preview), `apple-touch-icon.png` |
 | `robots.txt`, `sitemap.xml` | For Google and other search engines |
-| `404.html` | Not-found page |
-| `.nojekyll` | Tells GitHub Pages to serve files as-is |
+| `404.html` | Not-found page (Netlify serves it automatically) |
+| `netlify.toml` | Netlify settings: publish folder, security headers, caching |
+| `.nojekyll` | Only for GitHub Pages; remove once GitHub Pages is switched off |
 
 ## Editing
 
 - Text, projects and services live in the `<script type="text/x-dc" data-dc-script>` block near the bottom of `index.html` (English and Thai strings side by side).
-- The contact form posts to [FormSubmit](https://formsubmit.co) and forwards to `ak4rawinss@gmail.com`. The first submission sends a one-time **Activate** email — click it, or messages won't be delivered.
 - After any content change, update `<lastmod>` in `sitemap.xml`.
 
-## Deploy
+## Contact form (Netlify Forms)
 
-Push to `main` — GitHub Pages publishes automatically within a minute or two.
+- The visible form is rendered by JavaScript, so Netlify can't see it at deploy time. The hidden `<form name="contact" data-netlify="true">` just above `<x-dc>` is what registers it — keep its field names (`name`, `contact`, `service`, `message`) in sync with the visible form.
+- Messages appear in Netlify under **Site → Forms → contact**. To get them by email: **Site configuration → Notifications → Emails and webhooks → Form submission notifications → Add notification → Email notification**.
+- Spam protection: the hidden `bot-field` honeypot.
+
+## Deploy on Netlify (first time)
+
+1. Sign in at [app.netlify.com](https://app.netlify.com) with GitHub.
+2. **Add new site → Import an existing project → GitHub →** pick `Akrwin/Akrwin.github.io`.
+3. Leave the build command empty; publish directory `.` (both come from `netlify.toml`). Click **Deploy**.
+4. **Site configuration → Change site name →** `dataflick` (the site's links already point to `https://dataflick.netlify.app/`; if that name is taken, update the URL in `index.html`, `robots.txt`, `sitemap.xml` and this README).
+5. **Forms → Enable form detection**, then redeploy once so the `contact` form is registered.
+
+After that, every push to `main` deploys automatically.
 
 ## Preview locally
 
@@ -33,4 +45,4 @@ Push to `main` — GitHub Pages publishes automatically within a minute or two.
 python -m http.server 8000
 ```
 
-Then open http://localhost:8000/
+Then open http://localhost:8000/ (the contact form only works on Netlify).

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://akrwin.github.io/sitemap.xml
+Sitemap: https://dataflick.netlify.app/sitemap.xml

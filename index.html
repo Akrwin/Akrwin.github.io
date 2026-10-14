@@ -7,16 +7,16 @@
 <meta name="description" content="Freelance data analyst in Thailand: Looker Studio &amp; Power BI dashboards, Excel and Google Sheets automation, web scraping and data cleaning.">
 <meta name="author" content="Akkarawin Saiprapakorn">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://akrwin.github.io/">
+<link rel="canonical" href="https://dataflick.netlify.app/">
 <meta name="theme-color" content="#0A0A0A">
 <link rel="icon" href="assets/dataflick-icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="DataFlick">
-<meta property="og:url" content="https://akrwin.github.io/">
+<meta property="og:url" content="https://dataflick.netlify.app/">
 <meta property="og:title" content="DataFlick — Freelance Data Analyst · Akkarawin Saiprapakorn">
 <meta property="og:description" content="Freelance data analyst in Thailand: Looker Studio &amp; Power BI dashboards, Excel and Google Sheets automation, web scraping and data cleaning.">
-<meta property="og:image" content="https://akrwin.github.io/assets/og-image.png">
+<meta property="og:image" content="https://dataflick.netlify.app/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
@@ -24,7 +24,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DataFlick — Freelance Data Analyst · Akkarawin Saiprapakorn">
 <meta name="twitter:description" content="Freelance data analyst in Thailand: Looker Studio &amp; Power BI dashboards, Excel and Google Sheets automation, web scraping and data cleaning.">
-<meta name="twitter:image" content="https://akrwin.github.io/assets/og-image.png">
+<meta name="twitter:image" content="https://dataflick.netlify.app/assets/og-image.png">
 <!-- google-site-verification: paste the Search Console meta tag on the next line if you verify with the HTML-tag method -->
 <script type="application/ld+json">
 {
@@ -32,11 +32,11 @@
   "@graph": [
     {
       "@type": "Person",
-      "@id": "https://akrwin.github.io/#person",
+      "@id": "https://dataflick.netlify.app/#person",
       "name": "Akkarawin Saiprapakorn",
       "jobTitle": "Freelance Data Analyst",
-      "url": "https://akrwin.github.io/",
-      "image": "https://akrwin.github.io/assets/akkarawin-cutout.webp",
+      "url": "https://dataflick.netlify.app/",
+      "image": "https://dataflick.netlify.app/assets/akkarawin-cutout.webp",
       "email": "mailto:ak4rawinss@gmail.com",
       "sameAs": [
         "https://github.com/Akrwin",
@@ -58,14 +58,14 @@
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://akrwin.github.io/#service",
+      "@id": "https://dataflick.netlify.app/#service",
       "name": "DataFlick",
-      "url": "https://akrwin.github.io/",
-      "logo": "https://akrwin.github.io/assets/apple-touch-icon.png",
-      "image": "https://akrwin.github.io/assets/og-image.png",
+      "url": "https://dataflick.netlify.app/",
+      "logo": "https://dataflick.netlify.app/assets/apple-touch-icon.png",
+      "image": "https://dataflick.netlify.app/assets/og-image.png",
       "description": "Freelance data analyst in Thailand. Dashboards (Looker Studio, Power BI), Excel & Google Sheets automation, web scraping and data cleaning — from raw data to decisions. รับทำ Dashboard, วิเคราะห์ข้อมูล และ Automation.",
       "founder": {
-        "@id": "https://akrwin.github.io/#person"
+        "@id": "https://dataflick.netlify.app/#person"
       },
       "areaServed": "TH",
       "availableLanguage": [
@@ -95,6 +95,12 @@
   <ul><li><a href="mailto:ak4rawinss@gmail.com">ak4rawinss@gmail.com</a></li><li><a href="https://fastwork.co/byob/2vNB5siUlb">Fastwork</a></li><li><a href="https://linkedin.com/in/ak4rawin">LinkedIn</a></li><li><a href="https://github.com/Akrwin">GitHub</a></li></ul>
 </div>
 </noscript>
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="contact" />
+  <input name="bot-field" /><input name="name" /><input name="contact" />
+  <select name="service"><option>Data Visualization</option></select>
+  <textarea name="message"></textarea>
+</form>
 <x-dc>
 <helmet>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -734,9 +740,9 @@ button{font-family:inherit}
         </sc-if>
         <sc-if value="{{ formOpen }}" hint-placeholder-val="{{ true }}">
           <form name="contact" onSubmit="{{ submitForm }}" style="display:flex;flex-direction:column;gap:16px">
+            <input type="hidden" name="form-name" value="contact" />
             <input type="hidden" name="_subject" value="New project inquiry — DataFlick website" />
-            <input type="hidden" name="_template" value="table" />
-            <p style="display:none"><label>Leave empty <input name="_honey" tabindex="-1" autocomplete="off" /></label></p>
+            <p style="display:none"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
             <div style="font-size:24px;font-weight:700;letter-spacing:-0.02em">{{ t.fH }}</div>
             <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--mute)">{{ t.fName }}<input name="name" required="{{ true }}" autocomplete="name" style="width:100%;font-family:inherit;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);outline:none" /></label>
             <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--mute)">{{ t.fContact }}<input name="contact" required="{{ true }}" placeholder="{{ t.fContactPh }}" style="width:100%;font-family:inherit;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);outline:none" /></label>
@@ -999,11 +1005,16 @@ class Component extends DCLogic {
       sendLabel: this.state.form === 'sending' ? t.fSending : t.fSend,
       submitForm: (e) => {
         e.preventDefault();
-        const body = JSON.stringify(Object.fromEntries(new FormData(e.target)));
+        const data = new FormData(e.target);
         this.setState({ form: 'sending' });
-        fetch('https://formsubmit.co/ajax/ak4rawinss@gmail.com', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body })
-          .then(r => r.ok ? r.json() : Promise.reject(r.status))
-          .then(d => this.setState({ form: String(d && d.success) === 'true' ? 'sent' : 'error' }))
+        // Netlify Forms receives the POST on Netlify. Until GitHub Pages is switched off, the old
+        // github.io copy (which cannot receive POSTs) keeps sending through FormSubmit.
+        const sent = /\.github\.io$/.test(location.hostname)
+          ? fetch('https://formsubmit.co/ajax/ak4rawinss@gmail.com', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(data)) })
+              .then(r => r.ok ? r.json() : Promise.reject(r.status)).then(d => String(d && d.success) === 'true')
+          : fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
+              .then(r => r.ok);
+        sent.then(ok => this.setState({ form: ok ? 'sent' : 'error' }))
           .catch(() => this.setState({ form: 'error' }));
       },
       flow: [
