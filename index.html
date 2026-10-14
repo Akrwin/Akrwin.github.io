@@ -630,17 +630,14 @@ button{font-family:inherit}
         <span style="font-size:17px;color:#f5b301;letter-spacing:2px" aria-label="5.0">★★★★★ <span style="color:var(--ink);letter-spacing:0;font-weight:700">5.0</span></span>
       </div>
       <blockquote lang="th" style="margin:0;font-size:clamp(19px,2.4vw,24px);line-height:1.6;font-weight:500;letter-spacing:-0.005em;text-wrap:pretty">“{{ featured.text }}”</blockquote>
-      <figcaption style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--mute)">
-        <span aria-hidden="true" style="width:36px;height:36px;border-radius:50%;background:var(--card2);color:var(--ink);display:flex;align-items:center;justify-content:center;font-weight:700">N</span>
-        <span><span style="color:var(--ink);font-weight:600">{{ featured.name }}</span> · {{ t.client }} · {{ featured.date }}</span>
-      </figcaption>
+      <figcaption style="font-size:14px;color:var(--mute)">{{ t.client }} · {{ featured.date }}</figcaption>
     </figure>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
       <sc-for list="{{ reviews }}" as="rv" hint-placeholder-count="5">
         <div style="background:var(--card);box-shadow:var(--shadow);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px">
           <div style="font-size:15px;color:#f5b301;letter-spacing:2px">★★★★★</div>
           <div style="font-size:19px;line-height:1.55;font-weight:500;letter-spacing:-0.005em;text-wrap:pretty">“{{ rv.text }}”</div>
-          <div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--mute)"><span>{{ rv.name }}</span><span>{{ rv.date }}</span></div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--mute)"><span>{{ t.client }}</span><span>{{ rv.date }}</span></div>
         </div>
       </sc-for>
     </div>
@@ -1056,13 +1053,13 @@ class Component extends DCLogic {
         { name: 'Google Cloud SDK', desc: L('CLI-based table uploads and BigQuery management via bq commands', 'อัปโหลดตารางและจัดการ BigQuery ผ่านคำสั่ง bq บน CLI') },
         { name: 'Facebook Ads API', desc: L('Schema modeled after real Ads structure — campaigns, ad sets, and ads hierarchy', 'Schema อิงโครงสร้าง Ads จริง ทั้ง campaigns, ad sets และ ads') }
       ],
-      featured: { text: 'ประทับใจการร่วมงานในครั้งนี้มากค่ะ ทำงานเร็วตามกำหนด งานออกมามีคุณภาพ สามารถตอบคำถามได้เคลียทุกประเด็น มีความเข้าใจในเรื่อง Data ในการทำ dashboard อย่างดี สามารถแนะนำเพิ่มเติมในส่วนที่เราบรีฟไปได้ว่ายังขาดตรงไหนอีกบ้าง โดยรวมประทับใจมากค่ะขอบคุณค่ะ', name: 'NAMPUN', date: '13/10/2026' },
+      featured: { text: 'ประทับใจการร่วมงานในครั้งนี้มากค่ะ ทำงานเร็วตามกำหนด งานออกมามีคุณภาพ สามารถตอบคำถามได้เคลียทุกประเด็น มีความเข้าใจในเรื่อง Data ในการทำ dashboard อย่างดี สามารถแนะนำเพิ่มเติมในส่วนที่เราบรีฟไปได้ว่ายังขาดตรงไหนอีกบ้าง โดยรวมประทับใจมากค่ะขอบคุณค่ะ', date: '13/10/2026' },
       reviews: [
-        { text: 'Very professional, experienced, efficient, and quick to understand the requirements. Highly recommended.', name: t.client, date: '14/07/2026' },
-        { text: 'สอนเข้าใจง่าย อธิบายได้ดีมากค่ะ มีการแทรกเรื่องการประยุกต์ใช้ในโลกธุรกิจจริงด้วย ตามใจ Requirement ของลูกค้าสุดๆ แนะนำค่ะ', name: 'm37hkpqt', date: '28/02/2026' },
-        { text: 'เก่งและทำงานเร็วมาก', name: t.client, date: '16/05/2026' },
-        { text: 'สอนดีมากครับ เข้าใจง่าย', name: t.client, date: '17/07/2026' },
-        { text: 'งานไวมากครับ', name: 'Pasawich', date: '17/05/2026' }
+        { text: 'Very professional, experienced, efficient, and quick to understand the requirements. Highly recommended.', date: '14/07/2026' },
+        { text: 'สอนเข้าใจง่าย อธิบายได้ดีมากค่ะ มีการแทรกเรื่องการประยุกต์ใช้ในโลกธุรกิจจริงด้วย ตามใจ Requirement ของลูกค้าสุดๆ แนะนำค่ะ', date: '28/02/2026' },
+        { text: 'เก่งและทำงานเร็วมาก', date: '16/05/2026' },
+        { text: 'สอนดีมากครับ เข้าใจง่าย', date: '17/07/2026' },
+        { text: 'งานไวมากครับ', date: '17/05/2026' }
       ],
       ytStack: ['Python', 'Kafka', 'Airflow', 'DuckDB', 'YouTube API'],
       jobs: [
