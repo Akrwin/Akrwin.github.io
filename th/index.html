@@ -1,0 +1,1172 @@
+<!DOCTYPE html>
+<!-- Generated from index.html by scripts/build-th.mjs. Do not edit by hand; edit index.html and re-run the script. -->
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>รับทำ Dashboard และวิเคราะห์ข้อมูล — ฟรีแลนซ์ Data Analyst · DataFlick</title>
+<meta name="description" content="ฟรีแลนซ์ Data Analyst รับทำ Dashboard ด้วย Tableau, Power BI, Looker Studio รับทำ Excel / Google Sheets ดึงข้อมูลเว็บ ระบบ Automation และให้คำปรึกษาด้าน BI">
+<meta name="author" content="Akkarawin Saiprapakorn">
+<meta name="robots" content="index, follow">
+<meta name="google-site-verification" content="i1Om7mAgv6q-vE46YgoXGfwSENiHTkDbnB6JDyg-FZc">
+<link rel="canonical" href="https://dataflicker.netlify.app/th/">
+<link rel="alternate" hreflang="en" href="https://dataflicker.netlify.app/">
+<link rel="alternate" hreflang="th" href="https://dataflicker.netlify.app/th/">
+<link rel="alternate" hreflang="x-default" href="https://dataflicker.netlify.app/">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/dataflick-icon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="DataFlick">
+<meta property="og:url" content="https://dataflicker.netlify.app/th/">
+<meta property="og:title" content="รับทำ Dashboard และวิเคราะห์ข้อมูล — ฟรีแลนซ์ Data Analyst · DataFlick">
+<meta property="og:description" content="ฟรีแลนซ์ Data Analyst รับทำ Dashboard ด้วย Tableau, Power BI, Looker Studio รับทำ Excel / Google Sheets ดึงข้อมูลเว็บ ระบบ Automation และให้คำปรึกษาด้าน BI">
+<meta property="og:image" content="https://dataflicker.netlify.app/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="th_TH">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="รับทำ Dashboard และวิเคราะห์ข้อมูล — ฟรีแลนซ์ Data Analyst · DataFlick">
+<meta name="twitter:description" content="ฟรีแลนซ์ Data Analyst รับทำ Dashboard ด้วย Tableau, Power BI, Looker Studio รับทำ Excel / Google Sheets ดึงข้อมูลเว็บ ระบบ Automation และให้คำปรึกษาด้าน BI">
+<meta name="twitter:image" content="https://dataflicker.netlify.app/assets/og-image.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://dataflicker.netlify.app/#person",
+      "name": "Akkarawin Saiprapakorn",
+      "jobTitle": "ฟรีแลนซ์ Data Analyst",
+      "url": "https://dataflicker.netlify.app/",
+      "image": "https://dataflicker.netlify.app/assets/akkarawin-cutout.webp",
+      "email": "mailto:ak4rawinss@gmail.com",
+      "sameAs": [
+        "https://github.com/Akrwin",
+        "https://linkedin.com/in/ak4rawin",
+        "https://fastwork.co/byob/2vNB5siUlb"
+      ],
+      "knowsAbout": [
+        "Data analysis",
+        "Data visualization",
+        "Tableau",
+        "Looker Studio",
+        "Power BI",
+        "SQL",
+        "Python",
+        "Excel",
+        "Google Sheets",
+        "Web scraping",
+        "Automation"
+      ]
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://dataflicker.netlify.app/#service",
+      "name": "DataFlick",
+      "url": "https://dataflicker.netlify.app/",
+      "logo": "https://dataflicker.netlify.app/assets/apple-touch-icon.png",
+      "image": "https://dataflicker.netlify.app/assets/og-image.png",
+      "description": "ฟรีแลนซ์ Data Analyst ในประเทศไทย รับทำ Dashboard ด้วย Tableau, Looker Studio และ Power BI วิเคราะห์ข้อมูล รับทำ Excel และ Google Sheets ดึงข้อมูลเว็บ (Web Scraping) ทำความสะอาดข้อมูล ระบบ Automation และให้คำปรึกษาด้าน BI",
+      "founder": {
+        "@id": "https://dataflicker.netlify.app/#person"
+      },
+      "areaServed": "TH",
+      "availableLanguage": [
+        "en",
+        "th"
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preload" as="script" href="/vendor/react.production.min.js">
+<link rel="preload" as="script" href="/vendor/react-dom.production.min.js">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script>window.__resources={"https://unpkg.com/react@18.3.1/umd/react.production.min.js":"/vendor/react.production.min.js","https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js":"/vendor/react-dom.production.min.js"};</script>
+<script src="/support.js"></script>
+</head>
+<body>
+<noscript>
+<div style="max-width:720px;margin:48px auto;padding:0 22px;font-family:-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;line-height:1.6;color:#0A0A0A">
+  <h1>DataFlick — Data done in a flick.</h1>
+  <p><strong>Akkarawin Saiprapakorn</strong>, freelance data analyst. Data → analysis → dashboards → automation, for businesses and organizations at a fair price.</p>
+  <p>ฟรีแลนซ์ Data Analyst รับทำข้อมูล → วิเคราะห์ → Dashboard → ระบบ Automation สำหรับธุรกิจและองค์กร ในราคาที่เหมาะสม</p>
+  <h2>Services</h2>
+  <ul><li>Data visualization &amp; dashboards (Tableau, Looker Studio, Power BI)</li><li>Excel &amp; Google Sheets</li><li>Web scraping</li><li>Automation</li></ul>
+  <h2>Contact</h2>
+  <ul><li><a href="mailto:ak4rawinss@gmail.com">ak4rawinss@gmail.com</a></li><li><a href="https://fastwork.co/byob/2vNB5siUlb">Fastwork</a></li><li><a href="https://linkedin.com/in/ak4rawin">LinkedIn</a></li><li><a href="https://github.com/Akrwin">GitHub</a></li></ul>
+</div>
+</noscript>
+<form name="contact" data-netlify="true" netlify-honeypot="bot-field" hidden>
+  <input type="hidden" name="form-name" value="contact" />
+  <input name="bot-field" /><input name="name" /><input name="contact" />
+  <select name="service"><option>Data Visualization</option></select>
+  <textarea name="message"></textarea>
+</form>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&amp;family=Manrope:wght@500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=IBM+Plex+Sans+Thai:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth;--bg:#FFFFFF;--bg2:#F2F2F0;--card:#FFFFFF;--card2:#F2F2F0;--ink:#0A0A0A;--mute:#555555;--line:#E4E4E2;--link:#0A0A0A;--nav:rgba(255,255,255,0.82);--navline:rgba(10,10,10,0.08);--pill:#0A0A0A;--pillink:#FFFFFF;--shadow:none;color-scheme:light}
+html[data-theme="dark"]{--bg:#0A0A0A;--bg2:#111111;--card:#161616;--card2:#1C1C1C;--ink:#FFFFFF;--mute:#A0A0A0;--line:#262626;--link:#FFFFFF;--nav:rgba(10,10,10,0.72);--navline:rgba(255,255,255,0.08);--pill:#FFFFFF;--pillink:#0A0A0A;--shadow:0 1px 0 rgba(255,255,255,0.06) inset,0 24px 60px rgba(0,0,0,0.5);color-scheme:dark}
+[data-noanim],[data-noanim] *{transition:none!important}
+body,section,header,footer,nav,a,div,span{transition:background-color .5s ease,color .5s ease,border-color .5s ease,box-shadow .5s ease}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,"IBM Plex Sans Thai",sans-serif;line-height:1.47;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-decoration:none}
+a:hover{color:var(--mute);text-decoration:underline}
+h1,h2,h3,h4{font-family:'Manrope',-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,"IBM Plex Sans Thai",sans-serif}
+button{font-family:inherit}
+*{box-sizing:border-box}
+
+.df-navlinks>a{padding:8px 2px}
+@media (max-width:640px){.df-navlinks{flex-wrap:nowrap!important;overflow-x:auto;width:100%;gap:16px!important;scrollbar-width:none;-webkit-overflow-scrolling:touch}.df-navlinks::-webkit-scrollbar{display:none}.df-navlinks>a{white-space:nowrap;padding:10px 2px}.df-navlinks>div{margin-left:auto}.df-navlinks button{padding:6px 10px!important}}
+</style>
+<script>try{var t=localStorage.getItem('dataon-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</helmet>
+
+<nav style="position:sticky;top:0;z-index:50;background:var(--nav);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--navline)">
+  <div style="max-width:1024px;margin:0 auto;padding:0 22px;min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',ui-monospace,monospace">
+      <button onClick="{{ navLogoClick }}" title="{{ themeTitle }}" aria-label="{{ themeTitle }}" style="width:28px;height:28px;padding:0;border:0;border-radius:8px;background:transparent;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--ink)" style-hover="background:var(--card2)"><svg viewBox="6 6 46 52" width="20" height="23" fill="currentColor" aria-hidden="true" style="display:block;flex-shrink:0"><rect x="6" y="6" width="11" height="52"></rect><path d="M23 6h3a26 26 0 0 1 0 52h-3z"></path></svg></button>
+      <a href="#top" aria-label="Home" style="color:var(--ink);text-decoration:none;font-family:'Bricolage Grotesque',sans-serif;font-size:20px;font-weight:700;letter-spacing:-0.035em;white-space:nowrap" style-hover="color:var(--ink);text-decoration:none">DataFlick</a>
+    </div>
+    <div class="df-navlinks" style="display:flex;align-items:center;gap:20px;font-size:12px;flex-wrap:wrap">
+      <a href="#services" style="{{ nav.services }}">{{ t.navServices }}</a>
+      <a href="#projects" style="{{ nav.projects }}">{{ t.navProjects }}</a>
+      <a href="#experience" style="{{ nav.experience }}">{{ t.navExperience }}</a>
+      <a href="#skills" style="{{ nav.skills }}">{{ t.navSkills }}</a>
+      <div style="display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;padding:2px;gap:2px">
+        <button onClick="{{ setEn }}" style="{{ langEn }}">EN</button>
+        <button onClick="{{ setTh }}" style="{{ langTh }}" lang="th">TH</button>
+      </div>
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:7px;height:30px;padding:0 14px 0 11px;border-radius:999px;background:var(--ink);color:var(--bg);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap" style-hover="opacity:0.85;color:var(--bg);text-decoration:none"><svg viewBox="6 6 46 52" width="9" height="10" fill="currentColor" aria-hidden="true" style="display:block;flex-shrink:0"><rect x="6" y="6" width="11" height="52"></rect><path d="M23 6h3a26 26 0 0 1 0 52h-3z"></path></svg>{{ t.hire }}</a>
+    </div>
+  </div>
+</nav>
+<sc-if value="{{ inProjects }}" hint-placeholder-val="{{ false }}">
+  <div style="position:sticky;top:48px;z-index:40;background:var(--nav);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--navline)">
+    <div style="max-width:1024px;margin:0 auto;padding:0 22px;min-height:52px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <a href="#projects" style="font-size:21px;font-weight:600;letter-spacing:-0.01em;color:var(--ink);text-decoration:none">{{ t.navProjects }}</a>
+      <div style="display:flex;align-items:center;gap:20px;font-size:12px;flex-wrap:wrap">
+        <a href="#projects" style="{{ sub.all }}">{{ t.allProjects }}</a>
+        <a href="#projects/marketing" style="{{ sub.marketing }}">Marketing Analytics</a>
+        <a href="#projects/youtube" style="{{ sub.youtube }}">YouTube ETL Tracker</a>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+<header id="top" style="position:relative;overflow:hidden;background:#0A0A0A;color:#F2F2F0;padding:clamp(64px,9vw,120px) 22px clamp(72px,9vw,120px);min-height:min(820px,calc(100vh - 48px));display:flex;align-items:center">
+  <div aria-hidden="true" style="position:absolute;top:0;bottom:0;right:0;width:65%;pointer-events:none;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,0.35) 22%,#000 48%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,0.35) 22%,#000 48%)">
+    <x-import component-from-global-scope="DataFlickGrid" from="/logo-intro.js" theme="dark" style="position:absolute;inset:0" hint-size="100%,100%"></x-import>
+  </div>
+
+  <div style="position:relative;width:100%;max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));align-items:center;gap:clamp(16px,2vw,32px)">
+    <div style="min-width:0;display:flex;flex-direction:column;align-items:flex-start">
+      <div style="display:inline-flex;align-items:center;gap:10px;max-width:100%;padding:6px 14px 6px 6px;border-radius:999px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.12);font-size:13px;color:#DEDEDC">
+        <span style="flex-shrink:0;display:inline-flex;align-items:center;gap:6px;padding:3px 10px;border-radius:999px;background:#F2F2F0;color:#0A0A0A;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700"><span style="width:6px;height:6px;border-radius:50%;background:#34c759"></span>open</span>
+        <span style="min-width:0">{{ t.heroRole }}</span>
+      </div>
+      <h1 style="margin:28px 0 0;font-size:clamp(44px,6.4vw,88px);font-weight:700;letter-spacing:-0.045em;line-height:1.08;color:#F2F2F0"><span style="white-space:nowrap">Data done</span><br /><span style="white-space:nowrap">in a <span style="position:relative;display:inline-block">flick.<span style="position:absolute;left:0;right:0;bottom:-0.02em;height:0.08em;background:#FFFFFF;border-radius:999px"></span></span></span></h1>
+      <p style="margin:28px 0 0;max-width:500px;font-size:clamp(17px,1.7vw,20px);line-height:1.5;color:#A6A6A6;text-wrap:pretty">{{ t.flowP }}</p>
+      <div style="display:flex;gap:12px;align-items:center;margin-top:36px;flex-wrap:wrap">
+        <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;background:#FFFFFF;color:#0A0A0A;padding:14px 26px;border-radius:999px;font-size:17px;font-weight:600;text-decoration:none" style-hover="text-decoration:none;background:#E6E6E6">{{ t.start }}<span>→</span></a>
+        <a href="#services" style="display:inline-flex;align-items:center;white-space:nowrap;padding:13px 24px;border-radius:999px;font-size:17px;font-weight:500;color:#F2F2F0;background:transparent;border:1.5px solid rgba(255,255,255,0.24);text-decoration:none" style-hover="text-decoration:none;background:rgba(255,255,255,0.14)">{{ t.seeWork }}</a>
+      </div>
+      <div style="margin-top:56px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.12);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;width:100%;max-width:480px">
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-size:clamp(26px,3vw,32px);font-weight:700;letter-spacing:-0.035em;line-height:1">4+</span><span style="font-size:13px;color:#8A8A8A">{{ t.kYears }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-size:clamp(26px,3vw,32px);font-weight:700;letter-spacing:-0.035em;line-height:1">5.0<span style="font-size:0.6em;color:#f5b301;margin-left:4px">★</span></span><span style="font-size:13px;color:#8A8A8A">{{ t.kRating }}</span></div>
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><span style="font-size:clamp(26px,3vw,32px);font-weight:700;letter-spacing:-0.035em;line-height:1">24</span><span style="font-size:13px;color:#8A8A8A">{{ t.kOrders }}</span></div>
+      </div>
+    </div>
+    <div style="min-width:0;position:relative;margin-right:calc(-1 * clamp(0px,6vw,96px))">
+      <h2 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);margin:0">DataFlick</h2>
+      <x-import component-from-global-scope="DataFlickIntro" from="/logo-intro.js" theme="dark" bare="{{ true }}" loop="{{ false }}" zoom="{{ 1.3 }}" hint-size="100%,340px"></x-import>
+    </div>
+  </div>
+</header>
+<section id="intro" style="background:var(--bg);text-align:center;padding:clamp(72px,10vw,120px) 22px;border-top:1px solid var(--line);scroll-margin-top:48px">
+  <div style="max-width:1024px;margin:0 auto">
+    <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;font-weight:700;color:var(--mute)"><span style="color:var(--ink)">/</span> how it works</div>
+    <p style="margin:16px auto 0;max-width:720px;font-size:clamp(19px,2.2vw,24px);line-height:1.45;color:var(--ink);text-wrap:pretty">{{ t.heroP }}</p>
+    <div style="text-align:left">
+      <div style="margin-top:40px;display:flex;align-items:stretch;justify-content:center;gap:12px;flex-wrap:wrap">
+        <sc-for list="{{ flow }}" as="fs" hint-placeholder-count="4">
+          <div style="display:flex;align-items:center;gap:12px;flex:1 1 200px;min-width:0">
+            <div style="flex:1;min-width:0;align-self:stretch;background:var(--card2);border-radius:20px;padding:22px 20px;display:flex;flex-direction:column;gap:14px">
+              <div style="font-size:12px;font-weight:600;letter-spacing:0.04em;color:var(--link)">{{ fs.num }}</div>
+              <div style="font-size:19px;font-weight:700;letter-spacing:-0.015em;line-height:1.2">{{ fs.title }}</div>
+              <sc-if value="{{ fs.desc }}" hint-placeholder-val="{{ false }}">
+                <div style="font-size:14px;line-height:1.5;color:var(--mute);text-wrap:pretty">{{ fs.desc }}</div>
+              </sc-if>
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <sc-for list="{{ fs.items }}" as="fi" hint-placeholder-count="4">
+                  <div style="display:flex;align-items:center;gap:10px;font-size:14px;line-height:1.3">
+                    <sc-if value="{{ fi.icon }}" hint-placeholder-val="{{ null }}">
+                      <img src="{{ fi.icon }}" alt="" width="26" height="26" style="flex-shrink:0;display:block;width:26px;height:26px;border-radius:7px;box-shadow:0 1px 2px rgba(10,10,10,0.12)" />
+                    </sc-if>
+                    <sc-if value="{{ fi.noIcon }}" hint-placeholder-val="{{ true }}">
+                      <span style="flex-shrink:0;min-width:44px;text-align:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:11px;font-weight:700;padding:3px 6px;border-radius:6px;background:var(--bg);color:var(--ink);border:1px solid var(--line)">{{ fi.badge }}</span>
+                    </sc-if>
+                    <span style="min-width:0">{{ fi.label }}</span>
+                  </div>
+                </sc-for>
+              </div>
+            </div>
+            <sc-if value="{{ fs.arrow }}" hint-placeholder-val="{{ true }}">
+              <span style="flex-shrink:0;font-size:20px;font-weight:600;color:var(--ink)">→</span>
+            </sc-if>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+<section style="background:var(--bg2);padding:clamp(80px,11vw,140px) 22px">
+  <div style="max-width:1120px;margin:0 auto">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:16px 40px;flex-wrap:wrap;margin-bottom:clamp(32px,5vw,56px)">
+      <div>
+        <div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:13px;font-weight:700;color:var(--mute);margin-bottom:14px"><span style="color:var(--ink)">/</span> explore</div>
+        <h2 style="margin:0;font-size:clamp(40px,6.5vw,72px);font-weight:700;letter-spacing:-0.04em;line-height:1.02">Everything<br>about the work.</h2>
+      </div>
+      
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:20px">
+      <a href="#services" style="border-radius:28px;text-decoration:none;position:relative;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease;flex:2 1 560px;background:#0A0A0A;color:#F2F2F0;padding:clamp(28px,4vw,44px);min-height:420px" style-hover="transform:translateY(-4px);text-decoration:none;box-shadow:0 30px 60px rgba(10,10,10,0.25)">
+        <div style="position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;background:#FFFFFF;opacity:0.07;filter:blur(10px)"></div>
+        <div style="position:relative;display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;letter-spacing:0.02em;color:#8A8A8A">01<span style="color:#FFFFFF">/</span></span><span style="font-size:20px;color:#FFFFFF">↗</span></div>
+        <div style="position:relative;margin-top:20px;font-size:clamp(36px,5vw,56px);font-weight:700;letter-spacing:-0.04em;line-height:1">Services</div>
+        <div style="position:relative;margin-top:12px;max-width:420px;font-size:17px;line-height:1.5;color:#A6A6A6">{{ hm.svc }}</div>
+        <div style="position:relative;margin-top:auto;padding-top:32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:10px">
+          <sc-for list="{{ hm.svcItems }}" as="si" hint-placeholder-count="4">
+            <div style="background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:16px">
+              <div style="width:8px;height:8px;border-radius:50%;background:#FFFFFF;margin-bottom:12px"></div>
+              <div style="font-size:15px;font-weight:600;letter-spacing:-0.01em">{{ si }}</div>
+            </div>
+          </sc-for>
+        </div>
+      </a>
+      <a href="#experience" style="border-radius:28px;text-decoration:none;position:relative;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease;flex:1 1 300px;background:var(--card);box-shadow:var(--shadow);color:var(--ink);padding:clamp(28px,4vw,40px) clamp(28px,4vw,40px) 0;min-height:420px" style-hover="transform:translateY(-4px);text-decoration:none;box-shadow:0 30px 60px rgba(10,10,10,0.12)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;letter-spacing:0.02em;color:var(--mute)">02<span style="color:var(--ink)">/</span></span><span style="font-size:20px;color:var(--link)">↗</span></div>
+        <div style="margin-top:20px;font-size:clamp(30px,3.6vw,40px);font-weight:700;letter-spacing:-0.035em;line-height:1">Experience</div>
+        <div style="margin-top:12px;display:flex;align-items:baseline;gap:8px"><span style="font-size:56px;font-weight:700;letter-spacing:-0.05em;line-height:1">4+</span><span style="font-size:15px;color:var(--mute)">{{ hm.years }}</span></div>
+        <div style="position:relative;margin-top:auto;display:flex;justify-content:flex-end;align-items:flex-end;min-height:180px">
+          <div style="position:absolute;right:-30px;bottom:-60px;width:240px;height:240px;border-radius:50%;background:var(--ink);opacity:0.05"></div>
+          <img src="/assets/akkarawin-cutout.webp" width="640" height="1122" alt="" style="position:relative;display:block;width:150px;height:auto;margin-right:-8px">
+        </div>
+      </a>
+      <a href="#projects" style="border-radius:28px;text-decoration:none;position:relative;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease;flex:1 1 420px;background:var(--card);box-shadow:var(--shadow);color:var(--ink);padding:clamp(28px,4vw,40px) clamp(28px,4vw,40px) 0;min-height:400px" style-hover="transform:translateY(-4px);text-decoration:none;box-shadow:0 30px 60px rgba(10,10,10,0.12)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;letter-spacing:0.02em;color:var(--mute)">03<span style="color:var(--ink)">/</span></span><span style="font-size:20px;color:var(--link)">↗</span></div>
+        <div style="margin-top:20px;font-size:clamp(30px,3.6vw,40px);font-weight:700;letter-spacing:-0.035em;line-height:1">Projects</div>
+        <div style="margin-top:12px;font-size:16px;line-height:1.5;color:var(--mute)">{{ hm.proj }}</div>
+        <div style="margin-top:auto;padding-top:28px">
+          <div style="position:relative;height:210px">
+            <span style="position:absolute;right:0;top:4px;z-index:2;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:10px;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;padding:4px 8px;border-radius:6px;background:var(--card2);color:var(--mute);border:1px dashed var(--line)">{{ t.sample }}</span>
+            <div style="position:absolute;left:0;right:22%;top:0;bottom:0;border-radius:14px 14px 0 0;overflow:hidden;background:#0A0A0A;padding:8px 8px 0;box-shadow:0 -10px 40px rgba(10,10,10,0.12)">
+              <div style="display:flex;gap:4px;padding:0 2px 6px"><span style="width:6px;height:6px;border-radius:50%;background:#FF5F57"></span><span style="width:6px;height:6px;border-radius:50%;background:#FEBC2E"></span><span style="width:6px;height:6px;border-radius:50%;background:#28C840"></span></div>
+              <div style="background:#F2F2F0;border-radius:6px 6px 0 0;height:100%;padding:10px;display:flex;flex-direction:column;gap:8px">
+                <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:9px;font-weight:700;color:#0A0A0A">Marketing Overview</span><span style="font-size:7.5px;color:#8A8A8A;font-family:'JetBrains Mono',ui-monospace,monospace">Looker Studio</span></div>
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:6px">
+                  <div style="background:#fff;border-radius:5px;padding:6px"><div style="font-size:7px;color:#8A8A8A">Spend</div><div style="font-size:12px;font-weight:700;color:#0A0A0A">฿184K</div></div>
+                  <div style="background:#fff;border-radius:5px;padding:6px"><div style="font-size:7px;color:#8A8A8A">Sessions</div><div style="font-size:12px;font-weight:700;color:#0A0A0A">42.1K</div></div>
+                  <div style="background:#fff;border-radius:5px;padding:6px"><div style="font-size:7px;color:#8A8A8A">ROAS</div><div style="font-size:12px;font-weight:700;color:#0A0A0A">4.2×</div></div>
+                </div>
+                <div style="background:#fff;border-radius:5px;padding:8px;height:70px;display:flex;align-items:flex-end;gap:4px"><span style="flex:1;height:35%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:48%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:42%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:60%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:55%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:74%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:68%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:90%;background:#0A0A0A;border-radius:2px"></span><span style="flex:1;height:80%;background:#DEDEDC;border-radius:2px"></span></div>
+              </div>
+            </div>
+            <div style="position:absolute;right:0;bottom:16px;width:62%;border-radius:12px;background:#161616;border:1px solid #262626;padding:10px;box-shadow:0 18px 40px rgba(10,10,10,0.35)">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:8px;font-weight:700;color:#A6A6A6">youtube_etl.dag</span><span style="display:flex;align-items:center;gap:4px;font-size:7.5px;font-weight:700;color:#28C840"><span style="width:5px;height:5px;border-radius:50%;background:#28C840"></span>live</span></div>
+              <div style="display:flex;align-items:center;gap:4px"><div style="flex:1;min-width:0;background:#1A1A1A;border:1px solid #262626;border-radius:6px;padding:6px 4px;text-align:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:8px;font-weight:700;color:#DEDEDC;white-space:nowrap;overflow:hidden">API</div><span style="flex-shrink:0;color:#555555;font-size:9px">→</span><div style="flex:1;min-width:0;background:#1A1A1A;border:1px solid #262626;border-radius:6px;padding:6px 4px;text-align:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:8px;font-weight:700;color:#DEDEDC;white-space:nowrap;overflow:hidden">Kafka</div><span style="flex-shrink:0;color:#555555;font-size:9px">→</span><div style="flex:1;min-width:0;background:#1A1A1A;border:1px solid #FFFFFF;border-radius:6px;padding:6px 4px;text-align:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:8px;font-weight:700;color:#FFFFFF;white-space:nowrap;overflow:hidden">Airflow</div><span style="flex-shrink:0;color:#555555;font-size:9px">→</span><div style="flex:1;min-width:0;background:#1A1A1A;border:1px solid #262626;border-radius:6px;padding:6px 4px;text-align:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:8px;font-weight:700;color:#DEDEDC;white-space:nowrap;overflow:hidden">DuckDB</div></div>
+              <div style="margin-top:8px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:7.5px;line-height:1.6;color:#8A8A8A"><div><span style="color:#28C840">✓</span> extract_videos · 2.1s</div><div><span style="color:#0A0A0A">●</span> load_stats · running</div></div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="#skills" style="border-radius:28px;text-decoration:none;position:relative;overflow:hidden;display:flex;flex-direction:column;min-width:0;transition:transform .4s cubic-bezier(.2,.8,.2,1),box-shadow .4s ease;flex:1 1 420px;background:var(--card);box-shadow:var(--shadow);color:var(--ink);padding:clamp(28px,4vw,40px);min-height:400px" style-hover="transform:translateY(-4px);text-decoration:none;box-shadow:0 30px 60px rgba(10,10,10,0.12)">
+        <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;letter-spacing:0.02em;color:var(--mute)">04<span style="color:#0A0A0A">/</span></span><span style="font-size:20px;color:var(--link)">↗</span></div>
+        <div style="margin-top:20px;font-size:clamp(30px,3.6vw,40px);font-weight:700;letter-spacing:-0.035em;line-height:1">Skills</div>
+        <div style="margin-top:12px;font-size:16px;line-height:1.5;color:var(--mute)">{{ hm.skills }}</div>
+        <div style="margin-top:auto;padding-top:28px;display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ hm.tools }}" as="tk" hint-placeholder-count="10">
+            <span style="{{ tk.style }}">{{ tk.name }}</span>
+          </sc-for>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{ isServices }}" hint-placeholder-val="{{ false }}">
+<section id="services" style="background:var(--bg2);padding:clamp(72px,10vw,120px) 22px">
+  <div style="max-width:1024px;margin:0 auto">
+    <h2 style="margin:0 0 12px;font-size:clamp(36px,5.5vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1">{{ t.svcH }}</h2>
+    <p style="margin:0 0 48px;font-size:21px;color:var(--mute);max-width:620px;line-height:1.45">{{ t.svcP }}</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px">
+      <sc-for list="{{ services }}" as="s" hint-placeholder-count="4">
+        <div style="{{ s.cardStyle }}">
+          <sc-if value="{{ s.isViz }}" hint-placeholder-val="{{ false }}">
+            <div style="margin:-8px -8px 10px;border-radius:14px;overflow:hidden;padding:18px;background:color-mix(in srgb,#0A0A0A 5%,var(--card2))">
+              
+              <div style="background:transparent;border-radius:8px;height:176px;overflow:hidden;position:relative;z-index:1">
+                <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px 12px 0">
+                  <div style="background:#fff;border-radius:6px;padding:8px"><div style="font-size:8px;color:#8A8A8A">Revenue</div><div style="font-size:15px;font-weight:700;color:#0A0A0A">฿2.4M</div><div style="font-size:8px;color:#248a3d">▲ 12%</div></div>
+                  <div style="background:#fff;border-radius:6px;padding:8px"><div style="font-size:8px;color:#8A8A8A">Orders</div><div style="font-size:15px;font-weight:700;color:#0A0A0A">1,284</div><div style="font-size:8px;color:#248a3d">▲ 8%</div></div>
+                  <div style="background:#fff;border-radius:6px;padding:8px"><div style="font-size:8px;color:#8A8A8A">CTR</div><div style="font-size:15px;font-weight:700;color:#0A0A0A">3.6%</div><div style="font-size:8px;color:#C72037">▼ 1%</div></div>
+                </div>
+                <div style="display:grid;grid-template-columns:2fr 1fr;gap:8px;padding:8px 12px 12px">
+                  <div style="background:#fff;border-radius:6px;padding:10px;height:94px;display:flex;align-items:flex-end;gap:5px">
+                    <span style="flex:1;height:38%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:52%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:44%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:66%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:58%;background:#DEDEDC;border-radius:2px"></span><span style="flex:1;height:80%;background:#0A0A0A;border-radius:2px"></span><span style="flex:1;height:72%;background:#DEDEDC;border-radius:2px"></span>
+                  </div>
+                  <div style="background:#fff;border-radius:6px;height:94px;display:flex;align-items:center;justify-content:center"><div style="width:58px;height:58px;border-radius:50%;background:conic-gradient(#0A0A0A 0 62%,#0A0A0A 62% 84%,#DEDEDC 84% 100%);display:flex;align-items:center;justify-content:center"><div style="width:34px;height:34px;border-radius:50%;background:#fff"></div></div></div>
+                </div></div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ s.isExcel }}" hint-placeholder-val="{{ false }}">
+            <div style="margin:-8px -8px 10px;border-radius:14px;overflow:hidden;padding:18px;background:color-mix(in srgb,#248a3d 9%,var(--card2))">
+              
+              <div style="background:transparent;border-radius:8px;height:176px;overflow:hidden;position:relative;z-index:1">
+                <div style="display:flex;align-items:center;gap:6px;padding:6px 8px;background:#fff;border-bottom:1px solid #E5E5EA;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9px;color:#0A0A0A"><span style="font-weight:700;color:#107C41;font-style:italic">fx</span><span style="flex:1;background:#F5F5F7;border-radius:3px;padding:3px 6px;white-space:nowrap;overflow:hidden">=SUMIFS(C:C, A:A, "West") + D5</span></div>
+                <div style="display:grid;grid-template-columns:18px repeat(4,1fr);background:#fff;font-size:9px;line-height:1.3"><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;background:#F5F5F7;color:#8A8A8A;text-align:center"></div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;font-weight:700;background:#e9f5ec;color:#0A0A0A;">Region</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;font-weight:700;background:#e9f5ec;color:#0A0A0A;text-align:right;">Q1</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;font-weight:700;background:#e9f5ec;color:#0A0A0A;text-align:right;">Q2</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;font-weight:700;background:#e9f5ec;color:#0A0A0A;text-align:right;">Total</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;background:#F5F5F7;color:#8A8A8A;text-align:center">1</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;">North</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">120</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">142</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">262</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;background:#F5F5F7;color:#8A8A8A;text-align:center">2</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;">South</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">98</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">115</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">213</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;background:#F5F5F7;color:#8A8A8A;text-align:center">3</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;">East</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">143</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">160</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">303</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;background:#F5F5F7;color:#8A8A8A;text-align:center">4</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;">West</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">87</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;">104</div><div style="padding:4px 6px;border-right:1px solid #E5E5EA;border-bottom:1px solid #E5E5EA;white-space:nowrap;overflow:hidden;color:#0A0A0A;text-align:right;outline:2px solid #107C41;outline-offset:-2px;background:#e9f5ec;">191</div></div>
+                <div style="display:flex;gap:2px;padding:6px 8px;font-size:8px"><span style="padding:3px 8px;background:#fff;border-radius:3px 3px 0 0;color:#107C41;font-weight:700;border-bottom:2px solid #107C41">Sales</span><span style="padding:3px 8px;color:#8A8A8A">Summary</span><span style="padding:3px 8px;color:#8A8A8A">Chart</span></div></div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ s.isScrape }}" hint-placeholder-val="{{ false }}">
+            <div style="margin:-8px -8px 10px;border-radius:14px;overflow:hidden;padding:18px;background:color-mix(in srgb,#0A0A0A 5%,var(--card2))">
+              
+              <div style="background:#161616;border-radius:8px;height:176px;overflow:hidden;position:relative;z-index:1">
+                <div style="display:grid;grid-template-columns:1fr 1fr;height:100%">
+                  <div style="padding:12px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:9px;line-height:1.7;color:#A6A6A6;background:#161616">
+                    <div><span style="color:#FFFFFF">import</span> requests</div>
+                    <div><span style="color:#FFFFFF">from</span> bs4 <span style="color:#FFFFFF">import</span> Soup</div>
+                    <div>&nbsp;</div>
+                    <div>page = get(<span style="color:#9fd28a">url</span>)</div>
+                    <div><span style="color:#FFFFFF">for</span> item <span style="color:#FFFFFF">in</span> page:</div>
+                    <div>&nbsp;&nbsp;rows.append(...)</div>
+                    <div>df.to_csv(<span style="color:#9fd28a">"out.csv"</span>)</div>
+                    <div style="color:#28C840">✓ 1,240 rows saved</div>
+                  </div>
+                  <div style="padding:10px;background:#fff;display:flex;flex-direction:column;gap:5px;font-size:8.5px;color:#0A0A0A">
+                    <div style="font-weight:700;font-family:'JetBrains Mono',ui-monospace,monospace;color:#8A8A8A">out.csv</div>
+                    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:4px;font-weight:700;border-bottom:1px solid #E5E5EA;padding-bottom:3px"><span>product</span><span style="text-align:right">price</span></div>
+                    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:4px"><span>Item A</span><span style="text-align:right">฿490</span></div>
+                    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:4px"><span>Item B</span><span style="text-align:right">฿1,290</span></div>
+                    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:4px"><span>Item C</span><span style="text-align:right">฿320</span></div>
+                    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:4px"><span>Item D</span><span style="text-align:right">฿860</span></div>
+                    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:4px;color:#8A8A8A"><span>…</span><span style="text-align:right">…</span></div>
+                  </div>
+                </div></div>
+            </div>
+          </sc-if>
+          <sc-if value="{{ s.isAuto }}" hint-placeholder-val="{{ false }}">
+            <div style="margin:-8px -8px 10px;border-radius:14px;overflow:hidden;padding:18px;background:color-mix(in srgb,#8944ab 9%,var(--card2))">
+              
+              <div style="background:transparent;border-radius:8px;height:176px;overflow:hidden;position:relative;z-index:1">
+                <svg viewBox="0 0 300 176" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%"><path d="M60 46 C 60 90, 150 60, 150 96 M150 96 C 150 130, 60 110, 60 140 M150 96 C 150 130, 240 110, 240 140 M60 46 C 60 70, 240 50, 240 46" fill="none" stroke="#DEDEDC" stroke-width="1.5" stroke-dasharray="4 3"/></svg>
+                <div style="position:absolute;left:20%;top:26px;transform:translateX(-50%);background:#fff;border-radius:8px;padding:7px 10px;box-shadow:0 2px 6px rgba(10,10,10,0.08);border:1px solid #E5E5EA;min-width:72px;text-align:center"><div style="font-size:9px;font-weight:700;color:#0A0A0A">⏱ Schedule</div><div style="font-size:7.5px;color:#8A8A8A;font-family:'JetBrains Mono',ui-monospace,monospace">every 08:00</div></div>
+                <div style="position:absolute;left:80%;top:26px;transform:translateX(-50%);background:#fff;border-radius:8px;padding:7px 10px;box-shadow:0 2px 6px rgba(10,10,10,0.08);border:1px solid #E5E5EA;min-width:72px;text-align:center"><div style="font-size:9px;font-weight:700;color:#0A0A0A">Fetch data</div><div style="font-size:7.5px;color:#8A8A8A;font-family:'JetBrains Mono',ui-monospace,monospace">API · Sheets</div></div>
+                <div style="position:absolute;left:50%;top:78px;transform:translateX(-50%);background:#fff;border-radius:8px;padding:7px 10px;box-shadow:0 2px 6px rgba(10,10,10,0.08);border:1px solid #0A0A0A;min-width:72px;text-align:center"><div style="font-size:9px;font-weight:700;color:#0A0A0A">Transform</div><div style="font-size:7.5px;color:#8A8A8A;font-family:'JetBrains Mono',ui-monospace,monospace">python</div></div>
+                <div style="position:absolute;left:20%;top:128px;transform:translateX(-50%);background:#fff;border-radius:8px;padding:7px 10px;box-shadow:0 2px 6px rgba(10,10,10,0.08);border:1px solid #E5E5EA;min-width:72px;text-align:center"><div style="font-size:9px;font-weight:700;color:#0A0A0A">Update report</div><div style="font-size:7.5px;color:#8A8A8A;font-family:'JetBrains Mono',ui-monospace,monospace">dashboard</div></div>
+                <div style="position:absolute;left:80%;top:128px;transform:translateX(-50%);background:#fff;border-radius:8px;padding:7px 10px;box-shadow:0 2px 6px rgba(10,10,10,0.08);border:1px solid #E5E5EA;min-width:72px;text-align:center"><div style="font-size:9px;font-weight:700;color:#0A0A0A">Notify team</div><div style="font-size:7.5px;color:#8A8A8A;font-family:'JetBrains Mono',ui-monospace,monospace">email · LINE</div></div>
+                <div style="position:absolute;right:10px;top:8px;display:flex;align-items:center;gap:4px;font-size:8px;color:#248a3d;font-weight:700"><span style="width:6px;height:6px;border-radius:50%;background:#28C840"></span>Running</div></div>
+            </div>
+          </sc-if>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+            <span style="{{ s.tagStyle }}">{{ s.cat }}</span>
+            <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;color:#8A8A8A">{{ s.num }}<span style="color:var(--ink)">/</span></span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="font-size:28px;font-weight:700;letter-spacing:-0.025em;line-height:1.12">{{ s.title }}</div>
+            <div style="font-size:16px;line-height:1.5;color:var(--mute);text-wrap:pretty">{{ s.desc }}</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ s.items }}" as="i" hint-placeholder-count="3">
+              <div style="display:flex;align-items:flex-start;gap:10px;font-size:15px;line-height:1.45"><span style="flex-shrink:0;width:18px;height:18px;margin-top:1px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700">✓</span><span>{{ i }}</span></div>
+            </sc-for>
+          </div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--mute)"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700;color:var(--ink)">stack</span>{{ s.tools }}</div>
+          <div style="margin-top:auto;padding-top:20px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap">
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <span style="font-size:13px;color:var(--mute)">{{ s.fromLabel }}</span>
+              <span style="font-size:34px;font-weight:700;letter-spacing:-0.035em;line-height:1;color:var(--ink)">{{ s.price }}</span>
+              <span style="font-size:13px;color:var(--mute)">{{ s.proof }}</span>
+            </div>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <sc-if value="{{ s.onFastwork }}" hint-placeholder-val="{{ true }}">
+                <a href="https://fastwork.co/byob/2vNB5siUlb?openExternalBrowser=1&amp;source=byob" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;padding:12px 20px;border-radius:999px;background:var(--pill);color:var(--pillink);font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap" style-hover="background:var(--ink);color:var(--bg);text-decoration:none"><img src="/assets/logo-fastwork.webp" alt="" width="20" height="20" style="flex-shrink:0;display:block;width:20px;height:20px;border-radius:6px" />{{ t.orderBtn }}<span style="color:inherit">↗</span></a>
+              </sc-if>
+              <a href="#contact" onClick="{{ s.contactMe }}" style="{{ s.directStyle }}" style-hover="text-decoration:none;opacity:0.85">{{ t.directBtn }}</a>
+            </div>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+
+<section id="consulting" style="background:var(--bg);padding:clamp(72px,10vw,120px) 22px">
+  <div style="max-width:1024px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:clamp(32px,5vw,64px);align-items:center">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px"><span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:#e8f1fc;color:#0064d2">Consulting</span><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700;color:#8A8A8A">05<span style="color:var(--ink)">/</span></span></div>
+        <h2 style="margin:0 0 16px;font-size:clamp(36px,5.5vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1">{{ t.consultH }}</h2>
+        <p style="margin:0 0 28px;font-size:19px;line-height:1.5;color:var(--mute);text-wrap:pretty">{{ consult.desc }}</p>
+        <div style="display:flex;flex-direction:column;gap:12px;margin-bottom:20px">
+          <sc-for list="{{ consult.items }}" as="ci" hint-placeholder-count="3">
+            <div style="display:flex;align-items:flex-start;gap:10px;font-size:16px;line-height:1.45"><span style="flex-shrink:0;width:18px;height:18px;margin-top:1px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700">✓</span><span>{{ ci }}</span></div>
+          </sc-for>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px;color:var(--mute)"><span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-weight:700;color:var(--ink)">stack</span>Tableau · Power BI · Looker Studio · Automation</div>
+      </div>
+      <div aria-hidden="true" style="border-radius:24px;padding:clamp(24px,4vw,44px);background:color-mix(in srgb,#0064d2 9%,var(--card2))">
+        <div style="background:transparent;border-radius:8px;height:176px;overflow:hidden;display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:12px;position:relative;z-index:1">
+                <div style="display:flex;flex-direction:column;gap:6px">
+                  <div style="font-size:9px;color:#8A8A8A;font-weight:600">Consulting session</div>
+                  <div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #E5E5EA;border-radius:8px;padding:6px 9px;font-size:10px;font-weight:700;color:#0A0A0A"><span style="width:8px;height:8px;border-radius:2px;background:#E97627"></span>Tableau</div>
+                  <div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #E5E5EA;border-radius:8px;padding:6px 9px;font-size:10px;font-weight:700;color:#0A0A0A"><span style="width:8px;height:8px;border-radius:2px;background:#F2C811"></span>Power BI</div>
+                  <div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #E5E5EA;border-radius:8px;padding:6px 9px;font-size:10px;font-weight:700;color:#0A0A0A"><span style="width:8px;height:8px;border-radius:2px;background:#4285F4"></span>Looker Studio</div>
+                  <div style="display:flex;align-items:center;gap:6px;background:#fff;border:1px solid #E5E5EA;border-radius:8px;padding:6px 9px;font-size:10px;font-weight:700;color:#0A0A0A"><span style="width:8px;height:8px;border-radius:2px;background:#8944ab"></span>Data Automation</div>
+                </div>
+                <div style="background:#fff;border-radius:8px;border:1px solid #E5E5EA;padding:10px;display:flex;flex-direction:column;gap:8px">
+                  <div style="font-size:9px;color:#8A8A8A;font-weight:600">Agenda</div>
+                  <div style="display:flex;align-items:center;gap:7px;font-size:10px;color:#0A0A0A"><span style="flex-shrink:0;width:13px;height:13px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700">✓</span>Review current setup</div>
+                  <div style="display:flex;align-items:center;gap:7px;font-size:10px;color:#0A0A0A"><span style="flex-shrink:0;width:13px;height:13px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700">✓</span>Pick the right tools</div>
+                  <div style="display:flex;align-items:center;gap:7px;font-size:10px;color:#0A0A0A"><span style="flex-shrink:0;width:13px;height:13px;border-radius:50%;background:#0A0A0A;color:#fff;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700">✓</span>Plan the data flow</div>
+                  <div style="display:flex;align-items:center;gap:7px;font-size:10px;color:#0A0A0A"><span style="flex-shrink:0;width:13px;height:13px;border-radius:50%;border:1.5px solid #C7C7CC;color:transparent;display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:700">✓</span>Train your team</div>
+                </div>
+              </div>
+      </div>
+    </div>
+    <div style="margin-top:40px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:6px"><span style="font-size:13px;color:var(--mute)">{{ consult.pricing }}</span><span style="font-size:34px;font-weight:700;letter-spacing:-0.035em;line-height:1;color:var(--ink)">{{ consult.price }}</span><span style="font-size:13px;color:var(--mute)">{{ consult.priceSub }}</span></div>
+      <a href="#contact" onClick="{{ consult.contactMe }}" style="display:inline-flex;align-items:center;gap:6px;padding:12px 20px;border-radius:999px;font-size:15px;font-weight:600;text-decoration:none;white-space:nowrap;background:var(--pill);color:var(--pillink)" style-hover="text-decoration:none;opacity:0.85">{{ t.directBtn }}</a>
+    </div>
+    <h3 style="margin:88px 0 24px;font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">{{ t.larger }}</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:20px;overflow:hidden">
+      <sc-for list="{{ enterprise }}" as="e" hint-placeholder-count="3">
+        <div style="background:var(--card);padding:28px">
+          <div style="font-size:19px;font-weight:600;letter-spacing:-0.01em">{{ e.title }}</div>
+          <div style="margin-top:8px;font-size:15px;line-height:1.5;color:var(--ink)">{{ e.desc }}</div>
+          <div style="margin-top:12px;font-size:13px;color:var(--mute)">{{ e.tools }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{ isProjMarketing }}" hint-placeholder-val="{{ false }}">
+<section id="projects" style="background:#0A0A0A;color:#F2F2F0;padding:clamp(80px,11vw,140px) 22px">
+  <div style="max-width:1024px;margin:0 auto">
+    <a href="#projects" style="display:inline-block;margin-bottom:48px;font-size:15px;color:#FFFFFF">‹ {{ t.allProjects }}</a>
+    <div style="text-align:center">
+      <div style="display:flex;justify-content:center;margin-bottom:16px"><span style="font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:rgba(255,255,255,0.12);color:#FFFFFF">{{ t.daTag }}</span></div>
+      <h2 style="margin:0;font-size:clamp(40px,7vw,80px);font-weight:700;letter-spacing:-0.035em;line-height:1.04;text-wrap:balance">Marketing Analytics.<br>Social Media Dashboard.</h2>
+      <p style="margin:24px auto 0;max-width:700px;font-size:clamp(19px,2vw,21px);line-height:1.45;color:#A6A6A6">{{ t.caseP }}</p>
+      <div style="display:flex;gap:28px;justify-content:center;align-items:center;margin-top:32px;flex-wrap:wrap">
+        <a href="https://datastudio.google.com/reporting/1551af7e-77a2-41de-9e41-2905ba8a1644" target="_blank" rel="noopener" style="background:#FFFFFF;color:#0A0A0A;padding:12px 24px;border-radius:999px;font-size:17px;text-decoration:none;display:inline-flex;align-items:center;gap:8px"><span style="width:7px;height:7px;border-radius:50%;background:#30d158"></span>{{ t.live }}</a>
+        <a href="https://github.com/Akrwin" target="_blank" rel="noopener" style="font-size:17px;color:#FFFFFF">{{ t.source }}</a>
+      </div>
+    </div>
+    <div style="margin-top:64px;display:flex;justify-content:center">
+      <div style="display:inline-flex;background:#1A1A1A;border-radius:999px;padding:4px;gap:2px;flex-wrap:wrap;justify-content:center">
+        <sc-for list="{{ pages }}" as="p" hint-placeholder-count="4">
+          <button onClick="{{ p.select }}" style="{{ p.tabStyle }}">{{ p.short }}</button>
+        </sc-for>
+      </div>
+    </div>
+    <div style="margin-top:28px;border-radius:22px;overflow:hidden;background:#F2F2F0;box-shadow:0 30px 80px rgba(0,0,0,0.5)">
+      <img src="{{ page.img }}" alt="{{ page.name }}" style="display:block;width:100%;height:auto">
+    </div>
+    <div style="margin-top:20px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:14px;color:#8A8A8A">
+      <span><span style="color:#F2F2F0;font-weight:600">{{ page.name }}</span> · {{ page.foot }}</span>
+      <span style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px">{{ page.src }}</span>
+    </div>
+    <div style="margin-top:80px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:#262626;border-radius:20px;overflow:hidden">
+      <sc-for list="{{ stats }}" as="st" hint-placeholder-count="6">
+        <div style="background:#0A0A0A;padding:28px 16px;text-align:center">
+          <div style="font-size:44px;font-weight:700;letter-spacing:-0.03em;line-height:1">{{ st.n }}</div>
+          <div style="margin-top:8px;font-size:14px;color:#8A8A8A">{{ st.l }}</div>
+        </div>
+      </sc-for>
+    </div>
+    <h3 style="margin:96px 0 32px;font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.025em;text-align:center">{{ t.pipelineH }}</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px">
+      <sc-for list="{{ pipeline }}" as="ps" hint-placeholder-count="4">
+        <div style="background:#1A1A1A;border-radius:20px;padding:24px">
+          <div style="font-size:12px;font-weight:600;color:#FFFFFF;letter-spacing:0.02em">{{ ps.label }}</div>
+          <div style="font-size:21px;font-weight:600;margin:6px 0 16px;letter-spacing:-0.01em">{{ ps.name }}</div>
+          <div style="display:flex;flex-direction:column;gap:6px">
+            <sc-for list="{{ ps.items }}" as="it" hint-placeholder-count="4">
+              <div style="font-family:'JetBrains Mono','IBM Plex Sans Thai',ui-monospace,monospace;font-size:12px;color:#A6A6A6;line-height:1.4">{{ it }}</div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <h3 style="margin:96px 0 32px;font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.025em;text-align:center">{{ t.stackH }}</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:1px;background:#262626;border-radius:20px;overflow:hidden">
+      <sc-for list="{{ stack }}" as="sk" hint-placeholder-count="6">
+        <div style="background:#0A0A0A;padding:24px 26px">
+          <div style="font-size:17px;font-weight:600">{{ sk.name }}</div>
+          <div style="margin-top:6px;font-size:14px;line-height:1.5;color:#A6A6A6">{{ sk.desc }}</div>
+        </div>
+      </sc-for>
+    </div>
+    <sc-if value="{{ showSql }}" hint-placeholder-val="{{ true }}">
+      <h3 style="margin:96px 0 24px;font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.025em;text-align:center">SQL views.</h3>
+      <div style="display:flex;justify-content:center;margin-bottom:20px">
+        <div style="display:inline-flex;background:#1A1A1A;border-radius:999px;padding:4px;gap:2px;flex-wrap:wrap;justify-content:center">
+          <sc-for list="{{ views }}" as="v" hint-placeholder-count="4">
+            <button onClick="{{ v.select }}" style="{{ v.tabStyle }}">{{ v.name }}</button>
+          </sc-for>
+        </div>
+      </div>
+      <div style="background:#1A1A1A;border-radius:20px;overflow:hidden">
+        <div style="padding:14px 22px;border-bottom:1px solid #262626;font-size:13px;color:#8A8A8A">{{ view.desc }}</div>
+        <pre style="margin:0;padding:22px;overflow:auto;max-height:440px;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12.5px;line-height:1.6;color:#DEDEDC">{{ view.sql }}</pre>
+      </div>
+    </sc-if>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{ isProjects }}" hint-placeholder-val="{{ false }}">
+<section style="background:var(--bg2);padding:clamp(72px,10vw,120px) 22px">
+  <div style="max-width:1024px;margin:0 auto">
+    <div style="font-size:21px;font-weight:600;color:var(--mute);margin-bottom:8px">{{ t.navProjects }}</div>
+    <h2 style="margin:0 0 32px;font-size:clamp(36px,5.5vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1">{{ t.projH }}</h2>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px">
+      <sc-for list="{{ cats }}" as="c" hint-placeholder-count="4">
+        <button onClick="{{ c.select }}" style="{{ c.style }}">{{ c.label }}<span style="opacity:0.6;margin-left:6px">{{ c.count }}</span></button>
+      </sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:20px">
+      <sc-for list="{{ projectList }}" as="pr" hint-placeholder-count="2">
+        <a href="{{ pr.href }}" style="background:var(--card);box-shadow:var(--shadow);border-radius:20px;overflow:hidden;display:flex;flex-direction:column;color:var(--ink);text-decoration:none">
+          <sc-if value="{{ pr.img }}" hint-placeholder-val="{{ false }}">
+            <div style="aspect-ratio:16/10;background:var(--card2);overflow:hidden"><img src="{{ pr.img }}" alt="{{ pr.title }}" style="display:block;width:100%;height:100%;object-fit:cover;object-position:top"></div>
+          </sc-if>
+          <sc-if value="{{ pr.thumbText }}" hint-placeholder-val="{{ false }}">
+            <div style="aspect-ratio:16/10;background:#1A1A1A;display:flex;align-items:center;justify-content:center;padding:32px"><div style="font-family:'JetBrains Mono',ui-monospace,monospace;font-size:clamp(14px,1.6vw,18px);color:#F2F2F0;text-align:center;line-height:1.8">{{ pr.thumbText }}</div></div>
+          </sc-if>
+          <div style="padding:28px 32px 32px;display:flex;flex-direction:column;gap:12px;flex:1">
+            <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+              <span style="{{ pr.tagStyle }}">{{ pr.tagLabel }}</span>
+              <span style="font-size:13px;color:var(--mute)">{{ pr.meta }}</span>
+            </div>
+            <div style="font-size:28px;font-weight:700;letter-spacing:-0.025em;line-height:1.12">{{ pr.title }}</div>
+            <div style="font-size:16px;line-height:1.5;color:var(--ink)">{{ pr.desc }}</div>
+            <div style="font-size:13px;color:var(--mute)">{{ pr.highlights }}</div>
+            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-top:4px">
+              <sc-for list="{{ pr.tools }}" as="tt" hint-placeholder-count="4">
+                <span style="font-size:12px;padding:4px 10px;border-radius:999px;background:var(--card2);color:var(--ink)">{{ tt }}</span>
+              </sc-for>
+            </div>
+            <span style="margin-top:auto;padding-top:12px;font-size:17px;color:var(--link)">{{ t.viewProject }}</span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+    <sc-if value="{{ isEmpty }}" hint-placeholder-val="{{ false }}">
+      <div style="background:var(--card);box-shadow:var(--shadow);border-radius:20px;padding:56px 32px;text-align:center">
+        <div style="font-size:24px;font-weight:600;letter-spacing:-0.015em">{{ emptyTitle }}</div>
+        <div style="margin-top:8px;font-size:17px;color:var(--mute)">{{ t.emptySub }}</div>
+      </div>
+    </sc-if>
+    <p style="margin:28px 0 0;font-size:14px;color:var(--mute);text-align:center">{{ t.ghNote }} <a href="https://github.com/Akrwin" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{ isProjYoutube }}" hint-placeholder-val="{{ false }}">
+<section style="background:var(--bg);padding:clamp(64px,9vw,110px) 22px">
+  <div style="max-width:1024px;margin:0 auto">
+    <a href="#projects" style="display:inline-block;margin-bottom:48px;font-size:15px">‹ {{ t.allProjects }}</a>
+    <div style="text-align:center">
+      <div style="display:flex;justify-content:center;margin-bottom:16px"><span style="font-size:13px;font-weight:600;padding:5px 12px;border-radius:999px;background:var(--line);color:var(--ink)">{{ t.deTag }}</span></div>
+      <h2 style="margin:0;font-size:clamp(40px,7vw,80px);font-weight:700;letter-spacing:-0.035em;line-height:1.04;text-wrap:balance">YouTube Channel<br>ETL Tracker.</h2>
+      <p style="margin:24px auto 0;max-width:640px;font-size:clamp(19px,2vw,21px);line-height:1.45;color:var(--mute)">{{ t.ytP }}</p>
+      <div style="display:flex;justify-content:center;margin-top:32px">
+        <a href="https://github.com/Akrwin" target="_blank" rel="noopener" style="background:var(--ink);color:var(--bg);padding:12px 24px;border-radius:999px;font-size:17px;text-decoration:none">{{ t.ytBtn }}</a>
+      </div>
+    </div>
+    <h3 style="margin:88px 0 28px;font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.025em;text-align:center">{{ t.stackH }}</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:16px">
+      <sc-for list="{{ ytStack }}" as="ys" hint-placeholder-count="5">
+        <div style="background:var(--card2);border-radius:20px;padding:28px 20px;text-align:center;font-size:21px;font-weight:600;letter-spacing:-0.01em">{{ ys }}</div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{ isExperience }}" hint-placeholder-val="{{ false }}">
+<section id="experience" style="background:var(--bg);padding:clamp(72px,10vw,120px) 22px">
+  <div style="max-width:1024px;margin:0 auto">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));align-items:end;gap:24px 48px;margin-bottom:64px;border-bottom:1px solid var(--line)">
+      <div style="padding-bottom:clamp(32px,5vw,64px)">
+        <h2 style="margin:0 0 16px;font-size:clamp(36px,5.5vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1">{{ t.expH }}</h2>
+        <p style="margin:0;max-width:460px;font-size:19px;line-height:1.5;color:var(--mute);text-wrap:pretty">{{ t.expP }}</p>
+      </div>
+      <div style="position:relative;display:flex;justify-content:center;align-items:flex-end">
+        <div style="position:absolute;left:50%;bottom:0;transform:translateX(-50%);width:78%;aspect-ratio:1;border-radius:50%;background:var(--ink);opacity:0.05"></div>
+        <img src="/assets/akkarawin-cutout.webp" width="640" height="1122" alt="Akkarawin Saiprapakorn" style="position:relative;display:block;width:100%;max-width:290px;height:auto">
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line);border-radius:20px;overflow:hidden">
+      <sc-for list="{{ expStats }}" as="st" hint-placeholder-count="4">
+        <div style="background:var(--card);padding:28px 20px;text-align:center">
+          <div style="font-size:44px;font-weight:700;letter-spacing:-0.03em;line-height:1">{{ st.value }}</div>
+          <div style="margin-top:8px;font-size:14px;color:var(--mute)">{{ st.label }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <h3 style="margin:88px 0 24px;font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">{{ t.capsH }}</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1px;background:var(--line);border-radius:20px;overflow:hidden">
+      <sc-for list="{{ caps }}" as="c" hint-placeholder-count="3">
+        <div style="background:var(--card);padding:28px">
+          <div style="font-size:19px;font-weight:600;letter-spacing:-0.01em">{{ c.title }}</div>
+          <div style="margin-top:8px;font-size:15px;line-height:1.5;color:var(--ink)">{{ c.tools }}</div>
+          <div style="margin-top:12px;font-size:13px;color:var(--mute)">{{ t.capsFrom }} {{ c.from }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div id="fulltime" style="display:flex;align-items:baseline;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;margin:88px 0 24px;scroll-margin-top:72px">
+      <h3 style="margin:0;font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">{{ t.pathH }}</h3>
+      <span style="font-size:14px;color:var(--mute)">{{ t.ftRange }}</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:1px;background:var(--line);border-radius:20px;overflow:hidden">
+      <sc-for list="{{ jobs }}" as="j" hint-placeholder-count="4">
+        <div style="background:var(--card);padding:32px 24px;display:flex;flex-direction:column;align-items:center;text-align:center">
+          <img src="{{ j.logo }}" alt="{{ j.company }}" width="64" height="64" style="display:block;width:64px;height:64px;border-radius:16px;object-fit:cover;background:#fff;box-shadow:0 1px 3px rgba(10,10,10,0.14)" />
+          <div style="margin-top:18px;font-size:17px;font-weight:600;letter-spacing:-0.01em;line-height:1.3">{{ j.role }}</div>
+          <div style="margin-top:6px;font-size:14px;line-height:1.4;color:var(--mute)">{{ j.company }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="margin-top:64px;text-align:center">
+      <div style="font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em;line-height:1.25;text-wrap:balance">{{ t.expCta }}</div>
+      <a href="#contact" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;padding:12px 24px;border-radius:999px;background:var(--pill);color:var(--pillink);font-size:17px;font-weight:600;text-decoration:none" style-hover="background:var(--ink);color:var(--bg);text-decoration:none">{{ t.expCtaBtn }}</a>
+    </div>
+  </div>
+</section>
+<section id="freelance" style="background:var(--bg2);padding:clamp(72px,10vw,120px) 22px;scroll-margin-top:48px">
+  <div style="max-width:1024px;margin:0 auto">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px;flex-wrap:wrap">
+      <span style="display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;padding:4px 12px 4px 4px;border-radius:999px;background:var(--card);color:var(--ink);border:1px solid var(--line)"><img src="/assets/logo-fastwork.webp" alt="" width="22" height="22" style="flex-shrink:0;display:block;width:22px;height:22px;border-radius:6px" />{{ t.flTag }}</span>
+      <span style="font-size:14px;color:var(--mute)">{{ t.since }}</span>
+    </div>
+    <h3 style="margin:0;font-size:clamp(36px,5.5vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1">{{ t.flH }}</h3>
+    <p style="margin:16px 0 0;max-width:640px;font-size:21px;line-height:1.45;color:var(--mute)">{{ t.flP }}</p>
+    <div style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1px;background:var(--line);border-radius:20px;overflow:hidden">
+      <div style="background:var(--card);padding:28px 20px;text-align:center"><div style="font-size:44px;font-weight:700;letter-spacing:-0.03em;line-height:1;display:flex;align-items:center;justify-content:center;gap:6px">5.0<span style="font-size:28px;color:#f5b301">★</span></div><div style="margin-top:8px;font-size:14px;color:var(--mute)">{{ t.avg }}</div></div>
+      <div style="background:var(--card);padding:28px 20px;text-align:center"><div style="font-size:44px;font-weight:700;letter-spacing:-0.03em;line-height:1">20</div><div style="margin-top:8px;font-size:14px;color:var(--mute)">{{ t.reviewsL }}</div></div>
+      <div style="background:var(--card);padding:28px 20px;text-align:center"><div style="font-size:44px;font-weight:700;letter-spacing:-0.03em;line-height:1">100%</div><div style="margin-top:8px;font-size:14px;color:var(--mute)">{{ t.five }}</div></div>
+    </div>
+    <h4 style="margin:72px 0 24px;font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-0.02em">{{ t.say }}</h4>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:20px">
+      <sc-for list="{{ reviews }}" as="rv" hint-placeholder-count="5">
+        <div style="background:var(--card);box-shadow:var(--shadow);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:16px">
+          <div style="font-size:15px;color:#f5b301;letter-spacing:2px">★★★★★</div>
+          <div style="font-size:19px;line-height:1.55;font-weight:500;letter-spacing:-0.005em;text-wrap:pretty">“{{ rv.text }}”</div>
+          <div style="margin-top:auto;display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--mute)"><span>{{ t.client }}</span><span>{{ rv.date }}</span></div>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin:24px 0 0;font-size:14px;color:var(--mute)">{{ t.selected }}</p>
+  </div>
+</section>
+</sc-if>
+
+<sc-if value="{{ isSkills }}" hint-placeholder-val="{{ false }}">
+<section id="skills" style="background:var(--bg2);padding:clamp(72px,10vw,120px) 22px">
+  <div style="max-width:1024px;margin:0 auto">
+    <h2 style="margin:0 0 48px;font-size:clamp(36px,5.5vw,56px);font-weight:700;letter-spacing:-0.03em;line-height:1.1">{{ t.skillsH }}</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px">
+      <sc-for list="{{ skills }}" as="g" hint-placeholder-count="4">
+        <div style="background:var(--card);box-shadow:var(--shadow);border-radius:20px;padding:28px">
+          <div style="font-size:14px;color:var(--mute)">{{ g.cat }}</div>
+          <div style="display:flex;flex-direction:column;gap:6px;margin-top:14px">
+            <sc-for list="{{ g.items }}" as="i" hint-placeholder-count="4">
+              <div style="display:flex;align-items:center;gap:12px;font-size:21px;font-weight:600;letter-spacing:-0.01em"><img src="{{ i.icon }}" alt="" width="28" height="28" style="flex-shrink:0;display:block;width:28px;height:28px;border-radius:8px;box-shadow:0 1px 2px rgba(10,10,10,0.12)" /><span style="min-width:0">{{ i.name }}</span></div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <h3 style="margin:80px 0 24px;font-size:clamp(28px,4vw,40px);font-weight:700;letter-spacing:-0.025em">{{ t.eduH }}</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:20px">
+      <sc-for list="{{ edu }}" as="e" hint-placeholder-count="3">
+        <div style="background:var(--card);box-shadow:var(--shadow);border-radius:20px;padding:28px">
+          <div style="font-size:14px;color:var(--mute)">{{ e.kind }}</div>
+          <div style="font-size:21px;font-weight:600;letter-spacing:-0.01em;margin-top:10px;line-height:1.3">{{ e.title }}</div>
+          <div style="font-size:15px;color:var(--mute);margin-top:6px">{{ e.org }}</div>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+</section>
+</sc-if>
+
+<section id="contact" style="background:var(--bg);border-top:1px solid var(--line);padding:clamp(88px,12vw,140px) 22px">
+  <div style="max-width:1024px;margin:0 auto">
+    <div style="text-align:center">
+      <sc-if value="{{ showAvailability }}" hint-placeholder-val="{{ true }}">
+        <div style="display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--ink);background:var(--card2);padding:6px 14px;border-radius:999px;margin-bottom:28px">
+          <span style="width:8px;height:8px;border-radius:50%;background:#34c759"></span>{{ t.available }}
+        </div>
+      </sc-if>
+      <h2 style="margin:0;font-size:clamp(44px,7.5vw,80px);font-weight:700;letter-spacing:-0.035em;line-height:1.16">{{ t.contact1 }}<br />{{ t.contact2 }}</h2>
+      <p style="margin:24px auto 0;max-width:560px;font-size:21px;line-height:1.45;color:var(--mute)">{{ t.contactP }}</p>
+    </div>
+    <div style="margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:24px;align-items:start">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <a href="mailto:ak4rawinss@gmail.com" style="display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--card2);color:var(--ink);text-decoration:none" style-hover="text-decoration:none;background:var(--line)"><span style="flex-shrink:0;width:36px;height:36px;border-radius:10px;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700">@</span><span style="min-width:0;display:flex;flex-direction:column"><span style="font-size:12px;color:var(--mute)">Email</span><span style="font-size:16px;font-weight:600;overflow-wrap:anywhere">ak4rawinss@gmail.com</span></span><span style="margin-left:auto;color:var(--link)">↗</span></a>
+        <sc-if value="{{ hasLine }}" hint-placeholder-val="{{ true }}">
+          <a href="{{ lineUrl }}" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--card2);color:var(--ink);text-decoration:none" style-hover="text-decoration:none;background:var(--line)"><span style="flex-shrink:0;width:36px;height:36px;border-radius:10px;background:#06C755;color:#fff;display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700">LINE</span><span style="min-width:0;display:flex;flex-direction:column"><span style="font-size:12px;color:var(--mute)">LINE</span><span style="font-size:16px;font-weight:600;overflow-wrap:anywhere">{{ lineLabel }}</span></span><span style="margin-left:auto;color:var(--link)">↗</span></a>
+        </sc-if>
+        <sc-if value="{{ showPhone }}" hint-placeholder-val="{{ true }}">
+          <a href="tel:0907683100" style="display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--card2);color:var(--ink);text-decoration:none" style-hover="text-decoration:none;background:var(--line)"><span style="flex-shrink:0;width:36px;height:36px;border-radius:10px;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:'JetBrains Mono',ui-monospace,monospace;font-size:12px;font-weight:700">☎</span><span style="min-width:0;display:flex;flex-direction:column"><span style="font-size:12px;color:var(--mute)">{{ t.phoneL }}</span><span style="font-size:16px;font-weight:600;overflow-wrap:anywhere">090-768-3100</span></span><span style="margin-left:auto;color:var(--link)">↗</span></a>
+        </sc-if>
+        <a href="https://fastwork.co/byob/2vNB5siUlb?openExternalBrowser=1&amp;source=byob" target="_blank" rel="noopener" style="display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--card2);color:var(--ink);text-decoration:none" style-hover="text-decoration:none;background:var(--line)"><img src="/assets/logo-fastwork.webp" alt="Fastwork" width="36" height="36" style="flex-shrink:0;display:block;width:36px;height:36px;border-radius:10px" /><span style="min-width:0;display:flex;flex-direction:column"><span style="font-size:12px;color:var(--mute)">Fastwork</span><span style="font-size:16px;font-weight:600;overflow-wrap:anywhere">{{ t.fastwork }}</span></span><span style="margin-left:auto;color:var(--link)">↗</span></a>
+        <div style="display:flex;gap:10px">
+          <a href="https://linkedin.com/in/ak4rawin" target="_blank" rel="noopener" style="flex:1;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--card2);color:var(--ink);text-decoration:none;justify-content:center;font-weight:600" style-hover="text-decoration:none;background:var(--line)">LinkedIn ↗</a>
+          <a href="https://github.com/Akrwin" target="_blank" rel="noopener" style="flex:1;display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;background:var(--card2);color:var(--ink);text-decoration:none;justify-content:center;font-weight:600" style-hover="text-decoration:none;background:var(--line)">GitHub ↗</a>
+        </div>
+      </div>
+      <div style="background:var(--card2);border-radius:24px;padding:clamp(24px,3.5vw,36px)">
+        <sc-if value="{{ formSent }}" hint-placeholder-val="{{ false }}">
+          <div role="status" style="padding:48px 8px;text-align:center">
+            <div style="width:56px;height:56px;margin:0 auto 18px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700">✓</div>
+            <div style="font-size:24px;font-weight:700;letter-spacing:-0.02em">{{ t.fSentH }}</div>
+            <div style="margin-top:8px;font-size:16px;color:var(--mute)">{{ t.fSentP }}</div>
+          </div>
+        </sc-if>
+        <sc-if value="{{ formOpen }}" hint-placeholder-val="{{ true }}">
+          <form name="contact" onSubmit="{{ submitForm }}" style="display:flex;flex-direction:column;gap:16px">
+            <input type="hidden" name="form-name" value="contact" />
+            <p style="display:none"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+            <div style="font-size:24px;font-weight:700;letter-spacing:-0.02em">{{ t.fH }}</div>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--mute)">{{ t.fName }}<input name="name" required="{{ true }}" autocomplete="name" style="width:100%;font-family:inherit;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);outline:none" /></label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--mute)">{{ t.fContact }}<input name="contact" required="{{ true }}" placeholder="{{ t.fContactPh }}" style="width:100%;font-family:inherit;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);outline:none" /></label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--mute)">{{ t.fService }}
+              <select name="service" style="width:100%;font-family:inherit;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);outline:none;appearance:auto">
+                <option>Data Visualization</option>
+                <option>Excel &amp; Google Sheets</option>
+                <option>Web Scraping</option>
+                <option>Automation</option>
+                <option>Consulting</option>
+                <option>{{ t.fOther }}</option>
+              </select>
+            </label>
+            <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--mute)">{{ t.fMsg }}<textarea name="message" rows="4" placeholder="{{ t.fMsgPh }}" style="width:100%;font-family:inherit;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);outline:none;resize:vertical;min-height:110px"></textarea></label>
+            <button type="submit" disabled="{{ formSending }}" style="border:0;cursor:pointer;font-family:inherit;font-size:17px;font-weight:600;padding:14px 24px;border-radius:999px;background:var(--ink);color:var(--bg)">{{ sendLabel }}</button>
+            <sc-if value="{{ formError }}" hint-placeholder-val="{{ false }}">
+              <div role="alert" style="font-size:14px;line-height:1.5;color:#C72037">{{ t.fErr }} <a href="mailto:ak4rawinss@gmail.com">ak4rawinss@gmail.com</a></div>
+            </sc-if>
+          </form>
+        </sc-if>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="background:var(--bg2);padding:20px 22px;font-size:12px;color:var(--mute)">
+  <div style="max-width:1024px;margin:0 auto;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <span>{{ t.foot1 }}</span>
+    <span>{{ t.foot2 }}</span>
+  </div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;lineId&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contact&quot;},&quot;showPhone&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Contact&quot;},&quot;showAvailability&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;},&quot;showSql&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Content&quot;}}">
+const PAGES = [
+  { short: 'Overview', name: 'Executive Overview', src: 'v_cross_channel_daily', foot: '6 KPI Scorecards · Combo Chart · Donut · Stacked Bar', img: '/assets/dash-1.webp' },
+  { short: 'Facebook Ads', name: 'Facebook Ads Performance', src: 'facebook_ads_campaigns · v_fb_ads_full', foot: '6 KPI Scorecards · Stacked Bar · Horizontal Bar · Line · Table', img: '/assets/dash-2.webp' },
+  { short: 'Facebook Page', name: 'Facebook Page Insights', src: 'v_fb_page_summary · facebook_page_posts', foot: '6 KPI Scorecards · Line · Donut · Combo Chart · Table', img: '/assets/dash-3.webp' },
+  { short: 'GA4 Traffic', name: 'Website Traffic — Google Analytics 4', src: 'v_ga4_daily_summary · ga4_sessions · ga4_pages', foot: '6 KPI Scorecards · Combo · Donut · Horizontal Bar · Table', img: '/assets/dash-4.webp' }
+];
+const VIEWS = [
+  { name: 'v_fb_ads_full', desc: 'campaigns · adsets · ads hierarchy', sql: `CREATE OR REPLACE VIEW \`celtic-hour-498216-j6.marketing_analytics.v_fb_ads_full\` AS
+SELECT
+  c.date, c.campaign_id, c.campaign_name, c.objective, c.status,
+  a.adset_id, a.adset_name, a.age_group, a.gender, a.placement,
+  d.ad_id, d.ad_name, d.creative_type,
+  c.spend          AS campaign_spend,
+  c.impressions    AS campaign_impressions,
+  c.clicks         AS campaign_clicks,
+  c.conversions    AS campaign_conversions,
+  a.spend          AS adset_spend,
+  a.impressions    AS adset_impressions,
+  a.clicks         AS adset_clicks,
+  d.spend          AS ad_spend,
+  d.impressions    AS ad_impressions,
+  d.clicks         AS ad_clicks,
+  d.conversions    AS ad_conversions
+FROM \`marketing_analytics.facebook_ads_campaigns\` c
+LEFT JOIN \`marketing_analytics.facebook_ads_adsets\`  a
+  ON c.date = a.date AND c.campaign_id = a.campaign_id
+LEFT JOIN \`marketing_analytics.facebook_ads_ads\`     d
+  ON a.date = d.date AND a.campaign_id = d.campaign_id AND a.adset_id = d.adset_id;` },
+  { name: 'v_fb_page_summary', desc: 'page daily + post aggregates', sql: `CREATE OR REPLACE VIEW \`celtic-hour-498216-j6.marketing_analytics.v_fb_page_summary\` AS
+SELECT
+  d.date, d.page_likes_total, d.new_page_likes, d.page_reach,
+  d.page_impressions, d.page_engaged_users, d.page_views,
+  d.video_views, d.reactions, d.comments, d.shares,
+  COALESCE(p.posts_count,      0) AS posts_count,
+  COALESCE(p.post_reach,       0) AS post_reach,
+  COALESCE(p.post_impressions, 0) AS post_impressions,
+  COALESCE(p.post_reactions,   0) AS post_reactions,
+  COALESCE(p.post_shares,      0) AS post_shares
+FROM \`marketing_analytics.facebook_page_daily\` d
+LEFT JOIN (
+  SELECT
+    date,
+    COUNT(*)          AS posts_count,
+    SUM(reach)        AS post_reach,
+    SUM(impressions)  AS post_impressions,
+    SUM(reactions)    AS post_reactions,
+    SUM(shares)       AS post_shares
+  FROM \`marketing_analytics.facebook_page_posts\`
+  GROUP BY date
+) p ON d.date = p.date;` },
+  { name: 'v_ga4_daily_summary', desc: 'sessions · pages · events by date', sql: `CREATE OR REPLACE VIEW \`celtic-hour-498216-j6.marketing_analytics.v_ga4_daily_summary\` AS
+SELECT
+  s.date,
+  SUM(s.sessions)                 AS total_sessions,
+  SUM(s.users)                    AS total_users,
+  SUM(s.new_users)                AS total_new_users,
+  AVG(s.bounce_rate)              AS avg_bounce_rate,
+  AVG(s.avg_session_duration_sec) AS avg_session_duration_sec,
+  AVG(s.pages_per_session)        AS avg_pages_per_session,
+  SUM(s.conversions)              AS total_conversions,
+  SUM(p.page_views)               AS total_page_views,
+  SUM(e.event_count)              AS total_events
+FROM \`marketing_analytics.ga4_sessions\` s
+LEFT JOIN (
+  SELECT date, SUM(page_views) AS page_views
+  FROM \`marketing_analytics.ga4_pages\`
+  GROUP BY date
+) p ON s.date = p.date
+LEFT JOIN (
+  SELECT date, SUM(event_count) AS event_count
+  FROM \`marketing_analytics.ga4_events\`
+  GROUP BY date
+) e ON s.date = e.date
+GROUP BY s.date;` },
+  { name: 'v_cross_channel_daily', desc: 'unified view across all 3 sources', sql: `CREATE OR REPLACE VIEW \`celtic-hour-498216-j6.marketing_analytics.v_cross_channel_daily\` AS
+SELECT
+  COALESCE(fb.date, pg.date, ga.date) AS date,
+  -- Facebook Ads
+  COALESCE(fb.spend,       0) AS fb_spend,
+  COALESCE(fb.impressions, 0) AS fb_impressions,
+  COALESCE(fb.clicks,      0) AS fb_clicks,
+  COALESCE(fb.conversions, 0) AS fb_conversions,
+  -- Facebook Page
+  COALESCE(pg.page_reach,         0) AS page_reach,
+  COALESCE(pg.page_engaged_users, 0) AS page_engaged_users,
+  COALESCE(pg.new_page_likes,     0) AS new_page_likes,
+  -- GA4
+  COALESCE(ga.total_sessions,    0) AS ga4_sessions,
+  COALESCE(ga.total_users,       0) AS ga4_users,
+  COALESCE(ga.total_conversions, 0) AS ga4_conversions
+FROM (
+  SELECT date,
+    SUM(spend) AS spend, SUM(impressions) AS impressions,
+    SUM(clicks) AS clicks, SUM(conversions) AS conversions
+  FROM \`marketing_analytics.facebook_ads_campaigns\` GROUP BY date
+) fb
+FULL OUTER JOIN \`marketing_analytics.facebook_page_daily\` pg ON fb.date = pg.date
+FULL OUTER JOIN \`marketing_analytics.v_ga4_daily_summary\` ga ON fb.date = ga.date;` }
+];
+const tab = (on) => ({ border: 0, cursor: 'pointer', fontFamily: 'inherit', fontSize: 14, padding: '8px 18px', borderRadius: 999, background: on ? '#F2F2F0' : 'transparent', color: on ? '#0A0A0A' : '#A6A6A6', fontWeight: on ? 600 : 400, transition: 'background .2s, color .2s' });
+const langBtn = (on) => ({ border: 0, cursor: 'pointer', fontFamily: 'inherit', fontSize: 11, fontWeight: 600, letterSpacing: '0.04em', padding: '3px 9px', borderRadius: 999, background: on ? 'var(--pill)' : 'transparent', color: on ? 'var(--pillink)' : 'var(--mute)' });
+
+const TX = {
+  en: {
+    navServices: 'Services', navProjects: 'Projects', navExperience: 'Experience', navSkills: 'Skills', hire: 'Hire me', allProjects: 'All projects',
+    available: 'Available for freelance projects', heroRole: 'Freelance Data Analyst · Akkarawin Saiprapakorn',
+    heroP: 'From raw source systems to dashboards stakeholders actually use. ETL pipelines, data models and BI in Tableau, Looker Studio and Power BI.',
+    flowP: 'Data → analysis → dashboards → automation, for businesses and organizations at a fair price.',
+    heroStat1: 'Fastwork rating', heroStat2: 'Client reviews', heroStat3: 'Years in data', heroWorked: 'Experience at', start: 'Start a project', seeWork: 'See all services ›',
+    svcH: 'Services, end to end.', svcP: 'Four service scopes. Order on Fastwork or contact me directly.', directBtn: 'Contact directly', consultH: 'Consulting, for your team.', kYears: 'Years in data', kRating: 'Fastwork rating', kOrders: 'Orders completed', order: 'Order on Fastwork ›', orderBtn: 'Order on Fastwork', from: 'Starting at', larger: 'For larger data projects.',
+    daTag: 'Data Analyst Project', deTag: 'Data Engineer Project',
+    caseP: 'End-to-end analytics project connecting Facebook Ads, Facebook Page, and Google Analytics 4 data through BigQuery into a 4-page interactive Looker Studio dashboard.',
+    live: 'View live dashboard', source: 'Source on GitHub ›', pipelineH: 'The pipeline.', stackH: 'Tech stack.', step: 'STEP',
+    projH: 'Built in the open.', viewProject: 'View project ›', emptySub: 'New projects in this category are on the way.', ghNote: 'The full source code of all my projects is available on my',
+    ytP: 'Build a real-time data pipeline that collects YouTube (9arm channel) data and shows it on a dashboard.', ytBtn: 'View source on GitHub',
+    expH: 'Experience.', expP: 'Four years of data work for banking, real estate, education and tech companies, now building dashboards and data systems for businesses of any size.', capsH: 'What you get.', capsFrom: 'From', pathH: 'Where I’ve worked.', more: 'Details', flRowSub: 'Many businesses', flRowOut: '24 orders delivered, 5 stars on every review.', flRowLink: 'Read client reviews ›', expCta: 'Want a dashboard like these for your business?', expCtaBtn: 'Start a project →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – Present',
+    flTag: 'Freelance · Fastwork', since: 'Since February 2026', flH: 'Joined Fastwork in 2026.',
+    flP: 'Freelance data analysis, dashboard and tutoring work for clients on Fastwork, alongside my full-time role.',
+    avg: 'Average rating', reviewsL: 'Client reviews', five: '5-star reviews', say: 'What clients say.', selected: 'Selected from 20 verified reviews on Fastwork.', client: 'Fastwork client',
+    skillsH: 'Tech specs.', eduH: 'Education & certificates.',
+    contact1: 'Have data?', contact2: "Let's talk.", contactP: "Tell me about your data and the decisions it should support. I'll reply with a scope and timeline.", fastwork: 'Hire me on Fastwork', phoneL: 'Phone', sample: 'Sample data', fH: 'Send a message', fName: 'Name', fContact: 'Email, LINE or phone', fContactPh: 'How should I reply?', fService: 'Service', fOther: 'Other', fMsg: 'About your data', fMsgPh: 'What data do you have, and what do you want to know from it?', fSend: 'Send message', fSending: 'Sending…', fSentH: 'Message sent.', fSentP: "Thanks. I'll get back to you within 24 hours.", fErr: "Couldn't send right now. Please email me at",
+    foot1: '© 2026 DataFlick · Akkarawin Saiprapakorn. Freelance Data Analyst.', foot2: 'B.Sc. Statistics, Kasetsart University',
+    all: 'All', empty: (c) => 'No ' + c + ' projects yet.', tag: (c) => c + ' Project', light: 'Switch to light mode', dark: 'Switch to dark mode'
+  },
+  th: {
+    navServices: 'Services', navProjects: 'Projects', navExperience: 'Experience', navSkills: 'Skills', hire: 'Hire me', allProjects: 'All projects',
+    available: 'พร้อมรับงานฟรีแลนซ์', heroRole: 'ฟรีแลนซ์ Data Analyst · Akkarawin Saiprapakorn',
+    heroP: 'ตั้งแต่ข้อมูลดิบจากระบบต้นทาง จนถึงแดชบอร์ดที่ทีมใช้งานได้จริง ทั้ง ETL pipeline, data model และ BI ด้วย Tableau, Looker Studio และ Power BI',
+    flowP: 'รับทำข้อมูล → วิเคราะห์ → Dashboard → ระบบ Automation สำหรับธุรกิจและองค์กร ในราคาที่เหมาะสม',
+    heroStat1: 'คะแนนบน Fastwork', heroStat2: 'รีวิวจากลูกค้า', heroStat3: 'ปีในสายงานข้อมูล', heroWorked: 'เคยร่วมงานกับ', start: 'เริ่มโปรเจกต์', seeWork: 'ดู Services ต่างๆ ›',
+    svcH: 'Services, end to end.', svcP: 'บริการ 4 ขอบเขต สั่งงานผ่าน Fastwork หรือติดต่อโดยตรงได้เลย', directBtn: 'ติดต่อโดยตรง', consultH: 'Consulting, for your team.', kYears: 'ปี ในสายงานข้อมูล', kRating: 'คะแนนบน Fastwork', kOrders: 'งานที่ส่งมอบแล้ว', order: 'สั่งงานบน Fastwork ›', orderBtn: 'สั่งงานบน Fastwork', from: 'เริ่มต้นที่', larger: 'For larger data projects.',
+    daTag: 'โปรเจกต์ Data Analyst', deTag: 'โปรเจกต์ Data Engineer',
+    caseP: 'โปรเจกต์วิเคราะห์ข้อมูลแบบ end-to-end เชื่อมข้อมูล Facebook Ads, Facebook Page และ Google Analytics 4 ผ่าน BigQuery สู่แดชบอร์ด Looker Studio แบบ interactive 4 หน้า',
+    live: 'ดูแดชบอร์ดจริง', source: 'ซอร์สโค้ดบน GitHub ›', pipelineH: 'The pipeline.', stackH: 'Tech stack.', step: 'ขั้นที่',
+    projH: 'Built in the open.', viewProject: 'ดูผลงาน ›', emptySub: 'ผลงานในหมวดนี้กำลังจะมาเร็วๆ นี้', ghNote: 'ซอร์สโค้ดของทุกโปรเจกต์ดูได้ที่',
+    ytP: 'สร้าง data pipeline แบบ real-time ที่เก็บข้อมูลช่อง YouTube (9arm) และแสดงผลบนแดชบอร์ด', ytBtn: 'ดูซอร์สโค้ดบน GitHub',
+    expH: 'Experience.', expP: 'เคยทำงานข้อมูลให้ธนาคาร อสังหาริมทรัพย์ การศึกษา และเทคโนโลยี ตอนนี้นำวิธีเดียวกันมาทำ Dashboard และระบบข้อมูลให้ธุรกิจทุก​ขนาด', capsH: 'What you get.', capsFrom: 'จาก', pathH: 'Where I’ve worked.', more: 'ดูรายละเอียด', flRowSub: 'ลูกค้าหลายธุรกิจ', flRowOut: 'ส่งมอบแล้ว 24 งาน ได้ 5 ดาวทุกรีวิว', flRowLink: 'อ่านรีวิวจากลูกค้า ›', expCta: 'อยากได้ Dashboard แบบนี้ในธุรกิจของคุณ?', expCtaBtn: 'เริ่มโปรเจกต์ →', fulltime: 'Full-time roles', fulltimeH: 'Full-time roles.', freelance: 'Freelance', ftRange: '2022 – ปัจจุบัน',
+    flTag: 'Freelance · Fastwork', since: 'ตั้งแต่กุมภาพันธ์ 2026', flH: 'Joined Fastwork in 2026.',
+    flP: 'รับงานวิเคราะห์ข้อมูล ทำแดชบอร์ด และสอน ให้ลูกค้าบน Fastwork ควบคู่กับงานประจำ',
+    avg: 'คะแนนเฉลี่ย', reviewsL: 'รีวิวจากลูกค้า', five: 'รีวิว 5 ดาว', say: 'What clients say.', selected: 'คัดมาจากรีวิว 20 รายการบน Fastwork', client: 'ลูกค้า Fastwork',
+    skillsH: 'Tech specs.', eduH: 'Education & certificates.',
+    contact1: 'Have data?', contact2: "Let's talk.", contactP: 'มีข้อมูลอยู่แล้วและอยากใช้ให้เกิดประโยชน์สูงสุด ทั้งเพื่อการตัดสินใจและการวิเคราะห์ธุรกิจ ติดต่อได้ทางช่องทางด้านล่างเลยครับ', fastwork: 'จ้างงานผ่าน Fastwork', phoneL: 'โทรศัพท์', sample: 'Sample data', fH: 'ส่งข้อความถึงผม', fName: 'ชื่อ', fContact: 'อีเมล, LINE หรือเบอร์โทร', fContactPh: 'ช่องทางที่ให้ติดต่อกลับ', fService: 'บริการ', fOther: 'อื่นๆ', fMsg: 'รายละเอียดข้อมูล', fMsgPh: 'มีข้อมูลอะไรบ้าง และอยากรู้อะไรจากข้อมูลนั้น', fSend: 'ส่งข้อความ', fSending: 'กำลังส่ง…', fSentH: 'ส่งข้อความแล้ว', fSentP: 'ขอบคุณครับ ผมจะติดต่อกลับภายใน 24 ชั่วโมง', fErr: 'ส่งไม่สำเร็จ กรุณาส่งอีเมลมาที่',
+    foot1: '© 2026 DataFlick · Akkarawin Saiprapakorn · ฟรีแลนซ์ Data Analyst', foot2: 'วท.บ. สถิติ มหาวิทยาลัยเกษตรศาสตร์',
+    all: 'All', empty: (c) => 'ยังไม่มีผลงานหมวด ' + c, tag: (c) => 'โปรเจกต์ ' + c, light: 'เปลี่ยนเป็นโหมดสว่าง', dark: 'เปลี่ยนเป็นโหมดมืด'
+  }
+};
+
+const CATS = [
+  { key: 'all', color: '#0A0A0A' },
+  { key: 'Data Analyst', color: '#0A0A0A', bg: '#EDEDEB' },
+  { key: 'Data Engineer', color: '#0A0A0A', bg: '#DEDEDC' },
+  { key: 'Excel', color: '#248a3d', bg: '#e9f5ec' }
+];
+const PROJECTS = [
+  { cat: 'Data Analyst', title: 'Marketing Analytics – Social Media Dashboard', href: '#projects/marketing', img: '/assets/dash-1.webp', meta: '2025',
+    desc: ['Built an end-to-end analytics pipeline that generates mock Facebook Ads, Facebook Page, and GA4 data, models it in BigQuery with SQL views, and visualizes it in a 4-page interactive Looker Studio dashboard.', 'สร้าง analytics pipeline แบบ end-to-end ที่สร้างข้อมูลจำลอง Facebook Ads, Facebook Page และ GA4 จัดโมเดลใน BigQuery ด้วย SQL views และแสดงผลบนแดชบอร์ด Looker Studio แบบ interactive 4 หน้า'],
+    highlights: ['8 tables · 4 SQL views · 4 pages · 23 charts · 26K+ rows', '8 ตาราง · 4 SQL views · 4 หน้า · 23 กราฟ · 26K+ แถว'], tools: ['Python', 'SQL', 'BigQuery', 'Looker Studio'] },
+  { cat: 'Data Engineer', title: 'YouTube Channel ETL Tracker', href: '#projects/youtube', thumbText: 'YouTube API → Kafka → Airflow → DuckDB → Dashboard', meta: 'Real-time',
+    desc: ['Build a real-time data pipeline that collects YouTube (9arm channel) data and shows it on a dashboard.', 'สร้าง data pipeline แบบ real-time ที่เก็บข้อมูลช่อง YouTube (9arm) และแสดงผลบนแดชบอร์ด'],
+    highlights: ['Streaming ingestion · Orchestrated pipeline', 'Streaming ingestion · Orchestrated pipeline'], tools: ['Python', 'Kafka', 'Airflow', 'DuckDB', 'YouTube API'] }
+];
+const svgURI = (s) => 'data:image/svg+xml;utf8,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">' + s + '</svg>');
+const ICONS = {
+  csv: svgURI('<rect width="26" height="26" rx="7" fill="#555555"/><rect x="6" y="7" width="14" height="12" rx="1.5" fill="none" stroke="#fff" stroke-width="1.6"/><path d="M6 11h14M6 15h14M11 7v12" stroke="#fff" stroke-width="1.4"/>'),
+  excel: svgURI('<rect width="26" height="26" rx="7" fill="#107C41"/><path d="M8.5 8l9 10M17.5 8l-9 10" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>'),
+  sheets: svgURI('<rect width="26" height="26" rx="7" fill="#0F9D58"/><path d="M8 5.5h7l4 4v11a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-14a1 1 0 0 1 1-1z" fill="#fff"/><path d="M15 5.5v4h4" fill="#A8DAB5"/><rect x="9.5" y="12" width="7" height="6" fill="none" stroke="#0F9D58" stroke-width="1.3"/><path d="M9.5 15h7M13 12v6" stroke="#0F9D58" stroke-width="1.2"/>'),
+  json: svgURI('<rect width="26" height="26" rx="7" fill="#0A0A0A"/><path d="M10 7.5c-2 0-2 1.2-2 2.5s-.6 2.5-2 3c1.4.5 2 1.7 2 3s0 2.5 2 2.5M16 7.5c2 0 2 1.2 2 2.5s.6 2.5 2 3c-1.4.5-2 1.7-2 3s0 2.5-2 2.5" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>'),
+  db: svgURI('<rect width="26" height="26" rx="7" fill="#336791"/><ellipse cx="13" cy="8.5" rx="6" ry="2.3" fill="none" stroke="#fff" stroke-width="1.6"/><path d="M7 8.5v9c0 1.3 2.7 2.3 6 2.3s6-1 6-2.3v-9M7 13c0 1.3 2.7 2.3 6 2.3s6-1 6-2.3" fill="none" stroke="#fff" stroke-width="1.6"/>'),
+  tableau: svgURI('<rect width="26" height="26" rx="7" fill="#fff"/><path d="M13 8.8v8.4M8.8 13h8.4" stroke="#E8762D" stroke-width="1.9"/><path d="M13 3.1999999999999997v4.8M10.6 5.6h4.8" stroke="#C72037" stroke-width="1.3"/><path d="M13 18v4.8M10.6 20.4h4.8" stroke="#5B879B" stroke-width="1.3"/><path d="M5.6 10.6v4.8M3.1999999999999997 13h4.8" stroke="#1F457E" stroke-width="1.3"/><path d="M20.4 10.6v4.8M18 13h4.8" stroke="#59879B" stroke-width="1.3"/><path d="M7.8 6.199999999999999v3.2M6.199999999999999 7.8h3.2" stroke="#7099A6" stroke-width="1"/><path d="M18.2 6.199999999999999v3.2M16.599999999999998 7.8h3.2" stroke="#EB912B" stroke-width="1"/><path d="M7.8 16.599999999999998v3.2M6.199999999999999 18.2h3.2" stroke="#1F457E" stroke-width="1"/><path d="M18.2 16.599999999999998v3.2M16.599999999999998 18.2h3.2" stroke="#C72037" stroke-width="1"/>'),
+  looker: svgURI('<rect width="26" height="26" rx="7" fill="#fff"/><rect x="6.5" y="11" width="5.5" height="9.5" rx="2.75" fill="#1A73E8"/><rect x="12.2" y="15" width="7.3" height="5.5" rx="2.75" fill="#AECBFA"/><circle cx="16" cy="9" r="3.6" fill="#4285F4"/>'),
+  powerbi: svgURI('<rect width="26" height="26" rx="7" fill="#F2C811"/><rect x="7" y="12" width="3.2" height="7" rx="1" fill="#0A0A0A"/><rect x="11.4" y="9" width="3.2" height="10" rx="1" fill="#0A0A0A" opacity="0.8"/><rect x="15.8" y="6" width="3.2" height="13" rx="1" fill="#0A0A0A" opacity="0.6"/>'),
+  aws: svgURI('<rect width="26" height="26" rx="7" fill="#232F3E"/><text x="13" y="14" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="8" font-weight="700" fill="#fff">aws</text><path d="M7.5 17c3.5 2 7.5 2 11 0" fill="none" stroke="#FF9900" stroke-width="1.5" stroke-linecap="round"/><path d="M17 16.2l1.8.6-.5 1.8" fill="none" stroke="#FF9900" stroke-width="1.2" stroke-linecap="round"/>'),
+  snowflake: svgURI('<rect width="26" height="26" rx="7" fill="#29B5E8"/><g stroke="#fff" stroke-width="1.8" stroke-linecap="round"><path d="M13 6v14M6.9 9.5l12.2 7M6.9 16.5l12.2-7"/><path d="M11 7.5l2 1.5 2-1.5M11 18.5l2-1.5 2 1.5" fill="none"/></g>'),
+  redshift: svgURI('<rect width="26" height="26" rx="7" fill="#8C4FFF"/><path d="M13 6l6 3v8l-6 3-6-3V9z" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M13 12v8M7 9l6 3 6-3" fill="none" stroke="#fff" stroke-width="1.4"/>'),
+  hive: svgURI('<rect width="26" height="26" rx="7" fill="#FDEE21"/><path d="M10 7h6l3 5-3 5h-6l-3-5z" fill="none" stroke="#0A0A0A" stroke-width="1.7" stroke-linejoin="round"/><circle cx="13" cy="12" r="1.6" fill="#0A0A0A"/>'),
+  s3: svgURI('<rect width="26" height="26" rx="7" fill="#3F8624"/><path d="M7 8.5h12l-1.6 10a1.2 1.2 0 0 1-1.2 1H9.8a1.2 1.2 0 0 1-1.2-1z" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><ellipse cx="13" cy="8.5" rx="6" ry="1.8" fill="#fff"/>'),
+  sql: svgURI('<rect width="26" height="26" rx="7" fill="#0A0A0A"/><text x="13" y="16.5" text-anchor="middle" font-family="Menlo,Consolas,monospace" font-size="8.5" font-weight="700" fill="#FFFFFF">SQL</text>'),
+  bigquery: svgURI('<rect width="26" height="26" rx="7" fill="#4285F4"/><circle cx="12" cy="12" r="5" fill="none" stroke="#fff" stroke-width="1.8"/><path d="M15.6 15.6l3.4 3.4" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/><path d="M10 13.5v-1.5M12 13.5v-3M14 13.5v-2" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>'),
+  python: svgURI('<rect width="26" height="26" rx="7" fill="#F2F2F0"/><path d="M13 5.5c-3 0-3.5 1.3-3.5 2.6V10H13v.8H8c-1.6 0-2.7 1.2-2.7 3.4s1 3.3 2.5 3.3h1.4v-2c0-1.4 1.2-2.6 2.6-2.6h3.6c1.2 0 2.1-1 2.1-2.2V8.1c0-1.3-1.1-2.6-4.5-2.6z" fill="#3776AB"/><path d="M13 20.5c3 0 3.5-1.3 3.5-2.6V16H13v-.8h5c1.6 0 2.7-1.2 2.7-3.4s-1-3.3-2.5-3.3h-1.4v2c0 1.4-1.2 2.6-2.6 2.6h-3.6c-1.2 0-2.1 1-2.1 2.2v2.6c0 1.3 1.1 2.6 4.5 2.6z" fill="#FFD43B"/><circle cx="11.2" cy="7.6" r=".8" fill="#fff"/><circle cx="14.8" cy="18.4" r=".8" fill="#fff"/>'),
+  spark: svgURI('<rect width="26" height="26" rx="7" fill="#E25A1C"/><path d="M13 5.5l1.9 5 5.3.3-4.1 3.4 1.4 5.2L13 16.5l-4.5 2.9 1.4-5.2-4.1-3.4 5.3-.3z" fill="#fff"/>'),
+  js: svgURI('<rect width="26" height="26" rx="7" fill="#F7DF1E"/><text x="17.5" y="19.5" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="9.5" font-weight="700" fill="#0A0A0A">JS</text>'),
+  scala: svgURI('<rect width="26" height="26" rx="7" fill="#DC322F"/><path d="M8 7.5c4 .6 8 .6 10 0v2.6c-2 .6-6 .6-10 0zM8 11.7c4 .6 8 .6 10 0v2.6c-2 .6-6 .6-10 0zM8 15.9c4 .6 8 .6 10 0v2.6c-2 .6-6 .6-10 0z" fill="#fff"/>'),
+  web: svgURI('<rect width="26" height="26" rx="7" fill="#E34F26"/><circle cx="13" cy="13" r="6.5" fill="none" stroke="#fff" stroke-width="1.6"/><path d="M6.5 13h13M13 6.5c2 2 2.8 4 2.8 6.5S15 17.5 13 19.5c-2-2-2.8-4-2.8-6.5S11 8.5 13 6.5z" fill="none" stroke="#fff" stroke-width="1.4"/>')
+};
+const SKILL_ICON = { 'AWS': ICONS.aws, 'Snowflake': ICONS.snowflake, 'Redshift': ICONS.redshift, 'Hive': ICONS.hive, 'S3': ICONS.s3, 'SQL': ICONS.sql, 'Google BigQuery': ICONS.bigquery, 'Python': ICONS.python, 'PySpark': ICONS.spark, 'JavaScript (Apps Script)': ICONS.js, 'Scala': ICONS.scala, 'Tableau': ICONS.tableau, 'Looker Studio': ICONS.looker, 'Power BI': ICONS.powerbi };
+const ROUTES = ['home', 'services', 'projects', 'projects/marketing', 'projects/youtube', 'experience', 'skills'];
+const routeFromHash = () => { const h = (location.hash || '').slice(1); return h === 'top' || h === '' ? 'home' : (ROUTES.includes(h) ? h : null); };
+const navStyle = (on) => ({ color: 'var(--ink)', opacity: on ? 1 : 0.8, fontWeight: on ? 600 : 400, textDecoration: 'none', whiteSpace: 'nowrap' });
+const tagStyle = (c) => ({ fontSize: 12, fontWeight: 600, padding: '4px 10px', borderRadius: 999, background: c.bg, color: c.color });
+
+class Component extends DCLogic {
+  state = { form: 'idle', page: 0, view: 0, cat: 'all', theme: (document.documentElement.dataset.theme || 'light'), lang: (document.documentElement.lang === 'th' ? 'th' : 'en'), route: routeFromHash() || 'home' };
+  componentDidMount() {
+    document.documentElement.dataset.theme = this.state.theme;
+    document.documentElement.lang = this.state.lang;
+    this.onHash = () => { const r = routeFromHash(); if (r && r !== this.state.route) { this.setState({ route: r }); window.scrollTo({ top: 0 }); } };
+    window.addEventListener('hashchange', this.onHash);
+  }
+  componentWillUnmount() { window.removeEventListener('hashchange', this.onHash); }
+  setLang(l) { document.documentElement.lang = l; try { localStorage.setItem('dataon-lang', l); } catch (e) {} this.setState({ lang: l }); }
+  renderVals() {
+    const p = this.props, r = this.state.route, lang = this.state.lang, th = lang === 'th';
+    const t = TX[lang];
+    const L = (en, thv) => (th ? thv : en);
+    const pick = (v) => (Array.isArray(v) ? (th ? v[1] : v[0]) : v);
+    return {
+      t,
+      setEn: () => this.setLang('en'), setTh: () => this.setLang('th'),
+      langEn: langBtn(!th), langTh: langBtn(th),
+      cats: CATS.map(c => { const on = this.state.cat === c.key; return { label: c.key === 'all' ? t.all : c.key, count: c.key === 'all' ? PROJECTS.length : PROJECTS.filter(x => x.cat === c.key).length, select: () => this.setState({ cat: c.key }), style: { border: 0, cursor: 'pointer', fontFamily: 'inherit', whiteSpace: 'nowrap', fontSize: 14, padding: '8px 16px', borderRadius: 999, background: on ? 'var(--pill)' : 'var(--card)', color: on ? 'var(--pillink)' : 'var(--ink)', fontWeight: on ? 600 : 400 } }; }),
+      projectList: PROJECTS.filter(x => this.state.cat === 'all' || x.cat === this.state.cat).map(x => { const c = CATS.find(k => k.key === x.cat); return { ...x, desc: pick(x.desc), highlights: pick(x.highlights), img: x.img || false, thumbText: x.thumbText || false, tagLabel: t.tag(x.cat), tagStyle: tagStyle(c) }; }),
+      isEmpty: !PROJECTS.some(x => this.state.cat === 'all' || x.cat === this.state.cat),
+      emptyTitle: t.empty(this.state.cat),
+      isHome: r === 'home', isServices: r === 'services', isProjects: r === 'projects', isExperience: r === 'experience', isSkills: r === 'skills',
+      isProjMarketing: r === 'projects/marketing', isProjYoutube: r === 'projects/youtube', inProjects: r.startsWith('projects'),
+      sub: { all: navStyle(r === 'projects'), marketing: navStyle(r === 'projects/marketing'), youtube: navStyle(r === 'projects/youtube') },
+      nav: { services: navStyle(r === 'services'), projects: navStyle(r.startsWith('projects')), experience: navStyle(r === 'experience'), skills: navStyle(r === 'skills') },
+      showAvailability: p.showAvailability ?? true,
+      theme: this.state.theme,
+      themeTitle: this.state.theme === 'dark' ? t.light : t.dark,
+      navLogoClick: (e) => { e.preventDefault(); const nt = this.state.theme === 'dark' ? 'light' : 'dark'; document.documentElement.dataset.theme = nt; try { localStorage.setItem('dataon-theme', nt); } catch (err) {} this.setState({ theme: nt }); },
+      showSql: p.showSql ?? true,
+      showPhone: p.showPhone ?? true,
+      hasLine: !!(p.lineId || '').trim(),
+      lineUrl: (() => { const id = (p.lineId || '').trim(); return /^https?:/.test(id) ? id : 'https://line.me/ti/p/~' + id.replace(/^@/, ''); })(),
+      lineLabel: (p.lineId || '').trim().replace(/^https?:\/\/[^/]+\/(ti\/p\/~?|R\/ti\/p\/)?/, '') || 'LINE',
+      formSent: this.state.form === 'sent', formOpen: this.state.form !== 'sent', formError: this.state.form === 'error', formSending: this.state.form === 'sending',
+      sendLabel: this.state.form === 'sending' ? t.fSending : t.fSend,
+      submitForm: (e) => {
+        e.preventDefault();
+        const data = new FormData(e.target);
+        this.setState({ form: 'sending' });
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
+          .then(r => this.setState({ form: r.ok ? 'sent' : 'error' }))
+          .catch(() => this.setState({ form: 'error' }));
+      },
+      flow: [
+        { num: '01', title: L('Your data', 'Your Data\n'), desc: L('Send whatever you already have.', 'ส่งไฟล์ที่มีอยู่มาได้เลย'), arrow: true, items: [{ badge: 'CSV', icon: ICONS.csv, label: L('CSV exports', 'ไฟล์ CSV') }, { badge: 'XLSX', icon: ICONS.excel, label: 'Excel' }, { badge: 'GSHEET', icon: ICONS.sheets, label: 'Google Sheets' }, { badge: 'JSON', icon: ICONS.json, label: L('APIs & JSON', 'API และ JSON') }, { badge: 'SQL', icon: ICONS.db, label: L('Databases', 'ฐานข้อมูล') }, { badge: 'HTML', icon: ICONS.web, label: L('Websites', 'เว็บไซต์') }] },
+        { num: '02', title: L('Clean & combine', 'Clean & combine'), desc: L('Fix errors, remove duplicates and join every source into one table.', 'แก้ข้อมูลผิด ลบข้อมูลซ้ำ และรวมทุกแหล่งให้อยู่ในตารางเดียว'), arrow: true, items: [] },
+        { num: '03', title: L('Analyze', 'Analyze'), desc: L('Define the KPIs that matter and find the trends behind them.', 'กำหนด KPI ที่สำคัญ และหาแนวโน้มที่อยู่เบื้องหลัง'), arrow: true, items: [] },
+        { num: '04', title: L('Dashboard', 'Dashboard\n'), desc: L('Ready to use, updated automatically.', 'พร้อมใช้งาน อัปเดตอัตโนมัติ'), arrow: false, items: [{ badge: 'TBL', icon: ICONS.tableau, label: 'Tableau' }, { badge: 'LKR', icon: ICONS.looker, label: 'Looker Studio' }, { badge: 'PBI', icon: ICONS.powerbi, label: 'Power BI' }, { badge: 'XLSX', icon: ICONS.excel, label: 'Excel / Google Sheets' }] }
+      ].map(st => ({ ...st, items: st.items.map(it => ({ ...it, icon: it.icon || false, noIcon: !it.icon })) })),
+      heroSteps: [L('Source', 'Source'), L('Clean', 'Clean'), L('Analyze', 'Analyze'), L('Dashboard', 'Dashboard')].map((label, i) => ({ n: '0' + (i + 1), label, style: { display: 'flex', flexDirection: 'column', gap: 4, padding: '14px 16px', minWidth: 0, borderLeft: i ? '1px solid var(--line)' : 0, background: i === 3 ? 'var(--card2)' : 'transparent' } })),
+      hm: {
+        sub: L('Services, projects, experience and skills. Pick where you want to start.', 'บริการ ผลงาน ประสบการณ์ และทักษะ เลือกดูส่วนที่สนใจได้เลย'),
+        svc: L('Four service scopes for teams that want more out of their data.', 'บริการ 4 ขอบเขต สำหรับทีมที่อยากใช้ข้อมูลให้คุ้มค่ากว่าเดิม'),
+        svcItems: ['Data Visualization', 'Excel & Google Sheets', 'Web Scraping', 'Automation'],
+        years: L('years in data', 'ปี ในสายงานข้อมูล'),
+        proj: L('Marketing analytics dashboard and YouTube ETL tracker.', 'แดชบอร์ด Marketing Analytics และ YouTube ETL Tracker'),
+        skills: L('Tools, education and certificates.', 'เครื่องมือ การศึกษา และใบรับรอง'),
+        tools: ['SQL', 'Python', 'Tableau', 'Power BI', 'Looker Studio', 'BigQuery', 'Snowflake', 'AWS', 'PySpark', 'Airflow'].map((n, i) => ({ name: n, style: { fontSize: 13, fontWeight: 600, padding: '8px 14px', borderRadius: 999, whiteSpace: 'nowrap', background: i < 3 ? '#0A0A0A' : 'var(--card2)', color: i < 3 ? '#F2F2F0' : 'var(--ink)', border: i < 3 ? '1px solid #0A0A0A' : '1px solid var(--line)' } }))
+      },
+      tiles: [
+        { href: '#services', num: '01', title: t.navServices, desc: L('Data visualization, Excel, web scraping and automation.', 'Data Visualization, Excel, Web Scraping และระบบอัตโนมัติ'), cta: L('Learn more ›', 'ดูเพิ่มเติม ›') },
+        { href: '#projects', num: '02', title: t.navProjects, desc: L('Marketing analytics dashboard and YouTube ETL tracker.', 'แดชบอร์ด Marketing Analytics และ YouTube ETL Tracker'), cta: L('View projects ›', 'ดูผลงาน ›') },
+        { href: '#experience', num: '03', title: t.navExperience, desc: 'Krungsri, Pruksa Holding, LEARN Corporation, QOL.', cta: L('See experience ›', 'ดูประสบการณ์ ›') },
+        { href: '#skills', num: '04', title: t.navSkills, desc: L('Tech specs, education and certificates.', 'ทักษะทางเทคนิค การศึกษา และใบรับรอง'), cta: L('View skills ›', 'ดูทักษะ ›') }
+      ],
+      page: PAGES[this.state.page],
+      pages: PAGES.map((x, i) => ({ ...x, tabStyle: tab(i === this.state.page), select: () => this.setState({ page: i }) })),
+      view: VIEWS[this.state.view],
+      views: VIEWS.map((x, i) => ({ ...x, tabStyle: tab(i === this.state.view), select: () => this.setState({ view: i }) })),
+      services: [
+        { num: '01', cat: 'Data', color: '#0A0A0A', bg: '#EDEDEB', title: 'Data Visualization',
+          desc: L('Dashboards in Tableau, Power BI and Looker Studio.', 'Data Visualization ด้วย Tableau, Power BI, Looker'),
+          items: L(['Interactive dashboards and KPI scorecards', 'Data cleaning and modeling before visualization', 'Charts designed around your business questions'], ['แดชบอร์ด interactive และ KPI scorecard', 'ทำความสะอาดและจัดโมเดลข้อมูลก่อนแสดงผล', 'ออกแบบกราฟตามคำถามทางธุรกิจของคุณ']),
+          tools: 'Tableau · Power BI · Looker Studio', proof: L('★ 5.0 · 18 orders', '★ 5.0 · ขายได้ 18') },
+        { num: '02', cat: 'Excel', color: '#248a3d', bg: '#e9f5ec', title: 'Excel & Google Sheets',
+          desc: L('Excel and Google Sheets work: data entry, data tables, advanced formulas and charts.', 'รับทำ Excel, Google Sheet (คีย์ข้อมูล, สร้างตารางข้อมูล, ผูกสูตรระดับ advance, สร้างกราฟต่างๆ)'),
+          items: L(['Data entry and structured tables', 'Advanced formulas', 'Charts and summary reports'], ['คีย์ข้อมูลและสร้างตารางข้อมูล', 'ผูกสูตรระดับ advance', 'กราฟและรายงานสรุป']),
+          tools: 'Excel · Google Sheets · Apps Script', proof: L('★ 5.0 · 6 orders', '★ 5.0 · ขายได้ 6') },
+        { num: '03', cat: 'Web Scraping', color: '#0A0A0A', bg: '#DEDEDC', title: 'Web Scraping',
+          desc: L('Website data extraction, delivered as ready-to-use files.', 'รับดึงข้อมูลจากเว็บไซต์ (Web Scraping) จัดเก็บเป็นไฟล์พร้อมใช้งาน'),
+          items: L(['Collect data from websites', 'Clean and structure the results', 'Deliver as ready-to-use files'], ['ดึงข้อมูลจากเว็บไซต์', 'ทำความสะอาดและจัดโครงสร้างข้อมูล', 'ส่งมอบเป็นไฟล์พร้อมใช้งาน']),
+          tools: 'Python', proof: L('New service', 'บริการใหม่') },
+        { num: '04', cat: 'Automation', color: '#8944ab', bg: '#f4ecf8', title: 'Automation Systems',
+          desc: L('Automation systems that take over repetitive daily manual work.', 'รับพัฒนาระบบอัตโนมัติ เปลี่ยนงานที่ทำมือทุกวัน ให้ระบบ Automate ทำแทนอย่างมีประสิทธิภาพ'),
+          items: L(['Replace repetitive manual tasks', 'Scheduled data workflows', 'Built to fit your existing tools'], ['แทนที่งานที่ต้องทำซ้ำด้วยมือ', 'ตั้งเวลา workflow ข้อมูลอัตโนมัติ', 'ออกแบบให้เข้ากับเครื่องมือที่ใช้อยู่']),
+          tools: 'Python · Airflow · Apps Script', proof: L('New service', 'บริการใหม่') }
+      ].map(s => {
+        const formValue = s.formValue || { '01': 'Data Visualization', '02': 'Excel & Google Sheets', '03': 'Web Scraping', '04': 'Automation' }[s.num];
+        const onFastwork = s.onFastwork !== false;
+        return { ...s, tagStyle: tagStyle(s), isViz: s.num === '01', isExcel: s.num === '02', isScrape: s.num === '03', isAuto: s.num === '04', 
+          price: s.price || '฿1,000', fromLabel: s.fromLabel || t.from, onFastwork,
+          cardStyle: { background: 'var(--card)', boxShadow: 'var(--shadow)', borderRadius: 20, padding: '36px 32px', display: 'flex', flexDirection: 'column', gap: 14, gridColumn: s.wide ? '1 / -1' : undefined },
+          directStyle: { display: 'inline-flex', alignItems: 'center', gap: 6, padding: '12px 20px', borderRadius: 999, fontSize: 15, fontWeight: 600, textDecoration: 'none', whiteSpace: 'nowrap',
+            background: onFastwork ? 'transparent' : 'var(--pill)', color: onFastwork ? 'var(--ink)' : 'var(--pillink)', border: onFastwork ? '1px solid var(--line)' : '1px solid transparent' },
+          // Preselect this service in the contact form; the link itself scrolls to #contact.
+          contactMe: () => setTimeout(() => { const sel = document.querySelector('form[name=contact]:not([hidden]) select[name=service]'); if (sel) sel.value = formValue; }, 60) };
+      }),
+      consult: {
+        desc: L('Advice on getting more out of Tableau, Power BI and Looker Studio, and on planning data automation for your organization.', 'ให้คำปรึกษาการใช้งาน Tableau, Power BI, Looker Studio และการวางระบบ Data Automation สำหรับองค์กร'),
+        items: L(['Review your current dashboards and data setup', 'Choose the right BI tool and data architecture', 'Hands-on training for your team'], ['ประเมิน Dashboard และระบบข้อมูลที่มีอยู่', 'แนะนำเครื่องมือ BI และโครงสร้างข้อมูลที่เหมาะสม', 'สอนการใช้งานให้ทีมแบบลงมือทำ']),
+        pricing: L('Pricing', 'ราคา'), price: L('Custom quote', 'ตามขอบเขตงาน'), priceSub: L('For organizations and teams', 'สำหรับองค์กรและทีม'),
+        // Preselect Consulting in the contact form; the link itself scrolls to #contact.
+        contactMe: () => setTimeout(() => { const sel = document.querySelector('form[name=contact]:not([hidden]) select[name=service]'); if (sel) sel.value = 'Consulting'; }, 60)
+      },
+      enterprise: [
+        { title: 'ETL & data pipelines', desc: L('Ingestion and transformation workflows that consolidate data from many source systems into one reliable foundation.', 'Workflow สำหรับนำเข้าและแปลงข้อมูล รวมข้อมูลจากหลายระบบต้นทางให้เป็นฐานข้อมูลเดียวที่เชื่อถือได้'), tools: 'Talend · Tableau Prep · Kafka · Airflow' },
+        { title: 'Requirements & data modeling', desc: L('Business requirements translated into solution designs, BRDs, data mapping and interface specifications.', 'แปลง business requirement เป็น solution design, BRD, data mapping และ interface specification'), tools: 'SQL · BigQuery · Snowflake · Redshift' },
+        { title: 'Data governance', desc: L('Standards for data quality, access control and tool consistency across Big Data, warehouse and BI systems.', 'มาตรฐานด้านคุณภาพข้อมูล การควบคุมสิทธิ์ และการใช้เครื่องมือให้เป็นแนวเดียวกัน ทั้งระบบ Big Data, Data Warehouse และ BI'), tools: 'AWS · S3 · Hive · Tableau' }
+      ],
+      stats: [{ n: '8', l: L('Tables', 'ตาราง') }, { n: '4', l: 'SQL Views' }, { n: '4', l: L('Pages', 'หน้า') }, { n: '23', l: L('Charts', 'กราฟ') }, { n: '26K+', l: L('Rows', 'แถว') }, { n: '3', l: L('Sources', 'แหล่งข้อมูล') }],
+      pipeline: [
+        { step: '01', name: 'CSV Files', items: ['facebook_ads_campaigns', 'facebook_ads_adsets', 'facebook_ads_ads', 'facebook_page_daily', 'facebook_page_posts', 'ga4_sessions', 'ga4_pages', 'ga4_events'] },
+        { step: '02', name: 'BigQuery Tables', items: [L('8 tables loaded via', 'โหลด 8 ตารางผ่าน'), 'Google Cloud SDK (bq)', 'Facebook Ads · 3', 'Facebook Page · 2', 'GA4 · 3'] },
+        { step: '03', name: 'SQL Views', items: ['v_fb_ads_full', 'v_fb_page_summary', 'v_ga4_daily_summary', 'v_cross_channel_daily'] },
+        { step: '04', name: 'Looker Studio', items: ['P1 · Executive Overview', 'P2 · Facebook Ads', 'P3 · Facebook Page', 'P4 · GA4 Traffic'] }
+      ].map(s => ({ ...s, label: t.step + ' ' + s.step })),
+      stack: [
+        { name: 'Python', desc: L('Mock data generation with SEA market benchmarks, seasonality, and growth trends', 'สร้างข้อมูลจำลองตาม benchmark ตลาด SEA พร้อม seasonality และแนวโน้มการเติบโต') },
+        { name: 'Google BigQuery', desc: L('Cloud data warehouse with 8 tables and 4 SQL views for data modeling', 'Cloud data warehouse มี 8 ตารางและ 4 SQL views สำหรับ data modeling') },
+        { name: 'SQL', desc: L('Views joining campaign hierarchy, page metrics, GA4 events, and cross-channel data', 'Views ที่ join โครงสร้างแคมเปญ, page metrics, GA4 events และข้อมูลข้ามช่องทาง') },
+        { name: 'Looker Studio', desc: L('Interactive dashboard with calculated fields, date filters, and drill-down', 'แดชบอร์ด interactive พร้อม calculated fields, ตัวกรองวันที่ และ drill-down') },
+        { name: 'Google Cloud SDK', desc: L('CLI-based table uploads and BigQuery management via bq commands', 'อัปโหลดตารางและจัดการ BigQuery ผ่านคำสั่ง bq บน CLI') },
+        { name: 'Facebook Ads API', desc: L('Schema modeled after real Ads structure — campaigns, ad sets, and ads hierarchy', 'Schema อิงโครงสร้าง Ads จริง ทั้ง campaigns, ad sets และ ads') }
+      ],
+      reviews: [
+        { text: 'ประทับใจการร่วมงานในครั้งนี้มากค่ะ ทำงานเร็วตามกำหนด งานออกมามีคุณภาพ สามารถตอบคำถามได้เคลียทุกประเด็น มีความเข้าใจในเรื่อง Data ในการทำ dashboard อย่างดี สามารถแนะนำเพิ่มเติมในส่วนที่เราบรีฟไปได้ว่ายังขาดตรงไหนอีกบ้าง โดยรวมประทับใจมากค่ะขอบคุณค่ะ', date: '13/10/2026' },
+        { text: 'Very professional, experienced, efficient, and quick to understand the requirements. Highly recommended.', date: '14/07/2026' },
+        { text: 'สอนเข้าใจง่าย อธิบายได้ดีมากค่ะ มีการแทรกเรื่องการประยุกต์ใช้ในโลกธุรกิจจริงด้วย ตามใจ Requirement ของลูกค้าสุดๆ แนะนำค่ะ', date: '28/02/2026' },
+        { text: 'เก่งและทำงานเร็วมาก', date: '16/05/2026' },
+        { text: 'สอนดีมากครับ เข้าใจง่าย', date: '17/07/2026' },
+        { text: 'งานไวมากครับ', date: '17/05/2026' }
+      ],
+      ytStack: ['Python', 'Kafka', 'Airflow', 'DuckDB', 'YouTube API'],
+      jobs: [
+        { dates: L('September 2025 – Present', 'กันยายน 2025 – ปัจจุบัน'), company: 'Krungsri (Bank of Ayudhya)', industry: L('Banking', 'ธนาคาร'), outcome: L('Built dashboards from real business requirements for business units across the bank.', 'สร้าง Dashboard จาก Business Requirement จริงของหน่วยธุรกิจย่อย (BU) ภายในองค์กร'), tools: ['Tableau', 'Tableau Prep', 'BRD · Data mapping'], logo: '/assets/logo-krungsri.webp', role: 'Data Analytics Consultant', points: L([
+          'Gathered and translated business requirements into solution designs across multiple business units, documented through Business Requirement Documents (BRDs), data mapping specifications, and interface specifications.',
+          'Designed data ingestion workflows to consolidate data from diverse source systems across subsidiary business units within a large-scale banking organization, ensuring consistent and reliable data flow into the enterprise data foundation.',
+          'Developed data transformation workflows using Tableau Prep and built analytical dashboards in Tableau, coordinating deployment with Tableau Admins across project delivery cycles.',
+          'Collaborated with Data Engineers on curated table development and data foundation initiatives, and partnered with Data Governance teams to ensure data standards and compliance throughout the delivery process.'], [
+          'รวบรวมและแปลง business requirement เป็น solution design ให้หลายหน่วยธุรกิจ จัดทำเป็นเอกสาร BRD, data mapping specification และ interface specification',
+          'ออกแบบ data ingestion workflow รวมข้อมูลจากหลายระบบต้นทางของบริษัทในเครือ ในองค์กรธนาคารขนาดใหญ่ ให้ข้อมูลไหลเข้าสู่ enterprise data foundation อย่างสม่ำเสมอและเชื่อถือได้',
+          'พัฒนา data transformation workflow ด้วย Tableau Prep และสร้างแดชบอร์ดวิเคราะห์ใน Tableau ประสานงาน deployment กับ Tableau Admin ตลอดรอบการส่งมอบโปรเจกต์',
+          'ทำงานร่วมกับ Data Engineer ในการพัฒนา curated table และโครงการ data foundation รวมถึงร่วมกับทีม Data Governance เพื่อให้เป็นไปตามมาตรฐานและข้อกำหนดด้านข้อมูลตลอดการส่งมอบ']) },
+        { dates: L('November 2024 – August 2025', 'พฤศจิกายน 2024 – สิงหาคม 2025'), company: 'Pruksa Holding Public Company Limited', industry: L('Real estate', 'อสังหาริมทรัพย์'), outcome: L('End to end: from building ETL pipelines to designing and developing the dashboards.', 'ทำครบตั้งแต่ ETL ไปจนถึงออกแบบและพัฒนา Dashboard'), tools: ['Talend', 'Tableau', 'Data governance'], logo: '/assets/logo-pruksa.webp', role: 'Senior Data Engineer / Data Analyst', points: L([
+          'Designed and managed ETL pipelines using Talend to integrate data from multiple sources, supporting analytics and business intelligence needs with accurate and timely delivery.',
+          'Established and maintained data governance standards, ensuring consistent data quality and smooth integration across systems, with reporting and visualization delivered through Tableau dashboards.',
+          'Oversaw data infrastructure operations including outsourced ETL supervision, tool standardization, license management, and access control for Big Data, Data Warehouse, and BI systems (Tableau).'], [
+          'ออกแบบและดูแล ETL pipeline ด้วย Talend เพื่อรวมข้อมูลจากหลายแหล่ง รองรับงาน analytics และ BI ให้ถูกต้องและทันเวลา',
+          'วางและดูแลมาตรฐาน data governance ให้คุณภาพข้อมูลสม่ำเสมอและเชื่อมต่อระหว่างระบบได้ราบรื่น พร้อมนำเสนอรายงานผ่านแดชบอร์ด Tableau',
+          'ดูแลงานโครงสร้างพื้นฐานข้อมูล ทั้งควบคุมงาน ETL ของ outsource กำหนดมาตรฐานเครื่องมือ จัดการ license และสิทธิ์การเข้าถึงระบบ Big Data, Data Warehouse และ BI (Tableau)']) },
+        { dates: L('March 2023 – October 2024', 'มีนาคม 2023 – ตุลาคม 2024'), company: 'LEARN Corporation (Ignite by Ondemand)', industry: L('Education', 'การศึกษา'), outcome: L('Built dashboards that let the Marketing team make decisions from data.', 'สร้าง Dashboard ให้ทีม Marketing ตัดสินใจจากข้อมูล'), tools: ['Tableau', 'Tableau Prep'], logo: '/assets/logo-learn.webp', role: 'Data Analyst', points: L([
+          'Extracted, cleaned, and analyzed data from multiple sources to identify trends and deliver ongoing reports supporting business decisions.',
+          'Designed and maintained custom Tableau dashboards and BI solutions to visualize large-scale data, providing business-critical analytics and strategic insights for stakeholders including the Marketing team.',
+          'Planned and designed ETL workflows using Tableau Prep based on business requirements, collaborating with the Marketing team to align data needs and handing off pipelines to the Data Engineering team for execution.'], [
+          'ดึง ทำความสะอาด และวิเคราะห์ข้อมูลจากหลายแหล่ง เพื่อหาแนวโน้มและจัดทำรายงานต่อเนื่องสนับสนุนการตัดสินใจทางธุรกิจ',
+          'ออกแบบและดูแลแดชบอร์ด Tableau และโซลูชัน BI สำหรับข้อมูลขนาดใหญ่ ให้ insight เชิงกลยุทธ์แก่ผู้เกี่ยวข้อง รวมถึงทีม Marketing',
+          'วางแผนและออกแบบ ETL workflow ด้วย Tableau Prep ตาม business requirement ร่วมกับทีม Marketing แล้วส่งต่อ pipeline ให้ทีม Data Engineering นำไปใช้งาน']) },
+        { dates: L('May 2022 – February 2023', 'พฤษภาคม 2022 – กุมภาพันธ์ 2023'), company: 'QOL Enterprises', industry: L('Tech', 'เทคโนโลยี'), outcome: '', tools: [], logo: '/assets/logo-qol.webp', role: 'Data Analyst', points: [] }
+      ].map(j => ({ ...j, hasOutcome: !!j.outcome, hasTools: j.tools.length > 0, toolsText: j.tools.join(' · ') })),
+      expStats: [
+        { value: '4+', label: L('Years in data', 'ปีในสายงานข้อมูล') },
+        { value: '4', label: L('Industries', 'อุตสาหกรรม') },
+        { value: '24', label: L('Fastwork orders delivered', 'งานที่ส่งมอบบน Fastwork') },
+        { value: '5.0 ★', label: L('Rating from 20 reviews', 'คะแนนจาก 20 รีวิว') }
+      ],
+      caps: [
+        { num: '01', title: L('Dashboards people actually open', 'Dashboard ที่ผู้บริหารเปิดดูจริง'), tools: 'Tableau · Looker Studio · Power BI', from: 'Krungsri, LEARN' },
+        { num: '02', title: L('Data that updates itself', 'ข้อมูลอัปเดตเอง ไม่ต้องทำมือ'), tools: L('ETL with Talend and Tableau Prep', 'ETL ด้วย Talend และ Tableau Prep'), from: 'Pruksa, Krungsri' },
+        { num: '03', title: L('Numbers every team agrees on', 'ตัวเลขตรงกันทุกทีม'), tools: L('Data governance and data standards', 'Data governance และมาตรฐานข้อมูล'), from: 'Pruksa, Krungsri' }
+      ],
+      skills: [
+        { cat: 'Data Storage / Warehousing', items: ['AWS', 'Snowflake', 'Redshift', 'Hive', 'S3'] },
+        { cat: 'SQL & Query Engines', items: ['SQL', 'Google BigQuery'] },
+        { cat: L('Programming Languages', 'ภาษาโปรแกรม'), items: ['Python', 'PySpark', 'JavaScript (Apps Script)', 'Scala'] },
+        { cat: L('Visualization Tools', 'เครื่องมือ Visualization'), items: ['Tableau', 'Looker Studio', 'Power BI'] }
+      ].map(g => ({ ...g, items: g.items.map(n => ({ name: n, icon: SKILL_ICON[n] || ICONS.csv })) })),
+      edu: [
+        { kind: L('Education', 'การศึกษา'), title: L('Bachelor of Science (Statistics)', 'วิทยาศาสตรบัณฑิต (สถิติ)'), org: L('Kasetsart University, Bangkok, Thailand', 'มหาวิทยาลัยเกษตรศาสตร์ กรุงเทพฯ') },
+        { kind: L('Certificate', 'ใบรับรอง'), title: 'Certified Professional Data Analyst', org: L('Offered by DataRockie', 'โดย DataRockie') },
+        { kind: L('Certificate', 'ใบรับรอง'), title: 'Python/Scala Programming Mastery', org: L('Offered by Skooldio', 'โดย Skooldio') }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
