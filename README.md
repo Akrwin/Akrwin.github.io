@@ -16,7 +16,6 @@ Designed in Claude Design and published on Netlify as a static site (no build st
 | `robots.txt`, `sitemap.xml` | For Google and other search engines |
 | `404.html` | Not-found page (Netlify serves it automatically) |
 | `netlify.toml` | Netlify settings: publish folder, security headers, caching |
-| `.nojekyll` | Only for GitHub Pages; remove once GitHub Pages is switched off |
 
 ## Editing
 

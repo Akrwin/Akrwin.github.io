@@ -750,7 +750,6 @@ button{font-family:inherit}
         <sc-if value="{{ formOpen }}" hint-placeholder-val="{{ true }}">
           <form name="contact" onSubmit="{{ submitForm }}" style="display:flex;flex-direction:column;gap:16px">
             <input type="hidden" name="form-name" value="contact" />
-            <input type="hidden" name="_subject" value="New project inquiry — DataFlick website" />
             <p style="display:none"><label>Leave empty <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
             <div style="font-size:24px;font-weight:700;letter-spacing:-0.02em">{{ t.fH }}</div>
             <label style="display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--mute)">{{ t.fName }}<input name="name" required="{{ true }}" autocomplete="name" style="width:100%;font-family:inherit;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);background:var(--bg);color:var(--ink);outline:none" /></label>
@@ -1017,14 +1016,8 @@ class Component extends DCLogic {
         e.preventDefault();
         const data = new FormData(e.target);
         this.setState({ form: 'sending' });
-        // Netlify Forms receives the POST on Netlify. Until GitHub Pages is switched off, the old
-        // github.io copy (which cannot receive POSTs) keeps sending through FormSubmit.
-        const sent = /\.github\.io$/.test(location.hostname)
-          ? fetch('https://formsubmit.co/ajax/ak4rawinss@gmail.com', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify(Object.fromEntries(data)) })
-              .then(r => r.ok ? r.json() : Promise.reject(r.status)).then(d => String(d && d.success) === 'true')
-          : fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
-              .then(r => r.ok);
-        sent.then(ok => this.setState({ form: ok ? 'sent' : 'error' }))
+        fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
+          .then(r => this.setState({ form: r.ok ? 'sent' : 'error' }))
           .catch(() => this.setState({ form: 'error' }));
       },
       flow: [
