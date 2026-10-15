@@ -1,6 +1,6 @@
 # DataFlick — Freelance Data Analyst portfolio
 
-Personal site of **Akkarawin Saiprapakorn** — https://dataflick.netlify.app/
+Personal site of **Akkarawin Saiprapakorn** — https://dataflicker.netlify.app/
 
 Designed in Claude Design and published on Netlify as a static site (no build step).
 
@@ -34,7 +34,7 @@ Designed in Claude Design and published on Netlify as a static site (no build st
 1. Sign in at [app.netlify.com](https://app.netlify.com) with GitHub.
 2. **Add new site → Import an existing project → GitHub →** pick `Akrwin/Akrwin.github.io`.
 3. Leave the build command empty; publish directory `.` (both come from `netlify.toml`). Click **Deploy**.
-4. **Site configuration → Change site name →** `dataflick` (the site's links already point to `https://dataflick.netlify.app/`; if that name is taken, update the URL in `index.html`, `robots.txt`, `sitemap.xml` and this README).
+4. **Site configuration → Change site name →** `dataflicker` (the site's links already point to `https://dataflicker.netlify.app/`; if that name is taken, update the URL in `index.html`, `robots.txt`, `sitemap.xml` and this README).
 5. **Forms → Enable form detection**, then redeploy once so the `contact` form is registered.
 
 After that, every push to `main` deploys automatically.

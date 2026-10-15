@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dataflick.netlify.app/sitemap.xml
+Sitemap: https://dataflicker.netlify.app/sitemap.xml
