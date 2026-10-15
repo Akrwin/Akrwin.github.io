@@ -13,6 +13,7 @@ Designed in Claude Design and published on Netlify as a static site (no build st
 | `vendor/` | Self-hosted React 18.3.1 (mapped in via `window.__resources`, so no CDN is needed) |
 | `logo-intro.js` | Logo intro animation |
 | `assets/` | Images (WebP), favicon, `og-image.png` (social share preview), `apple-touch-icon.png` |
+| `favicon.ico` | Black logo for clients that ask for `/favicon.ico` directly (otherwise Netlify serves its own icon) |
 | `robots.txt`, `sitemap.xml` | For Google and other search engines |
 | `404.html` | Not-found page (Netlify serves it automatically) |
 | `netlify.toml` | Netlify settings: publish folder, security headers, caching |
