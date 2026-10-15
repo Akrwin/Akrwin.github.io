@@ -13,7 +13,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 const SITE = 'https://dataflicker.netlify.app/';
 const TH_URL = SITE + 'th/';
 
-const TH_TITLE = 'รับทำ Dashboard และวิเคราะห์ข้อมูล — ฟรีแลนซ์ Data Analyst · DataFlick';
+const TH_TITLE = 'รับทำ Dashboard Tableau, Power BI | ฟรีแลนซ์ Data Analyst';
 const TH_DESC = 'ฟรีแลนซ์ Data Analyst รับทำ Dashboard ด้วย Tableau, Power BI, Looker Studio รับทำ Excel / Google Sheets ดึงข้อมูลเว็บ ระบบ Automation และให้คำปรึกษาด้าน BI';
 const TH_LD_DESC = 'ฟรีแลนซ์ Data Analyst ในประเทศไทย รับทำ Dashboard ด้วย Tableau, Looker Studio และ Power BI วิเคราะห์ข้อมูล รับทำ Excel และ Google Sheets ดึงข้อมูลเว็บ (Web Scraping) ทำความสะอาดข้อมูล ระบบ Automation และให้คำปรึกษาด้าน BI';
 
